@@ -57,6 +57,7 @@ intents:
 - photo_foyer_interne_eng
 - filiere_ang
 - lien_doc_ang
+- lien_doc_fr
 - lien_video_ang
 - salutation
 - remerciement
@@ -511,7 +512,7 @@ academics and job seekers, holders of a bachelor's degree or more
             ⭐1 730 DT per year\n"
 
  utter_pcr_fr: 
-   - text: "Vous devez soumettre votre dossier qui contient le test PCR à l'école, au Service Elève"
+   - text: "Vous devez soumettre votre dossier qui contient le test PCR à l'école, au Service élève"
 
  utter_pcr_ang: 
    - text: "You must submit your file which contains the PCR test at the school, at the Student Service"
@@ -849,7 +850,7 @@ college year"
 ##################################################################
 
  utter_default:
-  - text: "j'ai pas compris"
+  - text: "Je ne peux pas répondre"
 
 
 

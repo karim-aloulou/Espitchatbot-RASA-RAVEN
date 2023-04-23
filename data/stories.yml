@@ -1,17 +1,275 @@
 version: "3.1"
 
 stories:
+# Karim Yosr----------
 
-
-  - story: difference_3A_3B_ar
+  - story: salutation_ar_story
     steps:
     - intent: salutation_ar
-    - action:  utter_salutation
+    - action: utter_salutation
+
+  - story: difference_3A_3B_ar_story
+    steps:
     - intent: difference_3A_3B_ar
     - action: utter_difference_3A_3B_fr
+
+  - story: remerciement_ar_story
+    steps:
+    - intent: remerciement_ar
+    - action: utter_remerciement
+
+  - story: bye_ar_story
+    steps:
     - intent: bye_ar
     - action: utter_bye
 
+
+  - story: contact_ar_story
+    steps:
+    - intent: contact_ar
+    - action: utter_contact
+
+  - story: courssoir_ar_story
+    steps:
+    - intent: courssoir_ar
+    - action: utter_courssoir
+
+  - story: mobilite_internationale_story
+    steps:
+    - intent: mobilite_internationale_ar
+    - action: utter_mobilite_internationale
+
+  - story: avantage_alternance_story_ar
+    steps:
+    - intent: avantage_alternance_ar
+    - action: utter_avantage_alternance
+
+
+  - story: reclamation_confirmation_admission_story_ar
+    steps:
+    - intent: reclamation_confirmation_admission_ar
+    - action: utter_reclamation_confirmation_admission_fr
+
+  - story: concours_admission_ar_story
+    steps:
+    - intent: concours_admission_ar
+    - action: utter_concours_admission_fr
+
+  - story: modalites_paiement_ar_story
+    steps:
+    - intent: modalites_paiement_ar
+    - action: utter_modalites_paiement_fr
+
+  - story: reporter_entretien_ar_story
+    steps:
+    - intent: reporter_entretien_ar
+    - action: utter_reporter_entretien_fr
+
+  - story: date_preinscription_ar_story
+    steps:
+    - intent: date_preinscription_ar
+    - action:  utter_date_preinscription_fr
+
+  - story: cout_formation_ar_story
+    steps:
+    - intent: cout_formation_ar
+    - action:  utter_cout_formation_fr 
+
+  - story: B2_ar_story
+    steps:
+    - intent: B2_ar
+    - action: utter_B2_fr
+
+  - story: rentree_ar_story
+    steps:
+    - intent: rentree_ar
+    - action: utter_rentree_fr     
+
+  - story: modalite_ar_story
+    steps:
+    - intent: modalite_ar
+    - action: utter_modalite_fr 
+
+  - story: place_ar_story
+    steps:
+    - intent: place_ar
+    - action: utter_place_fr
+
+  - story: inscri_ing_info_ar_story
+    steps:
+    - intent: inscri_ing_info_ar
+    - action: utter_inscri_ing_info_fr  
+
+  - story: licence_info_ar_story
+    steps:
+    - intent: licence_info_ar
+    - action: utter_licence_info_fr 
+
+
+  - story: alternance_ar_story
+    steps:
+    - intent: alternance_ar
+    - action: utter_alternance_fr 
+
+  - story: admission_ar_story
+    steps:
+    - intent: admission_ar
+    - action: utter_admission_fr
+
+
+  - story: inscri_bac_ar_story
+    steps:
+    - intent: inscri_bac_ar
+    - action: utter_inscri_bac_fr
+
+  - story: club_ar_story
+    steps:
+    - intent: club_ar
+    - action: utter_club_fr   
+
+  - story: cout_hebergement_ar_story
+    steps:
+    - intent: cout_hebergement_ar
+    - action: utter_cout_hebergement_fr 
+
+
+  - story: cout_restauration_ar_story
+    steps:
+    - intent: cout_restauration_ar
+    - action: utter_cout_restauration_fr
+
+  - story:  note_ar_story
+    steps:
+    - intent: note_ar
+    - action: utter_note_fr  
+
+  - story: pcr_ar_story
+    steps:
+    - intent: pcr_ar
+    - action: utter_pcr_fr
+
+  # - story: classe_ar_story
+  #   steps:
+  #   - intent: classe_ar
+  #   - action: utter_classe_fr
+
+  - story: date_res_ar_story
+    steps:
+    - intent: date_res_ar
+    - action: utter_date_res_fr
+
+  - story: valider_module_ar_story
+    steps:
+    - intent: valider_module_ar
+    - action: utter_valider_module_fr
+
+  - story: admis_ar_story
+    steps:
+    - intent: admis_ar
+    - action: utter_admis_fr
+
+  - story: carte_amen_ar_story
+    steps:
+    - intent: carte_amen_ar
+    - action: utter_carte_amen_fr
+
+
+  - story: double_correction_ar_story
+    steps:
+    - intent: double_correction_ar
+    - action: utter_double_correction_fr
+
+  - story: confirmation_option_ar_story
+    steps:
+    - intent: confirmation_option_ar
+    - action: utter_confirmation_option_fr 
+
+  - story: conseil_classe_ar_story
+    steps:
+    - intent: conseil_classe_ar
+    - action: utter_conseil_classe_fr 
+
+  - story: credit_ar_story
+    steps:
+    - intent: credit_ar
+    - action: utter_credit_fr 
+
+  - story: exemples_rapport_stage_ar_story
+    steps:
+    - intent: exemples_rapport_stage_ar
+    - action: utter_exemples_rapport_stage_fr 
+
+  - story:  procedure_stage_ar_story
+    steps:
+    - intent: procedure_stage_ar
+    - action: utter_procedure_stage_fr 
+
+  - story: obtention_diplome_ar_story
+    steps:
+    - intent: obtention_diplome_ar
+    - action: utter_obtention_diplome_fr 
+
+  - story:  absence_examen_ar_story
+    steps:
+    - intent: absence_examen_ar
+    - action: utter_absence_examen_fr
+
+  - story: redoublement_ar_story
+    steps:
+    - intent: redoublement_ar
+    - action: utter_redoublement_fr  
+
+  - story:  ratt_ar_story
+    steps:
+    - intent: ratt_ar
+    - action: utter_ratt_fr 
+
+  - story: annulation_inscription_ar_story
+    steps:
+    - intent: annulation_inscription_ar
+    - action: utter_annulation_inscription_fr
+
+  - story:  regime_etude_ar_story
+    steps:
+    - intent: regime_etude_ar
+    - action: utter_regime_etude_fr
+
+  - story: photo_foyer_ar_story
+    steps:
+      - intent: photo_foyer_ar
+      - action: utter_type_foyer_fr
+
+  - story: photo_foyer_interne_ar_story
+    steps:
+      - intent: photo_foyer_interne_ar
+      - action: utter_photo_foyer1
+      - action: utter_photo_foyer2
+      - action: utter_photo_foyer3
+
+  - story: photo_foyer_externe_ar_story
+    steps:
+      - intent: photo_foyer_externe_ar
+      - action: utter_photo_foyer_externe1
+      - action: utter_photo_foyer_externe2
+      - action: utter_photo_foyer_externe3
+
+  - story: filiere_ar_story 
+    steps:
+      - intent: filiere_ar
+      - action: utter_type_visualisation_fr
+
+  # - story: lien_doc_ar_story
+  #   steps:
+  #     - intent: lien_doc_ar
+  #     - action: utter_type_visualisation_fr
+    
+
+  # - story: lien_video_ar_story
+  #   steps:
+  #     - intent: lien_video_ar
+  #     - action: utter_lien_video
+
+# ---------------------
 
 
 
@@ -321,10 +579,10 @@ stories:
     - intent: classe_ang
     - action: utter_classe_ang
 
-  - story: classe_fr
-    steps:
-    - intent: classe_fr
-    - action: utter_classe_fr
+  # - story: classe_fr
+  #   steps:
+  #   - intent: classe_fr
+  #   - action: utter_classe_fr
 
 
 
@@ -540,16 +798,16 @@ stories:
       - intent: filiere_fr
       - action: utter_type_visualisation_fr
 
-  - story: lien doc fr
-    steps:
-      - intent: lien_doc_fr
-      - action: utter_lien_doc
+  # - story: lien doc fr
+  #   steps:
+  #     - intent: lien_doc_fr
+  #     - action: utter_lien_doc
     
 
-  - story: lien video fr
-    steps:
-      - intent: lien_video_fr
-      - action: utter_lien_video
+  # - story: lien video fr
+  #   steps:
+  #     - intent: lien_video_fr
+  #     - action: utter_lien_video
 
 
   - story: filiere ang
@@ -563,10 +821,10 @@ stories:
       - action: utter_lien_doc
     
 
-  - story: lien video ang
-    steps:
-      - intent: lien_video_ang
-      - action: utter_lien_video
+  # - story: lien video ang
+  #   steps:
+  #     - intent: lien_video_ang
+  #     - action: utter_lien_video
 
 
   - story: story mobilite_internationale_eng

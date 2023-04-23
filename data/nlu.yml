@@ -630,6 +630,10 @@ nlu:
     - here is the link for documentation 
     - here the link for documentation :
 
+- intent: lien_doc_fr
+  examples: |
+    - test
+    - test 2
 - intent: lien_video_ang
   examples: |
     - here is the link for the video 
@@ -1571,6 +1575,7 @@ nlu:
     - chneya el date de préinscription 3al le site?
     - nheb n9ayed 3al site
     - wa9teh ekher ajal bech n9ayed fel site?
+    - wa9teh date pre inscription?
     - wa9teh ekher date becg n9ayed fel site?
 - intent: mobilite_internationale_ar
   examples: |
@@ -1592,6 +1597,7 @@ nlu:
     - kifech na3mel alternance?
     - fi chnoua tfidni l'alternance
     - alech naamel alternance
+    - chnoua l'avantage ta3 l'alternance?
 - intent: difference_3A_3B_ar
   examples: |
     - chnoua lfar9 bin 3a wel 3b ?
