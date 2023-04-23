@@ -2,6 +2,22 @@ version: "3.1"
 
 stories:
 
+
+  - story: difference_3A_3B_ar
+    steps:
+    - intent: salutation_ar
+    - action:  utter_salutation
+    - intent: difference_3A_3B_ar
+    - action: utter_difference_3A_3B_fr
+    - intent: bye_ar
+    - action: utter_bye
+
+
+
+
+
+
+
   - story: story 1
     steps:
     - intent: greet

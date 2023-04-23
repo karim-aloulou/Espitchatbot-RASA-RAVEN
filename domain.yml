@@ -148,6 +148,38 @@ intents:
 - certificat_ar
 - stage_ar
 - info_generale_esprit_ar
+- avantage_esprit_ar
+- procedure_inscription_ar
+- club_ar
+- cout_restauration_ar
+- cout_hebergement_ar
+- pcr_ar
+- classe_1ere_ar
+- date_res_ar
+- valider_module_ar
+- admis_ar
+- carte_amen_ar
+- double_correction_ar
+- confirmation_option_ar
+- conseil_classe_ar
+- credit_ar
+- exemples_rapport_stage_ar
+- procedure_stage_ar
+- obtention_diplome_ar
+- absence_examen_ar
+- redoublement_ar
+- ratt_ar
+- annulation_inscription_ar
+- regime_etude_ar
+- photo_foyer_ar
+- photo_foyer_externe_ar
+- photo_foyer_interne_ar
+- filiere_ar
+- applicabilite_formation_ar
+- reconnaissance_diplome_ar
+- reduction_premier_ar
+- administration_ar
+- partenaires_ar
 
 responses:
  utter_ask_nationality:

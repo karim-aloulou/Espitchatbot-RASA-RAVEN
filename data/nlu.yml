@@ -1795,3 +1795,489 @@ nlu:
     - chneya heya esprit?
     - behya esprit?
     - ma3roufa esprit?
+
+- intent: avantage_esprit_ar      
+  examples: |
+      - chnouma les avantages ki nakra f esprit?
+      - chnia nerbah ki nakra f esprit
+      - alech esprit?
+      - 3lech esprit?
+      - alech nakhtar f esprit?
+      - 3lech ne5tar esprit?
+      - 3lech bech na9ra f esprit
+      - chnouma les specificités mtaa esprit
+      - chnia houma les avantages f esprit
+      - kifeh esprit khir mel les ecoles d'ingenieurs lokhrin?
+      - a3tini les avantages mta kraya f esprit
+      - chnia les avantages ki nakra f esprit
+      - 3lech esprit
+      - alech esprit
+      - kifech tefrak esprit ala les facs lokhrin
+      - kifech tefra9 esprit ala les facs lokhrin
+      - chnia avantages ki nakra f esprit?
+
+  
+- intent: procedure_inscription_ar
+  examples: |
+    - chnouma les procedures mta l inscription
+    - chneya houma les procedures mta l inscription
+    - chnia na3mel bech n9ayed
+    - kifeh n9ayed 
+    - kifech nkayed
+    - kifeh tsir l inscription f esprit
+    - ta9yid f esprit
+    - nheb nkayed
+    - n7eb n9ayed
+    - aatini les procedures mtaa l inscription
+    - chnia le processus d'inscription
+    - kifech tsir l inscription 
+    - chnia les procedures d inscription
+    - nheb naref kifeh namel inscription
+    - tnajm tkoli kifeh namel l inscription
+
+- intent: club_ar
+  examples: |
+    - atini asemi les clubs f esprit
+    - fama des clubs f esprit?
+    - enehom les clubs li f esprit
+    - chnia fama clubs f esprit?
+    - chnia fama clubet f esprit
+    - kifeh nodkhol f club
+    - kifeh nod5ol f club
+    - kifech n9ayed f club
+    - kifech n9ayed f nedi
+    - a3tini lista mta3 les clubs
+    - listet clubs 
+    - listet clubet
+    - ahkili ala les clubs
+    - a7kili ala les clubs 
+    - a3tini des informations ala les clubs
+    - a3tini ma3loumet ala les clubs
+    - listet clubs
+
+- intent: cout_hebergement_ar
+  examples: |
+    - kadech coût mtaa hébergement?
+    - kadech tetkalef sokna
+    - 9adech tetkalef sokna
+    - chnouma les frais d'hébergement
+    - bkadeh l foyer
+    - b3adeh l foyer
+    - 3adech yetkalef l foyer
+    - kadeh tetkalef l sokna fl foyer
+    - soum l foyer
+    - a3tini soum l foyer
+    - nheb naaref coût d'hébergement
+    - kadeh coût de foyer 
+    - kadech coût de foyer 
+    - quel est le coût d'hebergement
+    - kadech soum l foyer
+    - kadeh prix hebergement
+    - kadech prix hebergement
+    - chnouma les tarifs hebergment
+    - chnia houma les tarifs hebergment
+
+- intent: cout_restauration_ar
+  examples: |
+    - chnia l coût de restauration
+    - soum restauration
+    - kadeh tetkalef restauration
+    - b9adeh tetkalef restauration
+    - nheb naref l coût de restauration
+    - n7eb na3ref 9adeh l cout de restauration
+    - nheb naaref kadeh l cout de restauration
+    - ib9adeh il restauration
+    - tnajem taatini l cout de restauration
+    - tnajem ta3tini l cout de restauration
+    - kadeh nkhales lel restaurant 
+    - 9adeh n5ales lel restaurant 
+    - b9adeh l mekla
+    - bkadeh tetkalef l mekla
+    - soum restaurant
+    - a3tini soum l restaurant
+    - b9adeh tetkalef l'inscription fel restaurant
+    - bkadeh nkayed fel restaurant
+    - b9adeh yetkalef l ftour
+    - chnouma les tarifs restauration
+    - chnia houma tarifs restauration 
+    - a3tini tarifs restauration 
+
+
+- intent: pcr_ar
+  examples: |
+    - nabaath test pcr par mail wala nhezou lel fac
+    - nab3ath test pcr par mail wala nhezou lel fac
+    - nab3eth test pcr par mail wala nhezou lel fac
+    - najem nabath test pcr par mail wala lezem nhezou lel fac
+    - nejem nabath test pcr par mail wala lezem nhezou lel fac
+    - mislch nabath test pcr par mail
+    - aadi ken nabaath test pcr 
+    - 3adi nabaath test pcr 3al mail 
+    - lezem nhot test pcr fel fac
+    - lezem nhez test pcr lel fac
+    - najam nabath l test pcr al mail kahaw
+
+
+- intent: classe_1ere_ar
+  examples: |
+    - kifech najem naaref classi mtaa l 1ere
+    - kifech najem na3ref classi mta3 l 1ere
+    - nheb naref classi mtaa l 1ere chnaamel
+    - nheb na3ref classi mtaa l 1ere chna3mel
+    - classi 1ére année
+    - win najem naaref classi mta l 1ere
+    - fin enajem nalka classi mta l 1ere
+    - kifeh najem naref ena f ana classe 1ere
+    - f ana classe 1ere nakra 
+    - kifech najem naref l classe 1ere li ena feha
+    - ena tebaa ana classe 1ere nakra
+
+
+- intent: date_res_ar
+  examples: |
+    - waktech l résultat?
+    - wakteh l resultat
+    - wakteh tahbet l resultat
+    - wa9tech tahbet l resultat
+    - wa9tech l resultat
+    - anehi date li tahbet feha l resultat
+    - a3tini date li tahbet feha l resultat
+    - date mta3 résultat
+    - nheb naaref date l resultat
+    - n7eb na3erf date l resultat
+
+- intent: valider_module_ar
+  examples: |
+    - kifech nvaled module
+    - kifeh nvalled module
+    - kifeh najem nhez module
+    - b moyenne akal men 10, les modules yetvaldou b 8 wala 10
+    - b 9adeh yatla3 module
+    - note minimale bech nvalidi module
+    - note minimale bech nvalled module
+    - nvalidi un module
+    - condition bech nvaled un module
+    - condition bech nvalidi un module
+    - note lezma bech nvalidi un module
+    - chnia note li najem nvalidi beha module
+    - chnia note li najem nhez beha module
+
+
+
+- intent: admis_ar
+  examples:  |
+      - kadech l moyenne minimale bech nenjah
+      - kadeh l moyenne minimale bech nanjah
+      - kadeh lezmni bech nanjah
+      - chnouma les conditions lezmin bech nanjah
+      - chnia houma les conditions lezmin bech nanjah
+      - 9adeh l moyenne minimale bech nanjah
+      - kadeh l moyenne minimale bech nanjah
+      - kadech lezm bech nanjah
+      - condition à satisfaire bech nanjah
+      - kadeh lezm njib bech nanjah
+      - 9adech lezemni njib bech nanja7
+      - n7eb nanja7 9adeh lezemni moyenne
+      - kifeh nanjah fel année universitaire
+      - bkadeh moyenne nanjah
+      - b9adeh moyenne nanja7
+      - ken njib {moyenne} ndoubel ?
+      - ken njib {moyenne} naawed l aam ?
+      - ken njib {moyenne} n3awed l 3am ?
+      - n3awed l3am b {moyenne} moyenne ?
+      - naawed laam b {moyenne} moyenne ?
+      - ndoubel b {moyenne} moyenne ?
+      - ndoubel ken njib {moyenne} moyenne generale
+
+- intent: carte_amen_ar
+  examples: |
+    - chnouma les avantages mtaa cartet amen bank
+    - chnia houma les avantages mtaa cartet amen bank
+    - a3tini les avantages ki na3mel carta amen bank
+    - 3lech na3mel f carta amen bank
+    - chnia izidni ken naamel carte amen bank
+    - alech nakhtar f carte bancaire mtaa amen bank
+    - chnia nerbah ken namel carte amen bank
+    - chnia nerbah ken namel cartet amen bank
+    - chnia l plus li f cartet amen bank
+    - avantages carte bancaire mtaa amen bank
+    - avantages carte bancaire mta3 amen bank
+    - chnia l bénéfice mtaa carte bancaire de amen bank
+    - chnia l bénéfice mta3 carte bancaire amen bank
+    - privilège cartet amen bank
+    - privilège carte bancaire mtaa amen bank
+    - privilège carte bancaire mta3 amen bank
+    - nheb naref les avantages mtaa carte bancaire amen bank
+    - n7eb na3ref les avantages mta3 carte bancaire amen bank
+
+- intent: double_correction_ar
+  examples: |
+    - kifech namel double correction
+    - kifeh namel double correction
+    - chnouma les procedures bech naamel double correction
+    - chnia houma les procedures bech naamel double correction
+    - a3tini les procedures bech tsir double correction
+    - kifech tsir l double correction
+    - kifeh tsir double correction
+    - kifh naaml double correction
+    - n7eb na3mel double correction
+    - nheb naamel double correction
+    - kifech nverifi note
+    - kifeh nverifi note
+    - kifech nthabet men note
+    - kifeh nthabet men note
+    - nheb naadi demande mtaa verification l note
+    - n7eb n3adi demande mta3 verification l note
+
+- intent: confirmation_option_ar
+  examples: |
+    - bech tconfirmiw l choix mtaa les options ?
+    - kifeh naaref resultat l orientation
+    - kifech naaref resultat l orientation
+    - nheb naaref specialite mtei
+    - n7eb na3ref specialite mte3i
+    - kifeh naaref specialite mtei
+    - kifech naaref specialite mtei 
+    - kifeh na3ref specialite mte3i
+    - kifech na3ref specialite mte3i 
+    - wa9teh tconfirmiw choix mta3 option?
+    - wakteh specialite
+    - wa9teh specialite
+    - nheb specialite mtei
+    - n7eb 3al specialite mte3i
+
+
+- intent: conseil_classe_ar
+  examples: |
+    - wakteh yabda conseil de classes
+    - wa9teh yabda conseil de classes
+    - wa9teh isir conseil de classes
+    - wakteh isir conseil de classes
+    - wakteh l periode mtaa l conseil de classes
+    - wa9teh l periode mta3 l conseil de classes
+    - a3tini date mta3 conseil de classes
+    - aatini date mtaa conseil de classes
+    - enehi date mta3 conseil de classes
+
+- intent: credit_ar
+  examples: |
+    - kifeh naaref ken mezel andi credits wala le
+    - kifech na3ref mezel andi credits wala le
+    - kifeh naaref aandi credit wala le
+    - n7eb na3ref ken andi credit wala le
+    - nheb naarf ken andi credit wala el
+    - kifeh najem naaref andi credit wala le
+    - kifech najm nchouf lista mta les credits 
+    - kifech najm nchouf liste des credits
+    - kifeh najem naaref les matieres li bech naawedhom
+    - kifeh najem naaref les matieres li bech naawed naadihom
+    - nheb naaref les matieres li bech naawed naadihom
+    - n7eb na3ref les matieres li bech n3awed n3adihom
+    - kifeh naaref ken andi des matieres bech naawedhom wala le
+    - kifeh na3ref ken 3andi des matieres bech n3awedhom wala le
+    - 9adeh 3andi men credit
+    - kadeh andi men credit
+
+- intent: exemples_rapport_stage_ar
+  examples: |
+    - nheb ala des exemples mtaa rapport de stage
+    - n7eb ala exemples mta3 rapport de stage
+    - ta3tini des exemples ala rapport de stage
+    - nheb nekhou fekra al rapport de stage
+    - n7eb ne5ou fekra al rapport de stage
+    - aatini des exemples al rapport de stage
+    - fama des exemples ala rapport de stage? 
+    - andkom des exemples ala rapport de stage?
+    - 3andkom des exemples ala rapport de stage?
+    - win najem nalka des exemples ala rapport de stage?
+    - win najem nal9a des exemples ala rapport de stage?
+    - win nejem nal9a des exemples ala rapport de stage?
+
+- intent: procedure_stage_ar
+  examples: |
+    - chnouma les procedures bech namel stage
+    - chnia houma les procedures bech namel stage
+    - chnouma les procedures bech na3mel stage
+    - chnia houma les procedures bech na3mel stage
+    - kifeh najem namel stage
+    - kifech najem naamel stage
+    - chnia les etapes bech namel stage
+    - a3tini les etapes bch na3mel stage
+    - nheb ala maaloumet al stage
+    - n7eb ala ma3loumet al stage
+    - nheb ala des informations concernant les stages
+
+- intent: obtention_diplome_ar
+  examples: |
+    - chnia les conditions bech nekhou diplome
+    - chnouma les conditions bech nekhou diplome
+    - kifeh najem nekhou diplome
+    - kifeh najem ne5ou diplome
+    - chnia lezem naamel bech nekhou diplome
+    - chnia lezem na3mek bech ne5ou diplome
+    - nheb nekhou diplome
+    - n7eb ne5ou diplome
+
+- intent: absence_examen_ar
+  examples: |
+    - kifeh naawed naadi examen
+    - ken njib justificatif najem naawed naadi examen
+    - ghiyeb ala examen
+    - ghebet ala examen
+    - kifeh naawed examen ki nghib 
+    - kifech n3awed n3adi examen
+    - ken njib justificatif najem n3awed n3adi examen
+    - 8iyeb ala examen
+    - 8ebet ala examen
+    - kifeh n3awed examen ki n8ib 
+
+
+
+- intent: redoublement_ar
+  examples: |
+    - kifeh najem ndoubel
+    - wakteh ndoubel
+    - chnouma les conditions bech ndoubel
+    - kadeh men mara najem ndoubel f esprit ingénieur
+    - wa9teh ndoubel
+    - chnia les conditions bech ndoubel
+    - 9adeh men mara najem ndoubel f esprit ingenieur
+    
+
+
+- intent: ratt_ar
+  examples: |
+    - kifeh tsir session de rattrapage
+    - chnia les conditions bech naadi f session de rattrapage
+    - est ce que lezm nkayed bech naadi f session
+    - tzid flous bch taadi f session de rattrapage
+    - yekhi session de rattrapage bel flous
+
+
+- intent: annulation_inscription_ar
+  examples: |
+    - kifeh najem nannuli l inscription
+    - yekhi najem nannuli l inscription
+    - najem nannuli l inscription
+    - fama remboursement ki nannuli l inscri
+    - najem nrajaa les frais d inscri ken nannuli l inscription
+
+
+- intent: regime_etude_ar
+  examples: |
+    - kadeh tokod l formation
+    - 9adeh to93od l formation 
+    - nheb naref regime l kraya
+    - kifeh regime l kraya
+    - kadeh men aam thebli bech nekhou diplome
+    - chnia l regime d etudes
+
+
+
+- intent: photo_foyer_ar
+  examples: |
+    - tnajem tabathli tsawer foyer
+    - tnajem tab3athli tsawer foyer
+    - tsawer foyer
+    - nheb ala tsawer foyer esprit
+    - nheb nchouf l foyer
+    - nheb nra l foyer kifeh
+    - n7eb ala tsawer foyer esprit
+    - n7eb nchouf l foyer
+    - n7eb nra l foyer kifeh
+- intent: filiere_ar
+  examples: |
+    - chnowa famma des specialités fel esprit en ingenieurie?
+    - nhebb nas2el aal specialités fel esprit
+    - nhebb na3ref  les options lmawjoudine
+    - options esprit ingénieur
+    - spécialités esprit ingénieur
+    - a3tini lista mta3 les options mta3 4éme année 
+    - a3tini lista mta3 les spécialités de la 4éme année
+    -chnouma les filieres elli najem nekhtarhom fel 4eme ?
+    - chnoumma les options elli ynajem yekhtarhoum etudiant fel esprit ingenieur?
+    - chnoumma specialites elli ynajem yekhtarhoum etudiant fel esprit ingenieur?
+    - options
+    - spécialités
+    - lista mta3 les options
+    - lista mta3 les spécialités
+    - nheb na3ref les options lmawjoudine fe cycle ingénieur
+    - chnouma les fileres disponible?
+    - nheb naaref hajet 3al orientation kifeh tsir
+    - nheb ma3loumet 3al orientation 
+    - nheb ma3loumet 3al tawjih mel 4ème 
+    - kifeh na3ref akther aal les options el mawjoudine fel esprit?
+
+- intent: applicabilite_formation_ar
+  examples: |
+    - elli na9rawouh fel ecole applicable fel vie reelle mteena?
+    - elli na9rawouh fel ecole nest7a9ouh fel vie reelle mteena?
+    - el formation mteena pratique lel vie réelle ?
+    - el formation mta3 l'esptit t3awena fel khedma nhar ekher ?
+    - el formation mta3 esprit adaptable marché de l'emploi ?
+    - bel formation mta3 esprit najem nal9a khedma ?
+    - aalech n3addi barcha wa9t fi des matières theoriques wa9telli ma nest7a9elhech fel pratique ?
+    - kifeh na3ref enou formation l'esprit bech bech t3anni ki nabda nekhdem ?
+    - formation l'esprit t3aweni fel les taches elli bech yo3rdhouni fel khedma ?
+    - el formation mta3 l'esprit t7adhrana bel behi lel khedma w lvie professionnelle ?
+    - el na9rawouh theorique sehel bech ykoun applicable fel pratique ?
+    - kifeh na3ref ennou lformation mt3i bech tkoun compatible heya wel besoin mtaa les entreprises elli bech nekhdem fihom ?
+    - najem nekhdem doubelli netkharej?
+    - sehel bech nal9a khedma ba3d ma nkammel ?
+    
+- intent: reconnaissance_diplome_ar
+  examples: |
+    - kifeh yesta3rfouli be diplome mte3i lbarra  ?
+    - kifeh yesta3rfouli be diplome mte3i fel 5arej 
+    - diplome mte3 l'esprit meta3rfine bih fel 5arej ?
+    - kifeh nrod diplome mte3i mesta3ref bih labrra ?
+    - najem nekhdem lbarra be bdiplome l'esprit ?
+    - chnowa na3mel bech nrod diplomi mesta3rfine bih fel 5arej ?
+    - chnouma el 7ajet elli lezm na3malhom bech nrod diplomi mesta3ref bih lbarra ?
+    - edawla mesta3rfa bdiplome l'esprit ?
+    - tounes mesta3rfa bdiplome l'esprit ?
+    - l3imeda mesta3rfa bdiplome l'esprit ?
+    - kifeh na3ref enou diplomi mesta3rfine bih lbarra ?
+    - diplomi mesta3fine bih automatiquement lbarra ?
+    - chnouma houma les conditions lezmine bech diplomi ukoun mesta3ref bih lbarra ?
+    - diplome esprit mestarfine bih en france?
+    - diplome esprit mestarfine bih  fi allemagne?
+    - diplome esprit mestarfine bih fel europe?
+    - diplome esprit mestarfine bih fel etats unis?
+    - diplome esprit mestarfine bih  fel asie?
+
+- intent: reduction_premier_ar
+  examples: |
+    - lwela mta3 les classes 3andhom reduction walle ?
+    - kifech najem nekhou reduction la7sen les specialités? 
+    - tlemdha elli aandhom moyenne behi ye5dhou reduction ?
+    - kidefh naaref ena najem nekhou reduction mta3 loulani mta3 lclasse walle ?
+    - kifech reduction mta3 les meilleurs specialités?
+    - 9adeh yon9os lel loulanine mta3 lclasse ?
+    - reduction
+    - remise
+    - reduction pour frere et soeur
+    - reduction lel khwet
+    - reduction lel loulanine mtaa lclasse
+    - reduction specialite loula
+    - famma reductions?
+    - najem nekhou reduction?
+- intent: administration_ar
+  examples: |
+    - chkoun tahar ben lakhdher?
+    - chkoun directeur  esprit?
+    - chkoun moudir esprit
+    - pdg
+    - chkoun aamal esprit esprit
+
+- intent: partenaires_ar
+  examples: |
+    - chkounhom les partenaires de esprit
+    - convention 
+    - atini liste des partenaires mta esprit
+    - charaka
+    - chkoun ysponsorisi fel esprit
+    - maa chkoun esprit aamla conventions
+    - m3a chkoun esprit 3amla convention
+
+
