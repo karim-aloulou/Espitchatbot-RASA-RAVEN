@@ -878,7 +878,6 @@ nlu:
     - prix de la formation ?
 
 
-
 - intent: B2_fr
   examples: |
     - comment je peux savoir si j'ai mon niveau b2?
@@ -894,7 +893,6 @@ nlu:
     - comment je peux savoir si j'ai validé le niveau b2?
     - note b2
 
-      
 - intent: rentree_fr
   examples: |
     - c'est quand exactement la rentrée cette année pour esprit ingénieur?
