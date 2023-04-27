@@ -2285,5 +2285,17 @@ nlu:
     - chkoun ysponsorisi fel esprit
     - maa chkoun esprit aamla conventions
     - m3a chkoun esprit 3amla convention
-
+    
+- intent: raven
+  examples: |
+    - what is a university 
+    - what is a uni 
+    - what is a degree
+    - what is a engineering
+    - what is a studying
+    - what is abachlor
+    - c'est quoi une université ?
+    - c'est quoi ingenieurie ?
+    - c'est quoi l'intelligence artificielle ?
+    - c'est quoi l'IA ? 
 

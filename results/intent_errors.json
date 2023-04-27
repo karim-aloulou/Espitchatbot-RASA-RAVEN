@@ -1,0 +1,122 @@
+[
+  {
+    "text": "bye",
+    "intent": "byefr",
+    "intent_prediction": {
+      "name": "bye",
+      "confidence": 0.5252460837364197
+    }
+  },
+  {
+    "text": "stage esprit",
+    "intent": "stage",
+    "intent_prediction": {
+      "name": "procedure_stage_fr",
+      "confidence": 0.40983161330223083
+    }
+  },
+  {
+    "text": "stage",
+    "intent": "stage",
+    "intent_prediction": {
+      "name": "procedure_stage_fr",
+      "confidence": 0.5620880126953125
+    }
+  },
+  {
+    "text": "spécialités esprit ingénieur",
+    "intent": "filiere_fr",
+    "intent_prediction": {
+      "name": "filiere_ar",
+      "confidence": 0.6559749245643616
+    }
+  },
+  {
+    "text": "spécialités",
+    "intent": "filiere_fr",
+    "intent_prediction": {
+      "name": "filiere_ar",
+      "confidence": 0.6793752312660217
+    }
+  },
+  {
+    "text": "reduction pour frere et soeur",
+    "intent": "reduction_premier_fr",
+    "intent_prediction": {
+      "name": "reduction_premier_ar",
+      "confidence": 0.5552611947059631
+    }
+  },
+  {
+    "text": "convention",
+    "intent": "partenaires_fr",
+    "intent_prediction": {
+      "name": "partenaires_ar",
+      "confidence": 0.49395695328712463
+    }
+  },
+  {
+    "text": "wa9teh date pre inscription?",
+    "intent": "date_preinscription_ar",
+    "intent_prediction": {
+      "name": "procedure_inscription_ar",
+      "confidence": 0.32088524103164673
+    }
+  },
+  {
+    "text": "chnoua l'avantage ta3 l'alternance?",
+    "intent": "avantage_alternance_ar",
+    "intent_prediction": {
+      "name": "avantage_alternance",
+      "confidence": 0.4715437591075897
+    }
+  },
+  {
+    "text": "aucune confirmation d'admission",
+    "intent": "reclamation_confirmation_admission_ar",
+    "intent_prediction": {
+      "name": "reclamation_confirmation_admission_fr",
+      "confidence": 0.5631916522979736
+    }
+  },
+  {
+    "text": "quel est le coût d'hebergement",
+    "intent": "cout_hebergement_ar",
+    "intent_prediction": {
+      "name": "cout_hebergement_fr",
+      "confidence": 0.6530765891075134
+    }
+  },
+  {
+    "text": "options esprit ingénieur",
+    "intent": "filiere_ar",
+    "intent_prediction": {
+      "name": "filiere_fr",
+      "confidence": 0.49975693225860596
+    }
+  },
+  {
+    "text": "options",
+    "intent": "filiere_ar",
+    "intent_prediction": {
+      "name": "filiere_fr",
+      "confidence": 0.5773932337760925
+    }
+  },
+  {
+    "text": "reduction",
+    "intent": "reduction_premier_ar",
+    "intent_prediction": {
+      "name": "reduction_premier_fr",
+      "confidence": 0.4890080690383911
+    }
+  },
+  {
+    "text": "pdg",
+    "intent": "administration_ar",
+    "intent_prediction": {
+      "name": "administration_fr",
+      "confidence": 0.38607802987098694
+    }
+  }
+]
