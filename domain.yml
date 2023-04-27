@@ -6,6 +6,7 @@ actions:
   - action_ask_nationality
   - action_get_price_tunisian
   - action_get_price_foreigner
+  - action_raven_generate_text
 intents:
 - greet
 - thanks
@@ -181,6 +182,7 @@ intents:
 - reduction_premier_ar
 - administration_ar
 - partenaires_ar
+- raven
 
 responses:
  utter_ask_nationality:
@@ -209,7 +211,7 @@ responses:
   - text: "You can change the date of your interview via Esprit website"
 
  utter_modalites_paiement_fr:
-  - text : "- Par virement bancaire : Nous acceptons les virements bancaires. 
+  - text : "- Par virement bancaire : Nous acceptons les virements bancaires. 
             Veuillez effectuer votre paiement à notre compte bancaire : 
             ESPRIT / banque : AMEN BANK / Agence raoued / RIB : 07 035 0020 101 10136691\n
             - Paiement en ligne\n   
@@ -321,7 +323,6 @@ semestre d'échange ou bien double-diplôme 🌍 \n\nPour plus d'information: ht
 
  utter_rentree_fr:
    - text: "👩‍🏫 Rentrée universitaire : 2021 - 2022 👩‍🏫 \n
-
 🔹 l'activité APP0 se tiendra au cours de la semaine du 6 septembre \n
 🔹 la reprise des cours pour les anciens étudiants aura lieu à partir du 13 septembre \n
 Pour plus d'informations : https://esprit.tn/admission/esprit-ingenieur"
@@ -329,7 +330,6 @@ Pour plus d'informations : https://esprit.tn/admission/esprit-ingenieur"
 
  utter_rentree_ang:
    - text: "👩‍🏫 Start of the academic year: 2021 - 2022 👩‍🏫\n
-
 🔹 APP0 activity will be held during the week of September 6 \n
 🔹 the resumption of classes for former students will take place from September 13 \n
 For more information: https://prit.tn/admission/ esprit-ingenieur "
@@ -404,7 +404,6 @@ For more information: https://prit.tn/admission/ esprit-ingenieur "
         - ESPRIT Club Internationaux\n
         - EMUN\n
         - ESPRIT Club engineers Spark\n\n
-
         pour plus d'informations
         https://esprit.tn/vie-etudiante/vie-campus/clubs"
   
@@ -431,7 +430,6 @@ For more information: https://prit.tn/admission/ esprit-ingenieur "
         - ESPRIT Club Internationaux\n
         - EMUN\n
         - ESPRIT Club engineers Spark\n\n
-
         for more information check this link
         https://esprit.tn/vie-etudiante/vie-campus/clubs"
   
@@ -465,17 +463,14 @@ academics and job seekers, holders of a bachelor's degree or more
 
  utter_cout_restauration_fr:
    - text: "               🥗Frais Restauration 2021/2022 🥗\n
-
             Pension complète (petit déjeuner, déjeuner et diner) \n
             ⭐ 500 DT par mois \n
             ⭐ 1 900 DT par tranche   \n
             ⭐ 3 800 DT par an\n
-
             Demi-pension (F1) (petit déjeuner, déjeuner ou diner) \n
             ⭐ 310 DT  par mois\n
             ⭐1 100 DT par tranche   \n
             ⭐2 200 DT par an\n
-
             Demi-pension (F2)  (déjeuner ou diner) \n
             ⭐250 DT  par mois\n
             ⭐865 DT par tranche \n  
@@ -483,29 +478,24 @@ academics and job seekers, holders of a bachelor's degree or more
 
  utter_cout_hebergement_fr:
    - text: "          🏫  Frais Hébergement 2021/2022  🏫 \n
-
 ⭐ Chambre double 2400 DT \n
 ⭐ Appartement S1 pour 4 personnes  2500 DT\n"
 
  utter_cout_hebergement_ang:
    - text: "          🏫  Accommodation Fees 2021/2022  🏫 \n
-
 ⭐ Double room 2400 DT \n
 ⭐ Apartment for 4 people  2500 DT\n"
 
  utter_cout_restauration_ang:
    - text: "               🥗 Catering costs 2021/2022 🥗\n
-
             Full board (breakfast, lunch and dinner) \n
             ⭐ 500 DT per month \n
             ⭐ 1 900 DT per installment   \n
             ⭐ 3 800 DT per year\n
-
             Half board (F1) (breakfast, lunch or dinner) \n
             ⭐ 310 DT  per month\n
             ⭐1 100 DT per installment   \n
             ⭐2 200 DT per year\n
-
             Half board (F2) (lunch or dinner) \n
             ⭐250 DT  per month\n
             ⭐865 DT per installment \n  
@@ -555,7 +545,6 @@ less than 10/20."
     ⭐ Pour la session de rattrapage:
         • Moyenne générale >= 10/20   \n
         • Déficit cumulé <= 15 ECTS (Il doit être égal à 0 ECTS si l'élève est en 5ème année) \n \n
-
     Les élèves, n’ayant pas satisfait les conditions précitées d’admission en année supérieure, sont
 considérés comme des cas spécifiques qui seront soumis au « Conseil Annuel » pour délibération. Il
 s’agit précisément des élèves ayant obtenu après rattrapage une moyenne générale supérieure ou
@@ -574,7 +563,6 @@ ces cassoit l’admission en année supérieure avec ou sans déficit,soit le re
    ⭐ For the retake session:\n
         • General average> = 10/20 \n
         • Cumulative deficit <= 15 ECTS (It must be equal to 0 ECTS if the student is in 4th year) \n \n
-
     Students who have not met the aforementioned conditions for admission to the next year are
 considered as specific cases which will be submitted to the 'Annual Council' for deliberation. It's about students who
  obtained after retake session a higher general average or equal to 10/20 and having totaled a cumulative deficit 
