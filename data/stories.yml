@@ -4,10 +4,10 @@ stories:
 
 
   
-  - story: raven
-    steps:
-    - intent: raven
-    - action: action_raven_generate_text
+  # - story: raven
+  #   steps:
+  #   - intent: raven
+  #   - action: action_raven_generate_text
 
   - story: salutation_ar_story
     steps:

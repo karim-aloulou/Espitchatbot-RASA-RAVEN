@@ -6,7 +6,7 @@ actions:
   - action_ask_nationality
   - action_get_price_tunisian
   - action_get_price_foreigner
-  - action_raven_generate_text
+  # - action_raven_generate_text
 intents:
 - greet
 - thanks
@@ -182,7 +182,7 @@ intents:
 - reduction_premier_ar
 - administration_ar
 - partenaires_ar
-- raven
+# - raven
 
 responses:
  utter_ask_nationality:
