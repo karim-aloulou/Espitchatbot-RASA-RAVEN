@@ -6,8 +6,12 @@ actions:
   - action_ask_nationality
   - action_get_price_tunisian
   - action_get_price_foreigner
+  # - action_concatenate_message
+  # - action_verifier_reponse
   # - action_raven_generate_text
 intents:
+- accepter
+- refuser
 - greet
 - thanks
 - bye
@@ -182,6 +186,12 @@ intents:
 - reduction_premier_ar
 - administration_ar
 - partenaires_ar
+- affirm
+- deny
+
+
+
+
 # - raven
 
 responses:
@@ -283,7 +293,18 @@ semestre d'échange ou bien double-diplôme 🌍 \n\nPour plus d'information: ht
   - text: "🔹 1st session: from 17/05 to 03/06
           \n🔹 2nd session: from 03/06 to 29/07
           \n🔹 3rd session: from 29/07 to 08/08"
+ 
+ utter_double_diplome:
+  - text: " Double-diplôme (2 ans, DD):\n
+Refaire la 4ème année! Perdre une année mais gagner un diplôme!\n
+♣ Imposée par les lois en vigueur (CTI)\n
+Mobilités des étudiants, formation en mastère\n
+.Faire M1 puis M2\n
+.Faire directement M2\n
+.Double-diplôme: Mastère (école partenaire)+ Ingénieur(Esprit)"
 
+ utter_paiement_par_tranche_fr:
+   - text: "Il est possible de payer en 2 tranches: 1ere tranche à l'inscription er la 2eme tranche avant le 15/01"
 
  utter_cout_formation_fr:
   - text: "💲 Coût total de la formation 💲
@@ -371,6 +392,11 @@ For more information: https://prit.tn/admission/ esprit-ingenieur "
 
  utter_inscri_bac_ang:
    - text: "In the 1st year, holders of a scientific, economic, technical or equivalent baccalaureate can register in Esprit.."
+
+ utter_stage:
+   - text: "Stage de formation humaine et sociale d'une durée de 4 semaines ,durant l'été lors du passage de la 1ère à la 2ème année.\n 
+Stage d'immersion en entreprise d'une durée de 6 semaines , pendant l'été lors du passage de la 3ème à la  4ème année.\n
+Stage ingénieur d'une durée de 8 semaines, pendant l'été lors du passage de la 4ème à la 5ème année."
 
 # utter_fields_fr:
 #   - text: "Veuillez choisissez"
@@ -609,7 +635,8 @@ considered as specific cases which will be submitted to the 'Annual Council' for
    - text: "Malheureusement, Esprit n'offre pas ce service"
  utter_procedure_stage_fr:
    - text: "Vous devez consulter le département du stage"
-
+ utter_procedure_inscription_fr:
+   - text: " Afin de s'inscrire il faut remplir le formulaire et choisir une date du concours... " 
 ###############
 
  utter_obtention_diplome_fr:
@@ -760,11 +787,18 @@ college year"
     - Three years for candidates who have been admitted to the National Entrance Competitions to Engineering Schools, or having a higher technical diploma, or a license or any other equivalent scientific or technical diploma. \n
     - Two years for candidates who have been admitted to the 2nd Master or the 2nd year of engineering cycle"
 
-
-
-
-
-
+ utter_filiere_fr:
+  - text : "Option DS (Data Science)\n Option Infini (Informatique Financière Et Ingénierie)\nOption Software Architecture Engineering\n Option ERP-BI (Enterprise Resource Planning-Business Intelligence)\n Option SIM (Systèmes Informatiques Et Mobiles)\n Option TWIN (Technologies Du Web Et De L’INternet)\n Option SLEAM : (Systèmes Et Logiciels Embarqués Ambiants Et Mobiles)\nOption NIDS (Network Infrastructure And Data Security)\nOption SE (Software Engineering )\nOption ArcTIC (Architecture IT Et Cloud Computing)\n Spécialité IA (Intelligence Artificielle)  "
+ utter_info_generale_esprit_fr:
+  - text : "Fondée en 2003 à l’initiative de trois universitaires ayant conduit de nombreux projets dans l’enseignement supérieur tunisien, et dans l’enseignement supérieur technique en particulier, entourés de plusieurs dizaines de leurs collègues, ainsi que d’entreprises TIC et de partenaires financiers, Esprit a dès le départ mis en place des formations basées sur des valeurs intangibles :\n
+    En plus d’être habilitée par le Ministère de l’Enseignement Supérieur et de la Recherche Scientifique tunisien, la qualité de l’enseignement Esprit a été reconnue internationalement :\n
+    Par son adhésion en avril 2014 à la conférence des grandes école (CGE )* qui regroupe environ 110 établissements français et étrangers qui forment leurs diplômés dans un souci constant d’excellence\n
+    Par son adhésion à l’initiative CDIO* fondé par le MIT (Massachussetts institue of Technology) qui regroupe 116 institutions dont 2 seulement sur le continent africain. CDIO a pour objectif est de recentrer la pédagogie des formations d’ingénieurs autour de mises en situation professionnelle)\n
+    Et enfin par l’accréditation internationale de ses programmes à travers le label EUR ACE qui lui a été délivrée par la commission française des titres de l’ingénieur(CTI)* en 2014 et en 2017.\n "
+#############################################
+ utter_avantage_esprit_fr:
+  - text : "Les avantages de esprit sont"
+##############################################
  utter_type_foyer_eng:
   - text: ""
     buttons:
@@ -835,15 +869,82 @@ college year"
         payload: Here is the link for the video
 
 
-##################################################################
+##########################
+ utter_applicabilite_formation_fr:
+  - text: "test test"
 
+##########################
+
+#NEW
+ utter_plus_info_associe_fr:
+  - text : "Voudriez vous avoir des informations associées à cet topic ?"
+
+ utter_plus_avantage_fr:
+  - text : "Voudriez vous savoir plus sur les avantages de ESPRIT ?"
+
+ utter_plus_cout_formation_fr:
+  - text : "Voudriez vous savoir plus sur les coûts de formations à ESPRIT ?"
+ utter_plus_info_generale_fr:
+  - text : "Voudriez vous savoir plus sur ESPRIT ?"
+ utter_plus_filiere_fr:
+  - text : "Voudriez vous savoir plus sur les filieres?"
+ utter_plus_applicabilite_fr:
+  - text : "Voudriez vous savoir plus sur l'applicabilité de notre programme éducatif?"
+ utter_plus_difference_3A3B_fr:
+  - text : "Voudriez vous savoir plus sur la difference entre 3A et 3B?"
+ utter_plus_double_diplome_fr:
+  - text : "Voudriez vous savoir plus sur la double diplomation à ESPRIT?"
+ utter_plus_procedure_stage_fr:
+  - text : "Voudriez vous savoir plus sur les procédures du stage à ESPRIT?"
+ utter_plus_club_fr:
+  - text : "Voudriez vous savoir plus sur les Clubs à ESPRIT?"
+ utter_plus_restau_fr:
+  - text : "Voudriez vous savoir plus sur les couts de restaurations à ESPRIT?"
+ utter_plus_photo_foyer_fr:
+  - text : "Voudriez vous voir les photos des foyers à ESPRIT?"
+ utter_plus_conseil_classe_fr:
+  - text : "Voudriez vous savoir plus sur les conseils de classe ?"
+ utter_plus_credit_fr:
+  - text : "Voudriez vous savoir plus sur les crédits ?"
+ utter_plus_rapport_stage_fr:
+  - text : "Voudriez vous savoir plus sur les rapports de stage à ESPRIT?"
+ utter_plus_mobilite_fr:
+  - text : "Voudriez vous savoir plus sur la mobilité internationale?"
+ utter_plus_formation_fr:
+  - text : "Voudriez vous savoir plus sur la formation à ESPRIT?"
+ utter_plus_licence_fr:
+  - text : "Voudriez vous savoir plus à propos les externes issus d'une licence en informatique?"
+ utter_plus_avantage_alternance_fr:
+  - text : "Voudriez vous savoir plus à propos les avantages de l'alternance?"
+ utter_plus_modalites_paiement_fr:
+  - text : "Voudriez vous savoir plus à propos les modalités de paiement?"
+ utter_plus_paiement_tranche_fr:
+  - text : "Voudriez vous savoir plus à propos le paiement par tranches?"
+ utter_plus_redoublement_fr:
+  - text : "Voudriez vous savoir plus à propos le processus de redoublement à ESPRIT?"
+ utter_plus_ratt_fr:
+  - text : "Voudriez vous savoir plus à propos le processus de rattrapage à ESPRIT?"
+ 
+ demander_acceptation:
+  - text : "accept?"
  utter_default:
   - text: "Je ne peux pas répondre"
 
 
 
-
+slots:
+  acceptation_slot:
+    type: bool
+    mappings:
+      - type: from_intent
+        value: true
+        intent: affirm
+      - type: from_intent
+        value: false
+        intent: deny
+    influence_conversation: true
 
 session_config:
- session_expiration_time: 60
- carry_over_slots_to_new_session: true
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+

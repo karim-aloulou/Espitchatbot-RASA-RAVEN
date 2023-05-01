@@ -2,12 +2,11 @@ version: "3.1"
 
 stories:
 
-
-  
   # - story: raven
   #   steps:
   #   - intent: raven
   #   - action: action_raven_generate_text
+
 
   - story: salutation_ar_story
     steps:
@@ -432,10 +431,10 @@ stories:
 
 
 
-  - story: story rentree_fr
-    steps:
-    - intent: rentree_fr
-    - action: utter_rentree_fr 
+  # - story: story rentree_fr
+  #   steps:
+  #   - intent: rentree_fr
+  #   - action: utter_rentree_fr 
 
   - story: story rentree_ang
     steps:
@@ -833,8 +832,637 @@ stories:
   #     - action: utter_lien_video
 
 
-  - story: story mobilite_internationale_eng
+
+
+
+
+
+
+# # NEW ADDINGS
+
+  - story: mobilite et alternance accepte fr 
     steps:
-      - intent: mobilite_internationale_eng
-      - action: utter_mobilite_internationale_eng
+      - intent: mobilite_internationale
+      - action: utter_mobilite_internationale
+      - action: utter_plus_info_associe_fr
+      - intent: accepter
+      - action: utter_plus_avantage_fr
+      - intent: accepter
+      - action: utter_avantage_alternance
+
+  - story: mobilite et alternance refuse fr 
+    steps:
+      - intent: mobilite_internationale
+      - action: utter_mobilite_internationale
+      - action: utter_plus_avantage_fr
+      - intent: refuser
+
+  
+  - story: Rentrée et cursus accepte fr
+    steps:
+    - intent: rentree_fr
+    - action: utter_rentree_fr
+    - action: utter_plus_info_associe_fr
+    - action: demander_acceptation
+    - intent: affirm
+    - slot_was_set:
+      - acceptation_slot: true
+    - action: utter_plus_filiere_fr
+    - action: demander_acceptation
+    - intent: affirm
+    - slot_was_set:
+      - acceptation_slot: true
+    - action: utter_filiere_fr
+    - action: utter_plus_applicabilite_fr
+    - action: demander_acceptation
+    - intent: affirm
+    - slot_was_set:
+      - acceptation_slot: true
+    - action: utter_applicabilite_formation_fr
+    - action: utter_plus_difference_3A3B_fr
+    - action: demander_acceptation
+    - intent: affirm
+    - slot_was_set:
+      - acceptation_slot: true
+    - action: utter_difference_3A_3B_fr
+    - intent: bye
+    - action: utter_bye
+  
+  # - story: Rentrée et cursus refuse fr
+  #   steps:
+  #     - intent: rentree_fr
+  #     - action: utter_rentree_fr
+  #     - action: utter_plus_info_associe_fr
+  #     - intent: refuser
+  
+
+  - story: Stages et double diplôme mobilite accepte fr
+    steps:
+      - intent: stage
+      - action: utter_stage
+      - action: utter_plus_info_associe_fr
+      - intent: accepter   
+      - action: utter_plus_procedure_stage_fr
+      - intent: accepter   
+      - action: utter_procedure_stage_fr
+      - action: utter_plus_rapport_stage_fr
+      - intent: accepter   
+      - action: utter_exemples_rapport_stage_fr
+      - action: utter_plus_double_diplome_fr
+      - intent: accepter   
+      - action: utter_double_diplome
+      - action: utter_plus_mobilite_fr
+      - intent: accepter   
+      - action: utter_mobilite_internationale
+      - intent: bye
+      - action: utter_bye
+
+
+  - story: Stages et double diplôme mobilite refuse fr
+    steps:
+      - intent: stage
+      - action: utter_stage
+      - action: utter_plus_info_associe_fr
+      - intent: refuser   
+
+
+
+  - story: Information sur école et la formation et la license accepte fr
+    steps:
+      - intent: salutation
+      - action: utter_salutation
+      - intent: info_generale_esprit
+      - action: utter_info_generale_esprit_fr
+      - action: utter_plus_info_associe_fr
+      - intent: accepter   
+      - action: utter_plus_licence_fr
+      - intent: accepter   
+      - action: utter_licence_info_fr
+      - action: utter_plus_cout_formation_fr
+      - intent: accepter   
+      - action: utter_cout_formation_fr
+      - intent: remerciement
+      - action: utter_remerciement
+      - intent: bye
+      - action: utter_bye
+        
+  
+  - story: Mobilité internationale et alternance accepte fr
+    steps:
+      - intent: salutation
+      - action: utter_salutation
+      - intent: mobilite_internationale
+      - action: utter_mobilite_internationale
+      - action: utter_plus_info_associe_fr
+      - intent: accepter
+      - action: utter_plus_avantage_alternance_fr
+      - intent: accepter
+      - action: utter_avantage_alternance
+      - intent: remerciement
+      - action: utter_remerciement
+      - intent: bye
+      - action: utter_bye
+  
+  
+  
+  
+  - story: Cours du soir et modalités de paiement accepte fr
+    steps:
+      - intent: salutation
+      - action: utter_salutation
+      - intent: courssoir
+      - action: utter_courssoir
+      - action: utter_plus_info_associe_fr
+      - intent: accepter
+      - action: utter_plus_modalites_paiement_fr
+      - intent: accepter
+      - action: utter_modalites_paiement_fr
+      - intent: remerciement
+      - action: utter_remerciement
+      - intent: bye
+      - action: utter_bye
+  
+  
+  
+  
+  
+  
+  - story: inscriptions et diplôme accepte fr
+    steps:
+      - intent: salutation
+      - action: utter_salutation
+      - intent: procedure_inscription_fr
+      - action: utter_procedure_inscription_fr
+      - action: utter_plus_info_associe_fr
+      - intent: accepter
+      - action: utter_plus_cout_formation_fr
+      - intent: accepter
+      - action: utter_cout_formation_fr
+      - action: utter_plus_double_diplome_fr
+      - intent: accepter
+      - action: utter_double_diplome
+      - intent: remerciement
+      - action: utter_remerciement
+      - intent: bye
+      - action: utter_bye
+  
+  - story: Stages et clubs
+    steps:
+      - intent: salutation
+      - action: utter_salutation
+      - intent: stage
+      - action: utter_stage
+      - action: utter_plus_info_associe_fr
+      - intent: accepter
+      - action: utter_plus_procedure_stage_fr
+      - intent: accepter
+      - action: utter_procedure_stage_fr
+      - action: utter_plus_club_fr
+      - action: utter_club_fr
+      - intent: remerciement
+      - action: utter_remerciement
+      - intent: bye
+      - action: utter_bye
+  
+  - story: Hébergement et restauration
+    steps:
+      - intent: salutation
+      - action: utter_salutation
+      - intent: cout_hebergement_fr
+      - action: utter_cout_hebergement_fr
+      - action: utter_plus_info_associe_fr
+      - intent: accepter
+      - action: utter_cout_restauration_fr
+      - action: utter_plus_photo_foyer_fr
+      - intent: accepter
+      - action: utter_photo_foyer1
+      - action: utter_photo_foyer2
+      - action: utter_photo_foyer3
+      - action: utter_photo_foyer_externe1
+      - action: utter_photo_foyer_externe2
+      - action: utter_photo_foyer_externe3
+      
+      - intent: remerciement
+      - action: utter_remerciement
+      - intent: bye
+      - action: utter_bye
+  
+  - story: Informations sur les filières et la mobilité internationale
+    steps:
+    - intent: salutation
+    - action: utter_salutation
+    - intent: filiere_fr
+    - action: utter_filiere_fr
+    - action: utter_plus_info_associe_fr
+    - intent: accepter
+    - action: utter_plus_mobilite_fr
+    - intent: accepter
+    - action: utter_mobilite_internationale
+    - action: utter_plus_info_associe_fr
+    - intent: accepter
+    - action: utter_plus_avantage_alternance_fr
+    - intent: accepter
+    - action: utter_avantage_alternance
+    - intent: remerciement
+    - action: utter_remerciement
+    - intent: bye
+    - action: utter_bye
+  
+  
+  - story: Options et conseils de classe
+    steps:
+    - intent: salutation
+    - action: utter_salutation
+    - intent: confirmation_option_fr
+    - action: utter_confirmation_option_fr
+    - action: utter_plus_info_associe_fr
+    - intent: accepter
+    - action: utter_plus_conseil_classe_fr
+    - intent: accepter
+    - action: utter_conseil_classe_fr
+    - action: utter_plus_credit_fr
+    - intent: accepter
+    - action: utter_credit_fr
+    - intent: remerciement
+    - action: utter_remerciement
+    - intent: bye
+    - action: utter_bye
+    
+  
+  - story: examens, absences et redoublement
+    steps:
+    - intent: salutation
+    - action: utter_salutation
+    - intent: absence_examen_fr
+    - action: utter_absence_examen_fr
+    - action: utter_plus_info_associe_fr
+    - intent: accepter
+    - action: utter_plus_redoublement_fr
+    - intent: accepter
+    - action: utter_redoublement_fr
+    - action: utter_plus_ratt_fr
+    - intent: accepter
+    - action: utter_ratt_fr
+    - intent: remerciement
+    - action: utter_remerciement
+    - intent: bye
+    - action: utter_bye
+  
+  
+    
+    
+  - story:  Inscriptions et coûts
+    steps:
+      - intent: salutation
+      - action: utter_salutation
+      - intent: procedure_inscription_fr
+      - action: utter_procedure_inscription_fr
+      - action: utter_plus_info_associe_fr
+      - intent: accepter
+      - action: utter_cout_formation_fr
+      - action: utter_plus_modalites_paiement_fr
+      - intent: accepter
+      - action: utter_modalites_paiement_fr
+      - action: utter_plus_paiement_tranche_fr
+      - action: utter_paiement_par_tranche_fr
+      - intent: remerciement
+      - action: utter_remerciement
+      - intent: bye
+      - action: utter_bye
+  
+  
+  
+  
+#   # - story: Informations sur les clubs et les partenaires
+#   #   steps:
+#   #   - intent: salutation
+#   #   - action: utter_salutation
+#   #   - intent: club_fr
+#   #   - action: utter_club_fr
+#   #   - intent: partenaires_fr
+#   #   - action: utter_partenaires_fr
+#   #   - intent: remerciement
+#   #   - action: utter_remerciement
+#   #   - intent: byefr
+#   #   - action: utter_byefr
+
+
+
+
+
+
+
+
+#   # - story: Stages et procédures
+#   #   steps:
+#   #     - intent: salutation
+#   #     - action: utter_salutation
+#   #     - intent: stage
+#   #     - action: utter_stage
+#   #     - intent: procedure_stage_fr
+#   #     - action: utter_procedure_stage_fr
+#   #     - intent: exemples_rapport_stage_fr
+#   #     - action: utter_exemples_rapport_stage_fr
+#   #     - intent: remerciement
+#   #     - action: utter_remerciement
+#   #     - intent: byefr
+#   #     - action: utter_byefr
+
+
+
+#   # - story: Inscription et examens
+#   #   steps:
+#   #     - intent: salutation
+#   #     - action: utter_salutation
+#   #     - intent: inscri_bac_fr
+#   #     - action: utter_inscri_bac_fr
+#   #     - intent: note_fr
+#   #     - action: utter_note_fr
+#   #     - intent: absence_examen_fr
+#   #     - action: utter_absence_examen_fr
+#   #     - intent: ratt_fr
+#   #     - action: utter_ratt_fr
+#   #     - intent: remerciement
+#   #     - action: utter_remerciement
+#   #     - intent: byefr
+#   #     - action: utter_byefr
+
+
+
+#   # - story:   Coût de formation et modalités de paiement
+#   #   steps:
+#   #     - intent: salutation
+#   #     - action: utter_salutation
+#   #     - intent: cout_formation_fr
+#   #     - action: utter_cout_formation_fr
+#   #     - intent: modalites_paiement_fr
+#   #     - action: utter_modalites_paiement_fr
+#   #     - intent: paiement_par_tranche_fr
+#   #     - action: utter_paiement_par_tranche_fr
+#   #     - intent: remerciement
+#   #     - action: utter_remerciement
+#   #     - intent: byefr
+#   #     - action: utter_byefr
+
+
+#   # - story:   Vie étudiante et clubs
+#   #   steps:
+#   #     - intent: salutation
+#   #     - action: utter_salutation
+#   #     - intent: club_fr
+#   #     - action: utter_club_fr
+#   #     - intent: cout_hebergement_fr
+#   #     - action: utter_cout_hebergement_fr
+#   #     - intent: cout_restauration_fr
+#   #     - action: utter_cout_restauration_fr
+#   #     - intent: remerciement
+#   #     - action: utter_remerciement
+#   #     - intent: byefr
+#   #     - action: utter_byefr
+
+
+
+#   # - story:  Admission et pré-inscription
+#   #   steps:
+#   #     - intent: salutation
+#   #     - action: utter_salutation
+#   #     - intent: admission_fr
+#   #     - action: utter_admission_fr
+#   #     - intent: date_preinscription_fr
+#   #     - action: utter_date_preinscription_fr
+#   #     - intent: rentree_fr
+#   #     - action: utter_rentree_fr
+#   #     - intent: remerciement
+#   #     - action: utter_remerciement
+#   #     - intent: byefr
+#   #     - action: utter_byefr
+
+#   # - story: Demande d'informations sur les clubs étudiants
+#   #   steps:
+#   #   - intent: contact
+#   #   - action: utter_contact
+#   #   - intent: club_fr
+#   #   - action: utter_club_info
+
+#   # - story: Demande de précisions sur la procédure d'inscription
+#   #   steps:
+#   #   - intent: admission_fr
+#   #   - action: utter_admission_info
+#   #   - intent: procedure_inscription_fr
+#   #   - action: utter_procedure_inscription
+
+#   # - story: Demande d'informations sur les avantages de l'ESPRIT
+#   #   steps:
+#   #   - intent: avantage_esprit_fr
+#   #   - action: utter_avantage_esprit
+#   #   - intent: avantage_alternance
+#   #   - action: utter_avantage_alternance
+
+#   # - story: Demande de précisions sur le coût des études
+#   #   steps:
+#   #   - intent: cout_formation_fr
+#   #   - action: utter_cout_formation
+#   #   - intent: cout_hebergement_fr
+#   #   - action: utter_cout_hebergement
+#   #   - intent: cout_restauration_fr
+#   #   - action: utter_cout_restauration
+  
+#   # - story: Demande d'informations sur la mobilité internationale
+#   #   steps:
+#   #   - intent: mobilite_internationale
+#   #   - action: utter_mobilite_info
+  
+#   # - story: Demande d'informations sur les modalités de paiement
+#   #   steps:
+#   #   - intent: modalites_paiement_fr
+#   #   - action: utter_modalites_paiement
+  
+#   # - story: Demande d'informations sur la rentrée
+#   #   steps:
+#   #   - intent: rentree_fr
+#   #   - action: utter_rentree_info
+  
+#   # - story: Demande d'informations sur les modalités d'inscription en ingénieur
+#   #   steps:
+#   #   - intent: inscri_ing_info_fr
+#   #   - action: utter_inscri_ing_info
+  
+#   # - story: Demande d'informations sur la procédure de validation des modules
+#   #   steps:
+#   #   - intent: valider_module_fr
+#   #   - action: utter_valider_module_info
+#   #   - intent: conseil_classe_fr
+#   #   - action: utter_conseil_classe
+  
+#   # - story: Demande d'informations sur les réductions pour les étudiants de première année
+#   #   steps:
+#   #   - intent: reduction_premier_fr
+#   #   - action: utter_reduction_premier
+  
+#   # - story: Demande de précisions sur les conditions d'obtention du diplôme
+#   #   steps:
+#   #   - intent: obtention_diplome_fr
+#   #   - action: utter_obtention_diplome
+#   #   - intent: double_diplome
+#   #   - action: utter_double_diplome
+  
+#   # - story: Demande d'informations sur les stages
+#   #   steps:
+#   #   - intent: stage
+#   #   - action: utter_stage_info
+#   #   - intent: exemples_rapport_stage_fr
+#   #   - action: utter_exemples_rapport_stage
+#   #   - intent: procedure_stage_fr
+#   #   - action: utter_procedure_stage
+  
+#   # - story: Demande d'informations sur les modalités de paiement par tranche
+#   #   steps:
+#   #   - intent: paiement_par_tranche_fr
+#   #   - action: utter_paiement_par_tranche_info
+  
+#   # - story: Demande de précisions sur la reconnaissance des diplômes
+#   #   steps:
+#   #   - intent: reconnaissance_diplome_fr
+#   #   - action: utter_reconnaissance_diplome
+  
+  
+  
+#   # - story: admission process
+#   #   steps:
+#   #   - intent: salutation
+#   #   - action: utter_greet
+#   #   - intent: admission_fr
+#   #   - action: utter_admission_details
+#   #   - intent: inscri_bac_fr
+#   #   - action: utter_bac_details
+#   #   - intent: B2_fr
+#   #   - action: utter_B2_details
+#   #   - intent: mobilite_internationale
+#   #   - action: utter_mobilite_details
+#   #   - intent: avantage_alternance
+#   #   - action: utter_alternance_details
+#   #   - intent: concours_admission_fr
+#   #   - action: utter_concours_details
+#   #   - intent: modalites_paiement_fr
+#   #   - action: utter_paiement_details
+#   #   - intent: date_preinscription_fr
+#   #   - action: utter_preinscription_date
+#   #   - intent: remerciement
+#   #   - action: utter_goodbye
+  
+#   # - story: course information
+#   #   steps:
+#   #   - intent: salutation
+#   #   - action: utter_greet
+#   #   - intent: contact
+#   #   - action: utter_contact_info
+#   #   - intent: courssoir
+#   #   - action: utter_course_details
+#   #   - intent: modalite_fr
+#   #   - action: utter_modalite_details
+#   #   - intent: inscri_ing_info_fr
+#   #   - action: utter_inscri_ing_details
+#   #   - intent: licence_info_fr
+#   #   - action: utter_licence_details
+#   #   - intent: alternance_fr
+#   #   - action: utter_alternance_details
+#   #   - intent: avantage_esprit_fr
+#   #   - action: utter_avantage_esprit
+#   #   - intent: info_generale_esprit
+#   #   - action: utter_info_generale_esprit
+#   #   - intent: club_fr
+#   #   - action: utter_club_details
+#   #   - intent: cout_hebergement_fr
+#   #   - action: utter_cout_hebergement
+#   #   - intent: cout_restauration_fr
+#   #   - action: utter_cout_restauration
+#   #   - intent: remerciement
+#   #   - action: utter_goodbye
+  
+#   # - story: international student enrollment
+#   #   steps:
+#   #   - intent: salutation
+#   #   - action: utter_greet
+#   #   - intent: mobilite_internationale
+#   #   - action: utter_mobilite_details
+#   #   - intent: avantage_alternance
+#   #   - action: utter_alternance_details
+#   #   - intent: admission_fr
+#   #   - action: utter_admission_details
+#   #   - intent: inscription_info
+#   #   - action: utter_inscription_info
+#   #   - intent: contact
+#   #   - action: utter_contact_info
+#   #   - intent: reduction_premier_fr
+#   #   - action: utter_reduction_details
+#   #   - intent: procedure_inscription_fr
+#   #   - action: utter_procedure_details
+#   #   - intent: partenaires_fr
+#   #   - action: utter_partenaires_details
+#   #   - intent: remerciement
+#   #   - action: utter_goodbye
+  
+#   # - story: payment options
+#   #   steps:
+#   #   - intent: salutation
+#   #   - action: utter_greet
+#   #   - intent: modalites_paiement_fr
+#   #   - action: utter_paiement_details
+#   #   - intent: paiement_par_tranche_fr
+#   #   - action: utter_paiement_par_tranche
+#   #   - intent: reduction_premier_fr
+#   #   - action: utter_reduction_details
+#   #   - intent: cout_formation_fr
+#   #   - action: utter_cout_formation
+#   #   - intent: date_res_fr
+#   #   - action: utter_date_reservation
+#   #   - intent: inscription_info
+#   #   - action: utter_inscription_info
+#   #   - intent: remerciement
+#   #   - action: utter_goodbye
+
+
+
+
+#   # - story: Salutation et informations générales
+#   #   steps:
+#   #   - intent: salutation
+#   #   - action: utter_salutation
+#   #   - intent: info_generale_esprit
+#   #   # définir les slots dans la même étape que l'intent
+#   #   # pour pouvoir les utiliser dans l'étape suivante
+#   #   - slot_was_set:
+#   #       - action_name: utter_info_generale_esprit
+#   #       - message: "Voudriez-vous savoir plus sur les avantages d'ESPRIT?"
+#   #   # corriger l'indentation de la section steps
+#   #   - steps:
+#   #     - intent: accepter
+#   #     # mettre les sections intent et action sur le même niveau
+#   #     - action: utter_avantage_esprit_fr
+#   #     - intent: refuser
+#   #     # mettre les sections intent et action sur le même niveau
+#   #     - action: utter_byefr
+
+
+#   # - story: Inscription et coût de formation
+#   #   steps:
+#   #   - intent: procedure_inscription_fr
+#   #     action: utter_procedure_inscription_fr
+#   #   - intent: cout_formation_fr
+#   #     action: action_ask_nationality
+#   #   - intent: nationality
+#   #     entities:
+#   #     - nationality: "Tunisien"
+#   #     - action: action_get_price_tunisian
+#   #   - intent: nationality
+#   #     entities:
+#   #     - nationality: "Etranger"
+#   #     - action: action_get_price_foreigner
+#   #   - action: action_concatenate_message
+#   #   - intent: modalites_paiement_fr
+#   #     action: utter_modalites_paiement_fr
+#   #   - intent: paiement_par_tranche_fr
+#   #     action: utter_paiement_par_tranche_fr
+#   #   - intent: byefr
+#   #     action: utter_byefr
 

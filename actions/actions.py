@@ -74,3 +74,129 @@
 #             logging.exception(f"Error generating response: {e}")
 
 #         return []
+
+# from typing import Any, Text, Dict, List
+# from rasa_sdk import Action, Tracker
+# from rasa_sdk.executor import CollectingDispatcher
+# from rasa_sdk.events import SlotSet
+
+# class ExempleAction(Action):
+
+#     def name(self) -> Text:
+#         return "action_exemple"
+
+#     def run(self, dispatcher: CollectingDispatcher,
+#             tracker: Tracker,
+#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+#         # récupère la valeur de l'entité "reponse"
+#         reponse = tracker.latest_message['entities'][0]['value']
+
+#         if reponse.lower() == "oui":
+#             # action à effectuer si la réponse est "oui"
+#             dispatcher.utter_message("Très bien! Je vous fournis aini plus d'informations")
+#         elif reponse.lower() == "non":
+#             # action à effectuer si la réponse est "non"
+#             dispatcher.utter_message("Dommage, peut-être une prochaine fois !")
+#         else:
+#             # action à effectuer si la réponse n'est ni "oui" ni "non"
+#             dispatcher.utter_message("Je n'ai pas compris votre réponse, Veuillez répondre par Oui ou par Non.")
+
+#         return []
+## action
+# actions.py
+# from typing import Text, List, Any, Dict
+# from rasa_sdk import Action, Tracker
+# from rasa_sdk.executor import CollectingDispatcher
+
+# class ConcatenateAction(Action):
+#     def name(self) -> Text:
+#         return "action_concatenate_message"
+
+#     def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+#         # Obtenir les entités
+#         action_name = None
+#         message = None
+
+#         for entity in tracker.latest_message["entities"]:
+#             if entity["entity"] == "action_name":
+#                 action_name = entity["value"]
+#             elif entity["entity"] == "message":
+#                 message = entity["value"]
+
+#         # Vérifier si les entités ont été trouvées
+#         if not action_name:
+#             dispatcher.utter_message(text="L'action n'est pas précisée.")
+#             return []
+
+#         if not message:
+#             dispatcher.utter_message(text="Le message n'est pas précisé.")
+#             return []
+
+#         # Concaténer le message à l'action
+#         concatenated_message = f"{action_name}: {message}"
+
+#         # Appeler l'action concaténée
+#         dispatcher.utter_message(text=concatenated_message)
+
+#         return []
+# from typing import Any, Text, Dict, List
+# from rasa_sdk import Action, Tracker
+# from rasa_sdk.executor import CollectingDispatcher
+
+# class ActionVerifierReponse(Action):
+
+#     def name(self) -> Text:
+#         return "action_verifier_reponse"
+
+#     def run(self, dispatcher: CollectingDispatcher,
+#             tracker: Tracker,
+#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+            
+#         reponse_utilisateur = tracker.get_slot("reponse_utilisateur")
+        
+#         if reponse_utilisateur == "oui":
+#             print('oui')
+#         elif reponse_utilisateur == "non":
+#             # La réponse est "non"
+#             print('non')
+#         else:
+#             print('autre chose')
+#             # La réponse est autre chose
+          
+#         return []
+
+# from rasa_sdk import Action
+# from rasa_sdk.events import SlotSet
+
+# class ActionDemanderAcceptation(Action):
+#     def name(self) -> str:
+#         return "demander_acceptation"
+
+#     async def run(self, dispatcher, tracker, domain):
+#         # Your custom logic here, e.g. asking a question or sending a message
+#         dispatcher.utter_message(text="Voulez-vous continuer?")
+
+#         return []
+from typing import Any, Text, Dict, List
+from rasa_sdk import Action, Tracker
+from rasa_sdk.executor import CollectingDispatcher
+from rasa_sdk.events import SlotSet
+
+class ActionDemanderAcceptation(Action):
+
+    def name(self) -> Text:
+        return "demander_acceptation"
+
+    async def run(
+        self,
+        dispatcher: CollectingDispatcher,
+        tracker: Tracker,
+        domain: Dict[Text, Any],
+    ) -> List[Dict[Text, Any]]:
+
+        # You can add any logic here, for example, sending a message
+        dispatcher.utter_message(text="Veuillez accepter pour continuer.")
+
+        return []
