@@ -1,3 +1,3 @@
 # # C'est pas conseillé pour les future MàJ
-# import warnings
-# warnings.filterwarnings("ignore")
+import warnings
+warnings.filterwarnings("ignore")

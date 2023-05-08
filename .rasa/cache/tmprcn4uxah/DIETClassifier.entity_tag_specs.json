@@ -1,0 +1,52 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-cours_ang",
+      "2": "I-cours_ang",
+      "3": "L-cours_ang",
+      "4": "U-cours_ang",
+      "5": "B-cours_fr",
+      "6": "I-cours_fr",
+      "7": "L-cours_fr",
+      "8": "U-cours_fr",
+      "9": "B-rentree_niveau_fr",
+      "10": "I-rentree_niveau_fr",
+      "11": "L-rentree_niveau_fr",
+      "12": "U-rentree_niveau_fr",
+      "13": "B-type_cout_ang",
+      "14": "I-type_cout_ang",
+      "15": "L-type_cout_ang",
+      "16": "U-type_cout_ang",
+      "17": "B-type_cout_fr",
+      "18": "I-type_cout_fr",
+      "19": "L-type_cout_fr",
+      "20": "U-type_cout_fr",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-cours_ang": 1,
+      "I-cours_ang": 2,
+      "L-cours_ang": 3,
+      "U-cours_ang": 4,
+      "B-cours_fr": 5,
+      "I-cours_fr": 6,
+      "L-cours_fr": 7,
+      "U-cours_fr": 8,
+      "B-rentree_niveau_fr": 9,
+      "I-rentree_niveau_fr": 10,
+      "L-rentree_niveau_fr": 11,
+      "U-rentree_niveau_fr": 12,
+      "B-type_cout_ang": 13,
+      "I-type_cout_ang": 14,
+      "L-type_cout_ang": 15,
+      "U-type_cout_ang": 16,
+      "B-type_cout_fr": 17,
+      "I-type_cout_fr": 18,
+      "L-type_cout_fr": 19,
+      "U-type_cout_fr": 20,
+      "O": 0
+    },
+    "num_tags": 21
+  }
+]

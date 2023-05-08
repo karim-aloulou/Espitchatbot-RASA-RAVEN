@@ -3,6 +3,16 @@ version: "3.1"
 nlu:
 
 
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - oui
+
 - intent: greet
   examples: |
     - hey
@@ -28,14 +38,11 @@ nlu:
 
 
 
-- intent: affirm
+- intent: refus
   examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
+    - non
+    - je ne veux pas
+    - je veux pas
 
 - intent: deny
   examples: |
@@ -59,7 +66,7 @@ nlu:
     - see you later
 
 
-- intent: date_preinscription_eng
+- intent: date_preinscription_ang
   examples: |
     - when can we pre-register on the site?
     - what is the date of pre-registration on the site?
@@ -78,7 +85,7 @@ nlu:
     - on which day ies the regestration?
 
 
-- intent: difference_3A_3B_eng
+- intent: difference_3A_3B_ang
   examples: |
     - what is the difference between  3a and 3b?
     - what are the differences between  3a and 3b?
@@ -88,7 +95,7 @@ nlu:
     - 3a and 3b
     - could you compare 3a and 3b
 
-- intent: reclamation_confirmation_admission_eng
+- intent: reclamation_confirmation_admission_ang
   examples: |
     - i did not receive a pre-registration confirmation email
     - i did not receive an admission email.
@@ -100,7 +107,7 @@ nlu:
     - i didin't get an admission email.
     - no one send me any email about the admission
 
-- intent: reporter_entretien_eng
+- intent: reporter_entretien_ang
   examples: |
     - i want to reschedule my interview
     - how can i reschedule my interview?
@@ -121,7 +128,7 @@ nlu:
     - rearrange interview
     - delay interview
 
-- intent: modalites_paiement_eng
+- intent: modalites_paiement_ang
   examples: |
     - what are the payment terms?
     - what are the payment modalities?
@@ -137,7 +144,7 @@ nlu:
     - payment
 
 
-- intent: cout_formation_eng
+- intent: cout_formation_ang
   examples: |
     - what is the total cost of the training?
     - cost of the training
@@ -276,7 +283,7 @@ nlu:
     - regestration without baccalaureate
     - without baccalaureate 
 
-- intent: note_eng
+- intent: note_ang
   examples: |
     - how can i see my grades?
     - i want to see my grade
@@ -288,7 +295,7 @@ nlu:
     - my grades
 
 
-- intent: club_eng
+- intent: club_ang
   examples: |
     - what are the available clubs
     - i want to know the list of clubs
@@ -302,7 +309,7 @@ nlu:
 
 
 
-- intent: concours_admission_eng
+- intent: concours_admission_ang
   examples: |
     - how the admission exam will be passed
     - how we are going to pass the admission exam
@@ -316,7 +323,7 @@ nlu:
     - entrance examination
 
 
-- intent: courssoir_eng
+- intent: courssoir_ang
   examples: |
     - evening class
     - evening courses
@@ -441,7 +448,7 @@ nlu:
     - i want to know the advantages of the amen bank credit card
 
 ########################################################
-- intent: double_correction_eng
+- intent: double_correction_ang
   examples: |
     - what is the procedure for making a reevaluation request ?
     - how can i make a demand for grade reevaluation 
@@ -454,7 +461,7 @@ nlu:
     - grade verification
 
 
-- intent: confirmation_option_eng
+- intent: confirmation_option_ang
   examples: |
     - when do you confirm the choice of fields?
     - when will you confirm the choice fields?
@@ -463,7 +470,7 @@ nlu:
     - when we will know our fields
     - orientation result 
 
-- intent: conseil_classe_eng
+- intent: conseil_classe_ang
   examples: |
     - when do class councils start?
     - when class council start?
@@ -472,7 +479,7 @@ nlu:
     - class council period
     - class council date 
 
-- intent: credit_eng
+- intent: credit_ang
   examples: |
     - how can i check my credits list
     - how can i know if i still have subjects to retake
@@ -484,7 +491,7 @@ nlu:
     - credit 
     - credits
 
-- intent: exemples_rapport_stage_eng
+- intent: exemples_rapport_stage_ang
   examples: |
     - how can obtain examples of internship reports
     - how can i have examples of internship report?
@@ -494,7 +501,7 @@ nlu:
     - where can i find the internship reports of former students?
     - reports
 
-- intent: procedure_stage_eng
+- intent: procedure_stage_ang
   examples: |
     - what is the procedure for doing an internship?
     - how can i do an internship?
@@ -503,7 +510,7 @@ nlu:
     - information about internship
     - internship procedure
 
-- intent: avantage_alternance_eng
+- intent: avantage_alternance_ang
   examples: |
     - what are the advantages of work-study training?
     - advantages of work-study training?
@@ -567,7 +574,7 @@ nlu:
     - are the projers the subject of a catch-up?
   
 
-- intent: annulation_inscription_eng
+- intent: annulation_inscription_ang
   examples: |
     - how do i cancel my registration?
     - how can i cancel my registration?
@@ -581,7 +588,7 @@ nlu:
 
 
 
-- intent: regime_etude_eng
+- intent: regime_etude_ang
   examples: |
     - what is the duration of the studies at esprit?
     - how many years i should study befor obtaining my engineering diploma
@@ -595,7 +602,7 @@ nlu:
     - duration of the engineering diploma 
   
 
-- intent: mobilite_internationale_eng
+- intent: mobilite_internationale_ang
   examples: |
     - is there any opportunities to study abroad?
     - are there opportunities for international mobility?
@@ -612,7 +619,7 @@ nlu:
     - can i do a double degree?
     - international mobility
 
-- intent: photo_foyer_eng
+- intent: photo_foyer_ang
   examples: |
     - i want pictures of esprit residence 
     - can you send me picture of esprit residence ?
@@ -620,12 +627,12 @@ nlu:
     - i want some pictures of esprit residence
 
 
-- intent: photo_foyer_externe_eng
+- intent: photo_foyer_externe_ang
   examples: |
     - here are the pictures of al amen residence
     - here are the pictures of al amen residence :
 
-- intent: photo_foyer_interne_eng
+- intent: photo_foyer_interne_ang
   examples: |
     - here are the pictures of esprit internal residence
     - here are the pictures of esprit internal residence (block 1)
@@ -707,7 +714,7 @@ nlu:
     - bonne journée
 
 
-- intent: contact
+- intent: contact_fr
   examples: |
     - numero de téléphone
     - phone number
@@ -725,7 +732,7 @@ nlu:
     - je veux contacter l'administration
     - sur quelle adresse mail je peux vous contacter?
 
-- intent: courssoir
+- intent: courssoir_fr
   examples: |
     - cours de soir
     - je veux des informations concernant le cours de soir
@@ -937,7 +944,6 @@ nlu:
 - intent: modalite_fr
   examples: |
     - comment se passera l'année unisversitaire?
-    - comment se passera l'année unisversitaire?
     - quelle est la modalité pour cette année universitaire?
     - les cours seront en ligne ou à l'école?
     - les cours seront en ligne ou présentiel?
@@ -1083,7 +1089,7 @@ nlu:
     - je veux payer par tranche
     - est ce que c'est possible de payer par tranches?
 
-- intent: info_generale_esprit      
+- intent: info_generale_esprit_fr      
   examples: |
     - je veux savoir plus de details sur esprit
     - donne moi une idée générale sur esprit
@@ -2304,7 +2310,255 @@ nlu:
     - chkoun ysponsorisi fel esprit
     - maa chkoun esprit aamla conventions
     - m3a chkoun esprit 3amla convention
-    
+
+#################################  YOSR ##################
+- intent: contact_ang 
+  examples: |
+    - phone number
+    - mail address   
+    - what is the phone number of the administration 
+    - give me the phone number of the administration
+    - i want the email adress of esprit
+    - how can i contact esprit
+    - administration phone number
+    - i want to contact the administration
+    - in which email address can I contact you?
+    - how can i contact you
+
+
+- intent: double_diplome_ang
+  examples: |
+    - Double diploma
+    - Offers of double diploma
+    - Can I do a double diploma?
+    - Opportunities to study to get a double diploma
+    - What is a program of double diploma?
+    - What are the advantages of a program of double diploma?
+    - What are the criteria of eligibility for a program of double diploma?
+
+- intent: certificat_ang
+  examples: |
+    - What are the certifications at Esprit?
+    - How can I obtain a certificate?
+    - How can I get a certificate?
+    - Esprit certification
+    - Obtaining certifications at Esprit
+
+- intent: stage_ang
+  examples: |
+    - Is the internship mandatory?
+    - What are the types of internships for each level of studies?
+    - What are the documents required to do an internship?
+    - How can I obtain the necessary documents to do an internship?
+    - Where can I submit my internship report?
+    - Internship
+    - internship esprit
+
+- intent: paiement_par_tranche_ang
+  examples: |
+    - I want to pay in installments for this order.
+    - How can I pay in installments?
+    - Can I pay in installments?
+    - I cannot pay the full amount at once, can I spread the payment?
+    - Payment by installment.
+    - I want to pay by installment.
+    - Is it possible to pay by installments?
+##
+
+- intent: info_generale_esprit_ang
+  examples: |
+    - I want to know more details about esprit.
+    - Give me a general idea about esprit.
+    - General information about esprit.
+    - I want to have general information about esprit.
+    - Can you give me more information about esprit?
+
+- intent: avantage_esprit_ang      
+  examples: |
+    - Why esprit?
+    - Why choose esprit?
+    - What are the specificities of esprit?
+    - How does esprit distinguish itself from other engineering schools?
+    - Advantages of esprit.
+    - Give me the advantages of studying at esprit.
+    - What are the advantages of studying at esprit?
+
+- intent: procedure_inscription_ang
+  examples: |
+    - What are the registration procedures?
+    - How do I proceed with registration?
+    - What is the registration process?
+    - How do I enroll at esprit?
+    - Registration procedure for esprit.
+    - Enrolling at esprit.
+    - I want to know how I can register.
+    - I want to know how I can enroll.
+
+- intent: applicabilite_formation_ang
+  examples: |
+    - Is what we learn in school applicable in real life?
+    - Does the training we receive make us directly operational?
+    - Is our education adapted to labor market trends?
+    - What's the point of spending so much time on theoretical subjects if they're not directly applicable in professional life?
+    - How can we know if our education will make us operational as soon as we enter the job market?
+    - Does our education adequately prepare us for the realities of the professional world?
+    - Is the theory taught in class easily transposable to practical applications?
+    - Est-ce que la théorie enseignée en cours est facilement transposable dans la pratique ?
+    - How can we know if our education will enable us to meet the needs of the company where we will work?
+    - Can I work directly after graduation?
+    - Is it easy to find a job after completing the education?
+
+- intent: reconnaissance_diplome_ang
+  examples: |
+    - How can I get my degree recognized abroad?
+    - Is my degree recognized abroad?
+    - How do I obtain recognition of my degree in another country?
+    - Can I work abroad with my degree?
+    - What do I need to do to have my degree recognized in another country?
+    - What are the procedures for the recognition of my degree?
+    - Is my degree recognized by the state?
+    - How can I find out if my degree is recognized abroad?
+    - Is the recognition of my degree automatic in all countries?
+    - What are the conditions for the recognition of my degree abroad?
+    - Is my degree recognized in France?
+    - Is my degree recognized in Germany?
+    - Is my degree recognized in Europe?
+    - Is my degree recognized in the United States?
+    - Is my degree recognized in Asia?
+
+- intent: reduction_premier_ang
+  examples: |
+    - Are there any discounts for top-performing students?
+    - How can I benefit from the discount for top students in my field?
+    - Do students with good grades have any advantages or discounts?
+    - How can I find out if I'm eligible for the discount for top-performing students?
+    - How does the discount for top students in my field work?
+    - What is the amount of the discount for students with good grades?
+    - reduction
+    - Is there a sibling discount?
+    - Is there a discount for being the top student?
+    - Is there a discount for being the top student in my field?
+    - Are there any discounts available?
+    - Do I qualify for a discount?
+
+- intent: administration_ang
+  examples: |
+    - Who is Tahar Ben Lakhdar?
+    - Who is the director of ESPRIT?
+    - CEO
+    - Founder of ESPRIT
+
+- intent: partenaires_ang
+  examples: |
+    - Partners
+    - Who are ESPRIT's partners?
+    - Conventions
+    - Who sponsors ESPRIT?
+    - With whom is ESPRIT in convention?
+    - Friends of ESPRIT
+ ####################################### hedi ###########################"
+- intent: nature_cours_fr
+  examples: |
+    - [cours du jour internationaux](cours_fr)
+    - [cours du jour tunisien](cours_fr)
+    - [cours du soir tunisien](cours_fr)
+
+- intent: nature_cours_ang
+  examples: |
+    - [international day course](cours_ang)
+    - [Tunisian day course](cours_ang)
+    - [Tunisian evening course](cours_ang)
+
+
+- intent: procedure_inscription_fr
+  examples: |
+    - quels sont les procedures d'inscription?
+    - comment procéder à l'inscription?
+    - quel est le processus d'inscription
+    - comment s'inscrire à esprit?
+    - procedure inscription esprit
+    - s'inscrire a esprit
+    - je veux savoir comment je peux m'inscrire
+
+
+- intent: procedure_inscription_ang
+  examples: |
+    - What are the registration procedures?
+    - How do I proceed with registration?
+    - What is the registration process?
+    - How do I enroll at esprit?
+    - Registration procedure for esprit.
+    - Enrolling at esprit.
+    - I want to know how I can register.
+    - I want to know how I can enroll.
+
+- intent: procedure_inscription_ar
+  examples: |
+    - chnouma les procedures mta l inscription
+    - chneya houma les procedures mta l inscription
+    - chnia na3mel bech n9ayed
+    - kifeh n9ayed 
+    - kifech nkayed
+    - kifeh tsir l inscription f esprit
+    - ta9yid f esprit
+    - nheb nkayed
+    - n7eb n9ayed
+    - aatini les procedures mtaa l inscription
+    - chnia le processus d'inscription
+    - kifech tsir l inscription 
+    - chnia les procedures d inscription
+    - nheb naref kifeh namel inscription
+    - tnajm tkoli kifeh namel l inscription
+
+
+- intent: cout_formation_ar
+  examples: |
+    - b9adech el 3am?
+    - 9adeh nkhales?
+    - chnoua nkhales?
+    - kadeh l aam
+    - kdeh l 3am
+    - 9adeh tetkalef el 9raya?
+    - 9adeh soum el 3am?
+    - 9adeh flous yetkalef el 3am?
+    - b9adeh el 9raya ?
+    - 9adeh 3am fi esprit?
+    - b9adech esprit ?
+    - chnoua soum el 9raya fi esprit?
+
+- intent: types_des_couts_fr
+  examples: |
+    - [un étudiant tunisien cours du jour](type_cout_fr)
+    - [un étudiant non pris en charge par une entreprise](type_cout_fr)
+    - [un étudiant tunisien cours du soir](type_cout_fr)
+    - [un étudiant international](type_cout_fr)
+
+- intent: types_des_couts_ang
+  examples: |
+    - [a tunisian student (day course)](type_cout_ang)
+    - [a student not supported by a company](type_cout_ang)
+    - [a tunisian student (evening course)](type_cout_ang)
+    - [an international student](type_cout_ang)
+
+- intent: rentree_niveau_fr
+  examples: |
+    - [1 ère année](rentree_niveau_fr)
+    - [2 ème année](rentree_niveau_fr)
+    - [3 ème année](rentree_niveau_fr)
+    - [4 ème année](rentree_niveau_fr)
+    - [5 ème année](rentree_niveau_fr)
+
+- intent: rentree_niveau_ang
+  examples: |
+    - [1st year] (rentree_niveau_ang)
+    - [2nd year] (rentree_niveau_ang)
+    - [3rd year] (rentree_niveau_ang)
+    - [4th year] (rentree_niveau_ang)
+    - [5th year] (rentree_niveau_ang)
+
+
+
+
 # - intent: raven
 #   examples: |
 #     - what is a university 

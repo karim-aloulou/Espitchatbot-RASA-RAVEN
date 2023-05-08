@@ -1,0 +1,61 @@
+version: "3.1"
+
+rules:
+- rule: No more information_fr
+  steps:
+  - intent: refus
+  - action: utter_no_more_info_fr
+
+- rule: No more information_ang
+  steps:
+  - intent: deny
+  - action: utter_no_more_info_ang
+  
+responses:
+  utter_no_more_info_fr:
+  - text: "D'accord, N'hésitez pas à me poser d'autres questions."
+  utter_no_more_info_ang:
+  - text: "Ok, feel free to ask me more questions."
+# - rule: Choisir le mode normal
+#   steps:
+#   - intent: normal_mode
+#   - action: action_set_mode_pro
+#   - slot_was_set:
+#       - mode_pro: false
+
+# - rule: Choisir le mode pro
+#   steps:
+#   - intent: pro_mode
+#   - action: action_set_mode_pro
+#   - slot_was_set:
+#       - mode_pro: true
+
+# - rule: Start conversation by choosing mode
+#   steps:
+#   - intent: greet
+#   - action: utter_choose_mode
+#   - intent: mode_choice
+#   - action: action_set_mode_pro
+# rules:
+# - rule: Rentrée en mode normal
+#   condition:
+#   - slot_was_set:
+#       - mode_normal: true
+#   steps:
+#   - intent: rentree_fr
+#   - action: utter_rentree_fr
+
+# - rule: Prompt user to choose mode
+#   condition:
+#   - not_intent: normal_mode
+#   - not_intent: pro_mode
+#   steps:
+#   - action: action_greet_and_ask_mode
+#   - intent: normal_mode
+#   - action: action_choose_mode
+#   - slot_was_set:
+#     - mode_normal: true
+#   - intent: pro_mode
+#   - action: action_choose_mode
+#   - slot_was_set:
+#     - mode_pro: true

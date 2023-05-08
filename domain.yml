@@ -1,28 +1,54 @@
 version: "3.1"
 
 entities:
-  - nationality
+  - cours_fr
+  - cours_ang
+  - type_cout_fr
+  - type_cout_ang
+  - rentree_niveau_fr
+  - rentree_niveau_ang
+
 actions:
-  - action_ask_nationality
-  - action_get_price_tunisian
-  - action_get_price_foreigner
+  - action_cours_fr
+  - action_cours_ang
+  - action_cout_fr
+  - action_cout_ang
+  - action_rentree_ang
+  - action_rentree_fr
+  - action_random_topic
+  - action_topic_info
+
+  # - action_mode
+  # - action_ask_nationality
+  # - action_get_price_tunisian
+  # - action_get_price_foreigner
+  # - utter_choose_mode
+  # - action_set_mode_pro
+  # - action_choose_mode
+  # - action_greet_and_ask_mode
+  # - action_random_topic
+  # - action_topic_info
+
   # - action_concatenate_message
   # - action_verifier_reponse
   # - action_raven_generate_text
 intents:
+- refus
 - accepter
 - refuser
 - greet
 - thanks
 - bye
-- date_preinscription_eng
-- difference_3A_3B_eng
-- reclamation_confirmation_admission_eng
-- reporter_entretien_eng
-- modalites_paiement_eng
-- cout_formation_eng
-- covidSession
-- B2
+- contact_fr
+- date_preinscription_ang
+- difference_3A_3B_ang
+- reclamation_confirmation_admission_ang
+- reporter_entretien_ang
+- modalites_paiement_ang
+- cout_formation_ang
+- B2_fr
+- B2_ang 
+- classe_fr
 - rentree_ang
 - modalite_ang
 - place_ang
@@ -31,10 +57,10 @@ intents:
 - alternance_ang
 - admission_ang
 - inscri_bac_ang
-- note_eng
-- club_eng
-- concours_admission_eng
-- courssoir_eng
+- note_ang
+- club_ang
+- concours_admission_ang
+- courssoir_ang
 - cout_hebergement_ang
 - cout_restauration_ang
 - pcr_ang
@@ -43,23 +69,23 @@ intents:
 - valider_module_ang
 - admis_ang
 - carte_amen_ang
-- double_correction_eng
-- confirmation_option_eng
-- conseil_classe_eng
-- credit_eng
-- exemples_rapport_stage_eng
-- procedure_stage_eng
-- avantage_alternance_eng
+- double_correction_ang
+- confirmation_option_ang
+- conseil_classe_ang
+- credit_ang
+- exemples_rapport_stage_ang
+- procedure_stage_ang
+- avantage_alternance_ang
 - obtention_diplome_ang
 - absence_examen_ang
 - redoublement_ang
 - ratt_ang
-- annulation_inscription_eng
-- regime_etude_eng
-- mobilite_internationale_eng
-- photo_foyer_eng
-- photo_foyer_externe_eng
-- photo_foyer_interne_eng
+- annulation_inscription_ang
+- regime_etude_ang
+- mobilite_internationale_ang
+- photo_foyer_ang
+- photo_foyer_externe_ang
+- photo_foyer_interne_ang
 - filiere_ang
 - lien_doc_ang
 - lien_doc_fr
@@ -68,19 +94,16 @@ intents:
 - remerciement
 - byefr
 - contact
-- courssoir
+- courssoir_fr
 - date_preinscription_fr
-- mobilite_internationale
-- avantage_alternance
+- mobilite_internationale_fr
+- avantage_alternance_fr
 - difference_3A_3B_fr
 - concours_admission_fr
 - reclamation_confirmation_admission_fr
 - reporter_entretien_fr
 - modalites_paiement_fr
-- covidSession_fr
 - cout_formation_fr
-- B2_fr
-- rentree_fr
 - modalite_fr
 - place_fr
 - inscri_ing_info_fr
@@ -89,13 +112,12 @@ intents:
 - admission_fr
 - inscri_bac_fr
 - note_fr
-- double_diplome
-- certificat
-- stage
+- double_diplome_fr
+- certificat_fr
+- stage_fr
 - paiement_par_tranche_fr
-- info_generale_esprit
+- info_generale_esprit_fr
 - avantage_esprit_fr
-- procedure_inscription_fr
 - club_fr
 - cout_hebergement_fr
 - cout_restauration_fr
@@ -155,7 +177,6 @@ intents:
 - stage_ar
 - info_generale_esprit_ar
 - avantage_esprit_ar
-- procedure_inscription_ar
 - club_ar
 - cout_restauration_ar
 - cout_hebergement_ar
@@ -188,13 +209,36 @@ intents:
 - partenaires_ar
 - affirm
 - deny
-
-
+- rentree_fr
+- contact_ang
+- double_diplome_ang
+- certificat_ang
+- stage_ang 
+- paiement_par_tranche_ang
+- info_generale_esprit_ang
+- avantage_esprit_ang
+- procedure_inscription_ang
+- applicabilite_formation_ang
+- reconnaissance_diplome_ang
+- reduction_premier_ang
+- administration_ang
+- partenaires_ang
+- procedure_inscription_fr
+- nature_cours_fr
+- nature_cours_ang
+- procedure_inscription_ar
+- types_des_couts_fr
+- types_des_couts_ang
+- rentree_niveau_fr
+- rentree_niveau_ang
 
 
 # - raven
 
 responses:
+#  utter_wrong_mode:
+#   - text: "Désolé, je n'ai pas compris. Veuillez choisir entre 'normal' et 'pro'."
+
  utter_ask_nationality:
   - text: "Êtes-vous tunisien ou étranger ?"
  utter_price_tunisian:
@@ -217,7 +261,7 @@ responses:
   - text: "au revoir"
  utter_reporter_entretien_fr:
   - text: "Vous pouvez modifier la date de votre entrtien sur le site d'Esprit" 
- utter_reporter_entretien_eng:
+ utter_reporter_entretien_ang:
   - text: "You can change the date of your interview via Esprit website"
 
  utter_modalites_paiement_fr:
@@ -227,33 +271,33 @@ responses:
             - Paiement en ligne\n   
             - Paiement par chèque"
 
- utter_modalites_paiement_eng:
+ utter_modalites_paiement_ang:
   - text : "- By bank transfer: We accept bank transfers.
             Please make your payment to our bank account:
             ESPRIT / bank: AMEN BANK / Raoued agency / RIB: 07 035 0020 101 10136691
             \n- Online payment \n
             - Check payment"
 
- utter_courssoir:
+ utter_courssoir_fr:
   - text: "ESPRIT- Cours du soir offre des formations d’ingénieur destinées aux professionnels, 
 académiques et demandeurs d’emploi, titulaires d’un diplôme de licence ou plus
 \nLa durée de la formation est 4 années d'études pour un accès avec une licence et 3 années pour un accès avec un master. 
  \n La charge horaire est hebdomadaire est de 14h  ( du Lundi au Vendredi de 18h30 à 20h30 et le Samedi de 14h à 18h) et ceci durant 10 mois/an."
 
- utter_mobilite_internationale:
+ utter_mobilite_internationale_fr:
   - text: "Esprit offre aux étudiants en formation d’ingénieurs des opportunités de
 semestre d'échange ou bien double-diplôme 🌍 \n\nPour plus d'information: https://esprit.tn/international/experience"
 
- utter_mobilite_internationale_eng:
+ utter_mobilite_internationale_ang:
   - text: "Esprit offers to engineering students opportunities for an exchange semester or a double degree 🌍 \n\nFor more informations: https://esprit.tn/international/experience"
 
- utter_avantage_alternance:
+ utter_avantage_alternance_fr:
   - text: "Parmi les avantages de la formation en alternance:\n
   🔹 Une formation de 4 années, alternée entre ESPRIT et l’entreprise partenaire\n
   🔹 Un contrat d’embauche avec l’entreprise partenaire et des avantages conséquents\n
   🔹 Une prise en charge des frais de formation par l’entreprise partenaire" 
 
- utter_contact:
+ utter_contact_fr:
   - text: "📞 (216) 70 250 000\n📧 contact@esprit.tn" 
  
  utter_iamabot:
@@ -265,7 +309,7 @@ semestre d'échange ou bien double-diplôme 🌍 \n\nPour plus d'information: ht
   - text: "🔹 3A:  les étudiants titulaires d’une licence dans la spécialité choisie intègrent ESPRIT en 3A.
           \n\n🔹 3B: les étudiants titulaires d’une licence généraliste en sciences ou en technologies / Les étudiants déclarés
            admis en liste principale ou en liste complémentaire aux concours nationaux d’accès aux études d’ingénieur(MP, PC, Techno)."
- utter_difference_3A_3B_eng:
+ utter_difference_3A_3B_ang:
   - text: "🔹 3A: For the student having 3-years diploma in computer science.
           \n\n🔹 3B: For the student having 3-years diploma in sciences or technologies (diploma other than computer science)"
 
@@ -281,7 +325,7 @@ semestre d'échange ou bien double-diplôme 🌍 \n\nPour plus d'information: ht
  utter_reclamation_confirmation_admission_fr:
   - text: "Vous pouvez envoyer votre réclamation au mail : 📧 admission2021@esprit.tn"
 
- utter_reclamation_confirmation_admission_eng:
+ utter_reclamation_confirmation_admission_ang:
   - text: "Please send your claim to this email: 📧 admission2021@esprit.tn"
 
 
@@ -289,12 +333,12 @@ semestre d'échange ou bien double-diplôme 🌍 \n\nPour plus d'information: ht
   - text: "🔹 1ère session: du 17/05 au 03/06
           \n🔹 2ème session: du 03/06 au 29/07
           \n🔹 3ème session: du 29/07 au 08/08"
- utter_date_preinscription_eng:
+ utter_date_preinscription_ang:
   - text: "🔹 1st session: from 17/05 to 03/06
           \n🔹 2nd session: from 03/06 to 29/07
           \n🔹 3rd session: from 29/07 to 08/08"
  
- utter_double_diplome:
+ utter_double_diplome_fr:
   - text: " Double-diplôme (2 ans, DD):\n
 Refaire la 4ème année! Perdre une année mais gagner un diplôme!\n
 ♣ Imposée par les lois en vigueur (CTI)\n
@@ -313,28 +357,14 @@ Mobilités des étudiants, formation en mastère\n
   \n7200 DT pour les étudiants tunisiens (cours de soir) 
   \n3000 € pour les étudiants étrangers." 
 
- utter_cout_formation_eng:
+ utter_cout_formation_ang:
   - text: "💲 The tuition fee 💲
   \n7350 DT for Tunisian students (morning class)
   \n7200 DT for Tunisian students (evening class) 
   \n3000 € for foreign students.."
 
 
-
- utter_covidSession: 
-   - text: "The covid session will be on the 6th of september 2021 and on the 11th of september 2021 \n \n
-   To register you have to put your file in the student service. \n \n
-   ⚠️ PS: Your file must include a supporting document (PCR) 
-"
-
-
- utter_covidSession_fr: 
-   - text: "Les examens de la session covid sont prévu le 06/09/2021 et le 11/09/2021\n \n
-   Pour vous inscrire vous devez déposer votre dossier au service étudiant. \n \n
-   ⚠️ NB : Votre dossier doit comporter un justificatif (PCR) " 
-
-
- utter_B2: 
+ utter_B2_ang: 
    - text: "You can check Esprit website then choose 'Resultat' then 'Notes langues'"
 
 
@@ -393,7 +423,7 @@ For more information: https://prit.tn/admission/ esprit-ingenieur "
  utter_inscri_bac_ang:
    - text: "In the 1st year, holders of a scientific, economic, technical or equivalent baccalaureate can register in Esprit.."
 
- utter_stage:
+ utter_stage_fr:
    - text: "Stage de formation humaine et sociale d'une durée de 4 semaines ,durant l'été lors du passage de la 1ère à la 2ème année.\n 
 Stage d'immersion en entreprise d'une durée de 6 semaines , pendant l'été lors du passage de la 3ème à la  4ème année.\n
 Stage ingénieur d'une durée de 8 semaines, pendant l'été lors du passage de la 4ème à la 5ème année."
@@ -434,7 +464,7 @@ Stage ingénieur d'une durée de 8 semaines, pendant l'été lors du passage de 
         https://esprit.tn/vie-etudiante/vie-campus/clubs"
   
 
- utter_club_eng:
+ utter_club_ang:
    - text: "The clubs list:\n
         - ESPRIT Club IeeeSb\n
         - Esprit ENACTUS\n
@@ -459,13 +489,13 @@ Stage ingénieur d'une durée de 8 semaines, pendant l'été lors du passage de 
         for more information check this link
         https://esprit.tn/vie-etudiante/vie-campus/clubs"
   
- utter_avantage_alternance_eng:
+ utter_avantage_alternance_ang:
    - text: "Parmi les avantages de la formation en alternance:\n
    🔹 Courses of 4 years alternating between ESPRIT and the partner company\n
    🔹 A hiring contract with the partner company\n
    🔹 Tuition fees will be payed by the partner company " 
 
- utter_concours_admission_eng:
+ utter_concours_admission_ang:
    - text: "For the 2020/2021 academic year, the entrance examination will be conducted entirely online.\n
           \n1. Welcome meeting: welcome meeting moderated by the director using Google Meet application
           during which there will be a presentation of the school followed by a question and answer session.\n
@@ -474,13 +504,13 @@ Stage ingénieur d'une durée de 8 semaines, pendant l'été lors du passage de 
           two texts chosen from the six texts received during pre-registration (3 texts in French and 3 texts in English)"
 
 
- utter_courssoir_eng:
+ utter_courssoir_ang:
    - text: "ESPRIT- Esprit Evening Course offers engineering training for professionals,
 academics and job seekers, holders of a bachelor's degree or more
 \n The duration of the training is 4 years for students having 3-years diploma and 4 years for the students having a master degree.
   \n Students study 14 hours weekly (Monday to Friday from 6.30 p.m. to 8.30 p.m. and Saturday from 2 p.m. to 6 p.m.) and this for 10 months / year. "
 
- utter_note_eng: 
+ utter_note_ang: 
    - text: "You can check your grades via Esprit website"
 
  utter_note_fr: 
@@ -609,18 +639,18 @@ considered as specific cases which will be submitted to the 'Annual Council' for
     ⭐ 0 Mobile Banking fees.  \n
     ⭐ 0 charges for the 'SESAME' bank card."
 
- utter_double_correction_eng:
+ utter_double_correction_ang:
    - text: "You must access your intranet space and make a  grade complaint request"
- utter_confirmation_option_eng:
+ utter_confirmation_option_ang:
   - text: "At the beginning of August"
- utter_conseil_classe_eng:
+ utter_conseil_classe_ang:
    - text: "⭐Main session: end of June\n
 ⭐Control session: mid July"
- utter_credit_eng:
+ utter_credit_ang:
    - text: "You must access your intranet space and check the list of credits"
- utter_exemples_rapport_stage_eng:
+ utter_exemples_rapport_stage_ang:
    - text: "Unfortunately, Esprit doesn't offer this service "
- utter_procedure_stage_eng:
+ utter_procedure_stage_ang:
    - text: "You must consult the internship department"
  utter_double_correction_fr:
    - text: "Vous devez accéder à votre espace intranet et faire une demande de réclamation de note"
@@ -755,7 +785,7 @@ the requirement to carry out additional work. \n
 A list of non-catch-up modules is communicated to all students at the start of each
 college year"
 
- utter_annulation_inscription_eng:
+ utter_annulation_inscription_ang:
   - text: "1) Cancellation requests submitted before November 30:\n
     - Registration fees are non-refundable.\n
     - The rest of the tuition fees are refundable within a period not exceeding one month from the notification date.\n
@@ -781,7 +811,7 @@ college year"
     - Trois années pour les candidats ayant été admis aux Concours Nationaux d’Entrée aux Ecoles d’ingénieurs, ou ayant un diplôme de technicien supérieur, ou une licence ou tout autre diplôme scientifique ou techniqueéquivalent.\n
     - Deux années pour les candidats ayant été admis en 2ème Master ou en 2ème année cycle ingénieur"
 
- utter_regime_etude_eng:
+ utter_regime_etude_ang:
   - text : "The duration of the training at ESPRIT for obtaining the engineering diploma is: \n
     - Five years for candidates with the baccalaureate as their last degree \n
     - Three years for candidates who have been admitted to the National Entrance Competitions to Engineering Schools, or having a higher technical diploma, or a license or any other equivalent scientific or technical diploma. \n
@@ -799,7 +829,7 @@ college year"
  utter_avantage_esprit_fr:
   - text : "Les avantages de esprit sont"
 ##############################################
- utter_type_foyer_eng:
+ utter_type_foyer_ang:
   - text: ""
     buttons:
       - title: ESPRIT Internal Residence 
@@ -877,72 +907,326 @@ college year"
 
 #NEW
  utter_plus_info_associe_fr:
-  - text : "Voudriez vous avoir des informations associées à cet topic ?"
+   - text : "Voudriez vous avoir des informations associées à cet topic ?"
 
  utter_plus_avantage_fr:
-  - text : "Voudriez vous savoir plus sur les avantages de ESPRIT ?"
+   - text : "Voudriez vous savoir plus sur les avantages de ESPRIT ?"
 
  utter_plus_cout_formation_fr:
-  - text : "Voudriez vous savoir plus sur les coûts de formations à ESPRIT ?"
+   - text : "Voudriez vous savoir plus sur les coûts de formations à ESPRIT ?"
  utter_plus_info_generale_fr:
-  - text : "Voudriez vous savoir plus sur ESPRIT ?"
+   - text : "Voudriez vous savoir plus sur ESPRIT ?"
  utter_plus_filiere_fr:
-  - text : "Voudriez vous savoir plus sur les filieres?"
+   - text : "Voudriez vous savoir plus sur les filieres?"
  utter_plus_applicabilite_fr:
-  - text : "Voudriez vous savoir plus sur l'applicabilité de notre programme éducatif?"
+   - text : "Voudriez vous savoir plus sur l'applicabilité de notre programme éducatif?"
  utter_plus_difference_3A3B_fr:
-  - text : "Voudriez vous savoir plus sur la difference entre 3A et 3B?"
+   - text : "Voudriez vous savoir plus sur la difference entre 3A et 3B?"
  utter_plus_double_diplome_fr:
-  - text : "Voudriez vous savoir plus sur la double diplomation à ESPRIT?"
+   - text : "Voudriez vous savoir plus sur la double diplomation à ESPRIT?"
  utter_plus_procedure_stage_fr:
-  - text : "Voudriez vous savoir plus sur les procédures du stage à ESPRIT?"
+   - text : "Voudriez vous savoir plus sur les procédures du stage à ESPRIT?"
  utter_plus_club_fr:
-  - text : "Voudriez vous savoir plus sur les Clubs à ESPRIT?"
+   - text : "Voudriez vous savoir plus sur les Clubs à ESPRIT?"
  utter_plus_restau_fr:
-  - text : "Voudriez vous savoir plus sur les couts de restaurations à ESPRIT?"
+   - text : "Voudriez vous savoir plus sur les couts de restaurations à ESPRIT?"
  utter_plus_photo_foyer_fr:
-  - text : "Voudriez vous voir les photos des foyers à ESPRIT?"
+   - text : "Voudriez vous voir les photos des foyers à ESPRIT?"
  utter_plus_conseil_classe_fr:
-  - text : "Voudriez vous savoir plus sur les conseils de classe ?"
+   - text : "Voudriez vous savoir plus sur les conseils de classe ?"
  utter_plus_credit_fr:
-  - text : "Voudriez vous savoir plus sur les crédits ?"
+   - text : "Voudriez vous savoir plus sur les crédits ?"
  utter_plus_rapport_stage_fr:
-  - text : "Voudriez vous savoir plus sur les rapports de stage à ESPRIT?"
+   - text : "Voudriez vous savoir plus sur les rapports de stage à ESPRIT?"
  utter_plus_mobilite_fr:
-  - text : "Voudriez vous savoir plus sur la mobilité internationale?"
+   - text : "Voudriez vous savoir plus sur la mobilité internationale?"
  utter_plus_formation_fr:
-  - text : "Voudriez vous savoir plus sur la formation à ESPRIT?"
+   - text : "Voudriez vous savoir plus sur la formation à ESPRIT?"
  utter_plus_licence_fr:
-  - text : "Voudriez vous savoir plus à propos les externes issus d'une licence en informatique?"
+   - text : "Voudriez vous savoir plus à propos les externes issus d'une licence en informatique?"
  utter_plus_avantage_alternance_fr:
-  - text : "Voudriez vous savoir plus à propos les avantages de l'alternance?"
+   - text : "Voudriez vous savoir plus à propos les avantages de l'alternance?"
  utter_plus_modalites_paiement_fr:
-  - text : "Voudriez vous savoir plus à propos les modalités de paiement?"
+   - text : "Voudriez vous savoir plus à propos les modalités de paiement?"
  utter_plus_paiement_tranche_fr:
-  - text : "Voudriez vous savoir plus à propos le paiement par tranches?"
+   - text : "Voudriez vous savoir plus à propos le paiement par tranches?"
  utter_plus_redoublement_fr:
-  - text : "Voudriez vous savoir plus à propos le processus de redoublement à ESPRIT?"
+   - text : "Voudriez vous savoir plus à propos le processus de redoublement à ESPRIT?"
  utter_plus_ratt_fr:
-  - text : "Voudriez vous savoir plus à propos le processus de rattrapage à ESPRIT?"
+   - text : "Voudriez vous savoir plus à propos le processus de rattrapage à ESPRIT?"
  
  demander_acceptation:
-  - text : "accept?"
+   - text : "accept?"
  utter_default:
-  - text: "Je ne peux pas répondre"
+   - text: "Je ne peux pas répondre"
+
+  # 
+ utter_choose_mode:
+   - text: "Veuillez choisir le mode de conversation: normal ou pro."
+
+ ####################################### YOSR ############################
+ utter_reduction_premier_fr:
+   - text: "Des réductions des frais de scolarité sont accordées annuellement aux étudiants les plus méritants : \n
+    🔹 30 % de réduction pour les élèves ayant une moyenne supérieure à
+    15/20 et classés premiers de leur classe.  \n
+    🔹 15 % de réduction pour les élèves classés premiers de leur classe
+    ayant une moyenne inférieure à 15/20. \n"
+ utter_reduction_premier_ang:
+   - text: "An annual tuition fee reduction is granted to the most deserving students:  \n
+   🔹 30% reduction for students with an average grade above 15/20 and ranked first in their class. \n 
+   🔹 15% reduction for students ranked first in their class with an average grade below 15/20. \n"
+
+ utter_administration_fr:
+   - text: "Tahar Ben Lakhdar : Directeur Fondateur \n
+   Docteur ès Sciences Physiques de l'Université Paris VI ; \n
+   Professeur à l'ENIT (1978-2000); \n
+   Président directeur général de l’Agence Tunisienne de la Formation Professionnelle (1995-1999); \n
+   Directeur fondateur de la mission universitaire de Tunisie en France (1993-1995) ; \n
+   Directeur fondateur de l’Ecole Supérieure des Communications de Tunis (1990-1993) ; \n
+   Directeur fondateur de l’Institut Supérieur de Technologie de Nabeul (1988-1990) ; \n
+   Directeur fondateur de l’Institut Préparatoire aux Études d’Ingénieurs de Nabeul (1986-1988) ; \n
+   Animateur de la reforme de l’enseignement supérieur technique (1990-1995) : \n
+   - Création des instituts préparatoires aux études d’ingénieur ; \n
+   - Création des Instituts Supérieurs des Études Technologiques ISET) ; \n
+   - Reforme des études d’ingénieur." 
+
+ utter_administration_ang:
+   - text: "Tahar Ben Lakhdar: Founder Director
+ 
+   Doctor of Physical Sciences from the University of Paris VI; \n
+   Professor at ENIT (1978-2000); \n
+   CEO of the Tunisian Agency for Vocational Training (1995-1999); \n
+   Founder Director of the Tunisian University Mission in France (1993-1995); \n
+   Founder Director of the Higher School of Communications in Tunis (1990-1993); \n
+   Founder Director of the Institute of Technology in Nabeul (1988-1990); \n
+   Founder Director of the Preparatory Institute for Engineering Studies in Nabeul (1986-1988); \n
+   Leader of the technical higher education reform (1990-1995): \n
+   
+   Creation of preparatory institutes for engineering studies; \n
+   Creation of Higher Institutes of Technological Studies (ISET); \n
+   Reform of engineering studies."
+
+ utter_partenaires_fr:
+   - text: " ESPRIT a établi des partenariats avec de nombreuses entreprises et institutions nationales et internationales, ce qui contribue à renforcer la qualité de la formation et à faciliter l'insertion professionnelle des diplômés. \n 
+   On dispose de trois types de partenariats: \n
+  🔹Partenariats Académiques: Université de Paris 13, Telecom Ecole de Management (TEM), Institut Supérieur d'Electronique de Paris (ISEP), Université du Maine, Ecole Supérieure Africaine des TICs (ESATIC), Université de Nice, Université de Sherbrooke, Cégep de la Pocatière, Institut National des Postes et Télécommunications de Rabat (INPT), Ecole Nationale Supérieure des Mines de Rabat, et bien d'autres. \n
+  🔹Partenariats Technologiques: Google, Cisco, British Council, IBM, EMC, Microsoft, Intel, Amazon Web Services, UNESCO, et bien d'autres. \n
+  🔹Partenariats Industriels: Evertek, Tunisie Télécom, Samsung, Vermeg, Gomycode, Huawei, et bien d'autres."
+
+ utter_partenaires_ang:
+   - text: "ESPRIT has established partnerships with many national and international companies and institutions, which helps to strengthen the quality of education and facilitate the professional integration of graduates. \n
+
+   There are three types of partnerships: \n
+   
+   🔹Academic Partnerships: University of Paris 13, Telecom Ecole de Management (TEM), Institut Supérieur d'Electronique de Paris (ISEP), Université du Maine, Ecole Supérieure Africaine des TICs (ESATIC), Université de Nice, Université de Sherbrooke, Cégep de la Pocatière, Institut National des Postes et Télécommunications de Rabat (INPT), Ecole Nationale Supérieure des Mines de Rabat, and many others. \n
+   
+   🔹Technological Partnerships: Google, Cisco, British Council, IBM, EMC, Microsoft, Intel, Amazon Web Services, UNESCO, and many others. \n
+   
+   🔹Industrial Partnerships: Evertek, Tunisie Télécom, Samsung, Vermeg, Gomycode, Huawei, and many others. \n"
+
+ utter_info_generale_esprit_ang: 
+   - text: "ESPRIT University is a private higher education institution located in Tunis, Tunisia.\n
+     It was founded in 2003 and has since become one of the leading institutions for engineering, computer science,\n
+     and business education in the region. The university offers undergraduate and graduate programs in a variety of fields, including\n
+     computer science, engineering, business administration, and multimedia. The institution is known for its focus on practical,\n
+     hands-on learning and its strong ties to industry,\n
+     which help students develop the skills and experience necessary to succeed in the workforce. \n
+     ESPRIT also emphasizes innovation, entrepreneurship, and research, encouraging students to pursue new ideas and technologies that can make a positive impact on society.\n
+     Overall, ESPRIT University is recognized as a leading institution for higher education in Tunisia and a valuable resource for students seeking high-quality, career-focused education."
+
+#  utter_info_generale_esprit_fr:
+#   - text: "
+#    L'Université ESPRIT est une institution d'enseignement supérieur privée située à Tunis, en Tunisie.
+#    Fondée en 2003, elle est devenue l'une des principales institutions d'enseignement en ingénierie, informatique et en administration des affaires de la région.\n
+#    L'université propose des programmes de premier cycle et des cycles supérieurs dans une variété de domaines, notamment l'informatique, l'ingénierie, l'administration des affaires et le multimédia.\n
+#    L'institution est connue pour son accent mis sur l'apprentissage pratique et concret ainsi que pour ses liens solides avec l'industrie, qui aident les étudiants à développer les compétences et l'expérience nécessaires pour réussir sur le marché du travail.\n
+#    ESPRIT met également l'accent sur l'innovation, l'entrepreneuriat et la recherche, encourageant les étudiants à poursuivre de nouvelles idées et technologies qui peuvent avoir un impact positif sur la société.\n
+#    Dans l'ensemble, l'Université ESPRIT est reconnue comme une institution leader pour l'enseignement supérieur en Tunisie et une ressource précieuse pour les étudiants cherchant une éducation de qualité axée sur la carrière."
+
+ utter_avantage_esprit_ang:
+   - text: "ESPRIT University offers several advantages to students, including high-quality education \n
+   , practical learning, strong industry connections, focus on innovation and entrepreneurship, international exposure, and a diverse student body. \n
+    These advantages prepare students for successful careers in a variety of fields, while also fostering a supportive and stimulating learning environment."
+
+#  utter_avantage_esprit_fr:
+#    - text: "L'Université ESPRIT offre plusieurs avantages aux étudiants,\n
+#     notamment une éducation de qualité, un apprentissage pratique, des liens solides avec l'industrie, une orientation vers l'innovation et l'entrepreneuriat, une exposition internationale et un corps étudiant diversifié.\n
+#     Ces avantages préparent les étudiants à des carrières réussies dans divers domaines, tout en favorisant un environnement d'apprentissage favorable et stimulant."
+
+ utter_procedure_inscription_ang:
+   - text: "this is the link for enrolment https://www.esprit.tn/admission/esprit-ingenieur"
+
+#  utter_procedure_inscription_fr:
+#    - text: "Voici le lien pour l'inscription : https://www.esprit.tn/admission/esprit-ingenieur"
+
+ utter_applicabilite_formation_ang:
+   - text: "Yes, the studies at ESPRIT University are designed to be highly applicable to real-life situations and prepare students for successful careers in their chosen fields. ESPRIT places a strong emphasis on practical learning,\n
+       with projects, internships, and collaborations with industry partners that allow students to gain hands-on experience and develop the skills and knowledge necessary to succeed in the workforce. Additionally, ESPRIT has strong ties to the industry,\n
+       providing students with valuable networking opportunities, internships, and job placements after graduation. Overall, ESPRIT's career-focused approach to learning ensures that students are well-prepared for the demands and challenges of the job market."
+
+#  utter_applicabilite_formation_fr:
+#    - text: "Oui, les études à l'Université ESPRIT sont conçues pour être hautement applicables à la vie réelle et préparer les étudiants à des carrières réussies dans leur domaine choisi. ESPRIT met un fort accent sur l'apprentissage pratique, avec des projets, \n
+#   des stages et des collaborations avec des partenaires industriels qui permettent aux étudiants de gagner une expérience pratique et de développer les compétences et les connaissances nécessaires pour réussir sur le marché du travail. De plus, ESPRIT entretient des liens solides avec l'industrie,\n
+#   offrant aux étudiants des opportunités précieuses de réseautage, de stages et de placements d'emploi après l'obtention du diplôme. Dans l'ensemble, l'approche axée sur la carrière d'ESPRIT garantit que les étudiants sont bien préparés aux exigences et aux défis du marché du travail."
+
+ utter_double_diplome_ang:
+   - text: "Esprit has established partnerships with several international universities and institutions, 
+                allowing its students to pursue double diploma programs.            
+                Esprit has double diploma agreements with prestigious universities such as Mines ParisTech, Telecom Paris, and EMLyon Business School, among others.
+                These agreements allow Esprit students to obtain two diplomas upon completion of their studies: one from Esprit and the other from the partner institution.
+                However, it is important to note that not all Esprit programs have double diploma agreements,
+                and the requirements for obtaining a double diploma may vary depending on the program and the partner institution. 
+                Therefore, if you are interested in pursuing a double diploma program at Esprit, it is recommended to check the specific requirements and conditions with the university."
+
+#  utter_double_diplome_fr:
+#    - text : "Esprit a établi des partenariats avec plusieurs universités et institutions internationales,
+#                 permettant à ses étudiants de suivre des programmes de double diplôme.
+#                 Esprit a des accords de double diplôme avec des universités prestigieuses telles que Mines ParisTech, Telecom Paris et EMLyon Business School, entre autres.
+#                 Ces accords permettent aux étudiants d'Esprit d'obtenir deux diplômes à la fin de leurs études : l'un d'Esprit et l'autre de l'institution partenaire. Cependant,
+#                 il est important de noter que tous les programmes d'Esprit n'ont pas d'accords de double diplôme et les exigences pour l'obtention d'un double diplôme peuvent varier en fonction du programme et de l'institution partenaire.
+#                 Par conséquent, si vous êtes intéressé par un programme de double diplôme à Esprit, il est recommandé de vérifier les exigences et les conditions spécifiques auprès de l'université."
+
+
+ utter_certificat_ang:
+   - text: "Esprit offers professional certification programs in various fields such as IT, networking, project management, digital marketing, graphic design,
+                cybersecurity and other areas in high demand in the job market. Admission requirements for certification programs vary by specific program, 
+                but may include academic prerequisites or relevant work experience.
+                If you are interested in a certification program at Esprit, it is recommended that you check the specific program requirements and contact the university for more information."
+
+ utter_certificat_fr:
+   - text: "Esprit propose des programmes de certification professionnelle dans différents domaines tels que l'informatique, le réseau, 
+  	 la gestion de projet, le marketing numérique, le design graphique, la cybersécurité et d'autres domaines très demandés sur le marché du travail.
+         Les conditions d'admission pour les programmes de certification varient en fonction du programme spécifique, mais peuvent inclure des prérequis académiques ou une expérience professionnelle pertinente. 
+	 Si vous êtes intéressé par un programme de certification à Esprit, il est recommandé de vérifier les exigences spécifiques du programme et de contacter l'université pour plus d'informations."
+
+
+ utter_stage_ang:
+  - text: "Internships are mandatory for all bachelor's and master's degree programs at Esprit, 
+            offering students the opportunity to gain practical experience in various industries such as engineering,
+            computer science, business, and communication. Students may need to provide a cover letter, CV, academic transcripts, 
+            and a letter of recommendation to apply for internships. The internship office provides guidance and support to students throughout the internship process,
+            from obtaining necessary documents to submitting their internship report. Overall, internships are an essential component of students' academic journey at Esprit,
+	          allowing them to apply what they have learned in the classroom to a professional setting and gain a deep understanding of their field of study."
+
+
+ utter_paiement_par_tranche_ang:
+   - text: "Methods of payment:
+		 each year the students have the payment as follows 
+		 1st installment: at registration
+		 2nd installment: before 01/15/2023
+
+		here is the link for online payment:
+		https://esprit-tn.com/ESPOnline/Online/Login.aspx "
+
+
+
+ ####################################### Hedi #########################
+
+ utter_nature_cours_fr:
+  - text: "Veuillez choisir le type du cours: \n
+     🔹cours du jour (internationaux) \n
+     🔹cours du jour (tunisien) \n
+     🔹cours du soir (tunisien) "
+
+ utter_nature_cours_ang:
+  - text: "Please choose the type of course: \n
+     🔹day course (International) \n
+     🔹day course (Tunisian) \n
+     🔹evening course (Tunisian) "
+ utter_types_des_couts_fr:
+  - text: "Êtes-vous : \n
+     un étudiant tunisien (cours du jour) \n
+     un étudiant non pris en charge par une entreprise \n
+     un étudiant tunisien (cours du soir) \n
+     un étudiant international"
+
+ utter_types_des_couts_ang:
+  - text: "Are you? : \n
+     Tunisian student (day course)  \n
+     A student not supported by a company \n
+     Tunisian student (evening course) \n
+     An international student"
+
+ utter_rentree_niveau_ang:
+  - text: "Are you? : \n
+     1st year  \n
+     2nd year \n
+     3rd year \n
+     4th year  \n
+     5th year "
+
+ utter_rentree_niveau_fr:
+  - text: "Êtes-vous? : \n
+    1 ère année \n
+    2 ème année \n
+    3 ème année \n
+    4 ème année \n
+    5 ème année " 
 
 
 
 slots:
-  acceptation_slot:
-    type: bool
-    mappings:
-      - type: from_intent
-        value: true
-        intent: affirm
-      - type: from_intent
-        value: false
-        intent: deny
+  topic:
+    type: text
     influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: topic
+  cours_fr:
+    type: text
+    mappings:
+    - type: from_text
+
+  cours_ang:
+    type: text
+    mappings:
+    - type: from_text
+
+  type_cout_fr:
+    type: text
+    mappings:
+    - type: from_text
+
+  type_cout_ang:
+    type: text
+    mappings:
+    - type: from_text
+
+# slots:
+#   acceptation_slot:
+#     type: bool
+#     influence_conversation: true
+#     mappings:
+#     - type: from_intent
+#       value: true
+#       intent: affirm
+#     - type: from_intent
+#       value: false
+#       intent: deny
+#   mode_pro:
+#     type: bool
+#     initial_value: false
+#     influence_conversation: true
+#     mappings:
+#     - type: from_intent
+#       intent: pro_mode
+#       value: true
+#     - type: from_intent
+#       intent: normal_mode
+#       value: false
+#   mode_normal:
+#     type: bool
+#     initial_value: true
+#     influence_conversation: true
+#     mappings:
+#     - type: from_intent
+#       intent: normal_mode
+#       value: true
+#     - type: from_intent
+#       intent: pro_mode
+#       value: false
+
+
 
 session_config:
   session_expiration_time: 60
