@@ -7,12 +7,20 @@ from fuzzywuzzy import process
 
 # Dictionnaires globaux des sujets
 topics = {
-    "prix_fr": {"modalite_fr","rentree_fr","concours_admission_fr"},
-    "dejainscrit_fr": {"place_fr","B2_fr","reclamation_confirmation_admission_fr"},
-    "autre_fr": {"procedure_inscription_fr","cout_formation_fr","date_preinscription_fr","reporter_entretien_fr","mobilite_internationale_fr", "avantage_alternance_fr","modalites_paiement_fr"},
-    "cour_fr": {"courssoir_fr", "difference_3A_3B_fr"},
-    "autre_ang":{"procedure_inscription_ang","rentree_ang","cout_formation_ang","cout_formation_fr",}
+    "noninscrit_fr": {"inscri_bac_fr","inscri_ing_info_fr","double_diplome_fr","certificat_fr","info_generale_esprit_fr","avantage_esprit_fr","difference_3A_3B_fr","regime_etude_fr","filiere_fr","applicabilite_formation_fr","reconnaissance_diplome_fr","partenaires_fr","rentree_fr","courssoir_fr"},
+    "dejainscrit_fr": {"club_fr","note_fr","modalite_fr","conseil_classe_fr","mobilite_internationale_fr","valider_module_fr","admis_fr","date_res_fr","classe_fr","obtention_diplome_fr","absence_examen_fr","reduction_premier_fr","B2_fr"},
+    "stage_fr": {"stage_fr","procedure_stage_fr","avantage_alternance_fr"},
+    "redouble_fr": {"credit_fr","double_correction_fr","redoublement_fr","ratt_fr"},
+    "prix_fr":{"cout_restauration_fr","cout_hebergement_fr","carte_amen_fr","paiement_par_tranche_fr","cout_formation_fr","modalites_paiement_fr"},
+    "admission_fr":{"date_preinscription_fr","concours_admission_fr","procedure_inscription_fr","annulation_inscription_fr","reporter_entretien_fr"},
     
+    "noninscrit_ang": {"inscri_bac_ang","inscri_ing_info_ang","double_diplome_ang","certificat_ang","info_generale_esprit_ang","avantage_esprit_ang","difference_3A_3B_ang","regime_etude_ang","filiere_ang","applicabilite_formation_ang","reconnaissance_diplome_ang","partenaires_ang","rentree_ang","courssoir_ang"},
+    "dejainscrit_ang": {"club_ang","note_ang","modalite_ang","conseil_classe_ang","mobilite_internationale_ang","valider_module_ang","admis_ang","date_res_ang","classe_ang","obtention_diplome_ang","absence_examen_ang","reduction_premier_ang","B2_ang"},
+    "stage_ang": {"stage_ang","procedure_stage_ang","avantage_alternance_ang"},
+    "redouble_ang": {"credit_ang","double_correction_ang","redoublement_ang","ratt_ang"},
+    "prix_ang":{"cout_restauration_ang","cout_hebergement_ang","carte_amen_ang","paiement_par_tranche_ang","cout_formation_ang","modalites_paiement_ang"},
+    "admission_ang":{"date_preinscription_ang","concours_admission_ang","procedure_inscription_ang","annulation_inscription_ang","reporter_entretien_ang"}
+     
 }
 class ActionRandomTopic(Action):
     def name(self) -> Text:
@@ -106,7 +114,7 @@ class ActionCours(Action):
         
         if best_match:
             matched_key, confidence = best_match
-            if confidence >= 80:  # Set a confidence threshold (e.g., 80%)
+            if confidence >= 40:  # Set a confidence threshold (e.g., 80%)
                 nature_cours = cours_info_fr.get(matched_key)
                 output = "L'inscription au {} : \n {}".format(matched_key, nature_cours)
             else:
@@ -138,7 +146,7 @@ class ActionCoursAng(Action):
         
         if best_match:
             matched_key, confidence = best_match
-            if confidence >= 80:  # Set a confidence threshold (e.g., 80%)
+            if confidence >= 40:  # Set a confidence threshold (e.g., 80%)
                 nature_cours = cours_info_ang.get(matched_key)
                 output = "Registration for the {} : \n {}".format(matched_key, nature_cours)
             else:
@@ -152,9 +160,9 @@ class ActionCoursAng(Action):
 
 
 cout_fr = {
-    "un étudiant tunisien (cours du jour)": "7350 DT",
+    "un étudiant tunisien (cours du jour)": "8100 DT",
     "un étudiant non pris en charge par une entreprise": "6200 DT",
-    "un étudiant tunisien (cours du soir)": "7200 DT",
+    "un étudiant tunisien (cours du soir)": "6500 DT",
     "un étudiant international": "3000 €"
 }
 
@@ -174,7 +182,7 @@ class ActionCoutFormation(Action):
 
         if best_match:
             matched_key, confidence = best_match
-            if confidence >= 80:  # Set a confidence threshold (e.g., 80%)
+            if confidence >= 40:  # Set a confidence threshold (e.g., 80%)
                 cout_formation = cout_fr.get(matched_key)
                 output = "Le coût total de la formation pour {} est : {}".format(matched_key, cout_formation)
             else:
@@ -188,9 +196,9 @@ class ActionCoutFormation(Action):
 
 
 cost_en = {
-    "a Tunisian student (day courses)": "7350 DT",
+    "a Tunisian student (day courses)": "8100 DT",
     "a student not sponsored by a company": "6200 DT",
-    "a Tunisian student (evening courses)": "7200 DT",
+    "a Tunisian student (evening courses)": "6500 DT",
     "an international student": "3000 €"
 }
 
@@ -209,7 +217,7 @@ class ActionCostOfEducation(Action):
 
         if best_match:
             matched_key, confidence = best_match
-            if confidence >= 80:  # Set a confidence threshold (e.g., 80%)
+            if confidence >= 40:  # Set a confidence threshold (e.g., 80%)
                 cost_of_education = cost_en.get(matched_key)
                 output = "The total cost of education for {} is: {}".format(matched_key, cost_of_education)
             else:
@@ -243,7 +251,7 @@ class ActionRentreeAng(Action):
 
         if best_match:
             matched_key, confidence = best_match
-            if confidence >= 80:  # Set a confidence threshold (e.g., 80%)
+            if confidence >= 40:  # Set a confidence threshold (e.g., 80%)
                 rentree_info = rentree_ang.get(matched_key)
                 output = "For {}: {}\nFor more information: https://prit.tn/admission/esprit-ingenieur".format(matched_key, rentree_info)
             else:
@@ -279,7 +287,7 @@ class ActionRentreeFr(Action):
 
         if best_match:
             matched_key, confidence = best_match
-            if confidence >= 80:  # Set a confidence threshold (e.g., 80%)
+            if confidence >= 40:  # Set a confidence threshold (e.g., 80%)
                 rentree_info = rentree_fr.get(matched_key)
                 output = "Pour {}: {}\nPour plus d'informations: https://prit.tn/admission/esprit-ingenieur".format(matched_key, rentree_info)
             else:
@@ -289,266 +297,3 @@ class ActionRentreeFr(Action):
 
         dispatcher.utter_message(text=output)
         return []
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# # import logging,os
-# # from typing import Any, Text, Dict, List
-# # from rasa_sdk import Action, Tracker
-# # from rasa_sdk.executor import CollectingDispatcher
-# # from langdetect import detect
-# # from translate import Translator
-# # from rwkv.model import RWKV
-# # from rwkv.utils import PIPELINE, PIPELINE_ARGS
-# # current_path = os.path.dirname(os.path.abspath(__file__))
-
-# # # set these before import RWKV
-# # os.environ['RWKV_JIT_ON'] = '1'
-# # os.environ["RWKV_CUDA_ON"] = '0' # '1' to compile CUDA kernel (10x faster), requires c++ compiler & cuda libraries
-
-# # # For alpha_frequency and alpha_presence, see "Frequency and presence penalties":
-# # # https://platform.openai.com/docs/api-reference/parameter-details
-
-
-# # class GenerateResponse(Action):
-    
-# #     def __init__(self):
-    
-# #         self.model = RWKV(model=current_path+'/RWKV-4-Raven-3B-v9-Eng99%-Other1%-20230411-ctx4096', strategy='cuda fp32i8')
-# #         self.pipeline = PIPELINE(self.model, current_path+'/20B_tokenizer.json') # 20B_tokenizer.json is in https://github.com/BlinkDL/ChatRWKV
-# #         self.args = PIPELINE_ARGS(temperature = 1.0, top_p = 0.7, top_k = 100, # top_k = 0 then ignore
-# #                      alpha_frequency = 0.25,
-# #                      alpha_presence = 0.25,
-# #                      token_ban = [0], # ban the generation of some tokens
-# #                      token_stop = [], # stop generation whenever you see any token here
-# #                      chunk_len = 256) # split input into chunks to save VRAM (shorter -> slower)
-
-        
-
-    
-# #     def name(self) -> Text:
-# #         return "action_raven_generate_text"
-
-# #     def run(self, dispatcher: CollectingDispatcher,
-# #             tracker: Tracker,
-# #             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-
-# #         # Get the user's message from the tracker
-# #         user_message = tracker.latest_message.get('text')
-# #         # Detect the language of the text
-# #         lang = detect(user_message)
-
-# #         # Create a translator object
-# #         if lang == 'fr':
-# #             translator = Translator(to_lang="en")
-# #             user_message = translator.translate(user_message)
-        
-# #         # Generate a response using GPT-4all
-# #         try:
-# #             def my_print(s):
-# #              print(s, end='', flush=True)
-             
-# #             generated_text=self.pipeline.generate(user_message, token_count=50, args=self.args, callback=my_print)
-            
-# #             # out, state = self.model.forward([187, 510, 1563, 310, 247], None)
-# #             #       # get logits
-# #             # out, state = self.model.forward([187, 510], None)
-# #             # out, state = self.model.forward([1563], state)           # RNN has state (use deepcopy to clone states)
-# #             # out, state = self.model.forward([310, 247], state)
-# #             #generated_text= out.detach().cpu().numpy()                 # same result as above
-           
-
-# #             if lang == 'fr':
-# #                 translator = Translator(to_lang="fr")
-# #                 generated_text = translator.translate(generated_text)
-            
-# #             dispatcher.utter_message(text=generated_text, skip_special_tokens=True)
-
-# #         except Exception as e:
-# #             logging.exception(f"Error generating response: {e}")
-
-# #         return []
-
-# # from typing import Any, Text, Dict, List
-# # from rasa_sdk import Action, Tracker
-# # from rasa_sdk.executor import CollectingDispatcher
-# # from rasa_sdk.events import SlotSet
-
-# # class ExempleAction(Action):
-
-# #     def name(self) -> Text:
-# #         return "action_exemple"
-
-# #     def run(self, dispatcher: CollectingDispatcher,
-# #             tracker: Tracker,
-# #             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-
-# #         # récupère la valeur de l'entité "reponse"
-# #         reponse = tracker.latest_message['entities'][0]['value']
-
-# #         if reponse.lower() == "oui":
-# #             # action à effectuer si la réponse est "oui"
-# #             dispatcher.utter_message("Très bien! Je vous fournis aini plus d'informations")
-# #         elif reponse.lower() == "non":
-# #             # action à effectuer si la réponse est "non"
-# #             dispatcher.utter_message("Dommage, peut-être une prochaine fois !")
-# #         else:
-# #             # action à effectuer si la réponse n'est ni "oui" ni "non"
-# #             dispatcher.utter_message("Je n'ai pas compris votre réponse, Veuillez répondre par Oui ou par Non.")
-
-# #         return []
-# ## action
-# # actions.py
-# # from typing import Text, List, Any, Dict
-# # from rasa_sdk import Action, Tracker
-# # from rasa_sdk.executor import CollectingDispatcher
-
-# # class ConcatenateAction(Action):
-# #     def name(self) -> Text:
-# #         return "action_concatenate_message"
-
-# #     def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-
-# #         # Obtenir les entités
-# #         action_name = None
-# #         message = None
-
-# #         for entity in tracker.latest_message["entities"]:
-# #             if entity["entity"] == "action_name":
-# #                 action_name = entity["value"]
-# #             elif entity["entity"] == "message":
-# #                 message = entity["value"]
-
-# #         # Vérifier si les entités ont été trouvées
-# #         if not action_name:
-# #             dispatcher.utter_message(text="L'action n'est pas précisée.")
-# #             return []
-
-# #         if not message:
-# #             dispatcher.utter_message(text="Le message n'est pas précisé.")
-# #             return []
-
-# #         # Concaténer le message à l'action
-# #         concatenated_message = f"{action_name}: {message}"
-
-# #         # Appeler l'action concaténée
-# #         dispatcher.utter_message(text=concatenated_message)
-
-# #         return []
-# # from typing import Any, Text, Dict, List
-# # from rasa_sdk import Action, Tracker
-# # from rasa_sdk.executor import CollectingDispatcher
-
-# # class ActionVerifierReponse(Action):
-
-# #     def name(self) -> Text:
-# #         return "action_verifier_reponse"
-
-# #     def run(self, dispatcher: CollectingDispatcher,
-# #             tracker: Tracker,
-# #             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-            
-# #         reponse_utilisateur = tracker.get_slot("reponse_utilisateur")
-        
-# #         if reponse_utilisateur == "oui":
-# #             print('oui')
-# #         elif reponse_utilisateur == "non":
-# #             # La réponse est "non"
-# #             print('non')
-# #         else:
-# #             print('autre chose')
-# #             # La réponse est autre chose
-          
-# #         return []
-
-# # from rasa_sdk import Action
-# # from rasa_sdk.events import SlotSet
-
-# # class ActionDemanderAcceptation(Action):
-# #     def name(self) -> str:
-# #         return "demander_acceptation"
-
-# #     async def run(self, dispatcher, tracker, domain):
-# #         # Your custom logic here, e.g. asking a question or sending a message
-# #         dispatcher.utter_message(text="Voulez-vous continuer?")
-
-# #         return []
-# from typing import Any, Text, Dict, List
-# from rasa_sdk import Action, Tracker
-# from rasa_sdk.executor import CollectingDispatcher
-# from rasa_sdk.events import SlotSet
-
-# class ActionSetModePro(Action):
-
-#     def name(self) -> Text:
-#         return "action_set_mode_pro"
-
-#     async def run(
-#         self,
-#         dispatcher: CollectingDispatcher,
-#         tracker: Tracker,
-#         domain: Dict[Text, Any],
-#     ) -> List[Dict[Text, Any]]:
-
-#         intent = tracker.latest_message['intent'].get('name')
-
-#         if intent == 'pro_mode':
-#             return [SlotSet("mode_pro", True)]
-#         else:
-#             return [SlotSet("mode_pro", False)]
-
-
-# class ActionDemanderAcceptation(Action):
-
-#     def name(self) -> Text:
-#         return "demander_acceptation"
-
-#     async def run(
-#         self,
-#         dispatcher: CollectingDispatcher,
-#         tracker: Tracker,
-#         domain: Dict[Text, Any],
-#     ) -> List[Dict[Text, Any]]:
-
-#         # You can add any logic here, for example, sending a message
-#         dispatcher.utter_message(text="Veuillez accepter pour continuer.")
-
-#         return []
-
-# class ActionChooseMode(Action):
-#     def name(self):
-#         return "action_choose_mode"
-    
-#     def run(self, dispatcher, tracker, domain):
-#         mode = tracker.latest_message.get('text').lower()
-#         if mode == "normal":
-#             dispatcher.utter_message("Vous êtes maintenant en mode normal.")
-#             return [ SlotSet("mode_pro", False)]
-#         elif mode == "pro":
-#             dispatcher.utter_message("Vous êtes maintenant en mode pro.")
-#             return [ SlotSet("mode_pro", True)]
-#         else:
-#             dispatcher.utter_message(template="utter_wrong_mode")
-#             return []
-
-# class ActionGreetAndAskMode(Action):
-#     def name(self):
-#         return "action_greet_and_ask_mode"
-
-#     def run(self, dispatcher, tracker, domain):
-#         dispatcher.utter_message(text="Salut ! Comment ça va ?")
-#         dispatcher.utter_message(text="Veuillez choisir le mode de conversation: normal ou pro.")
-#         return []

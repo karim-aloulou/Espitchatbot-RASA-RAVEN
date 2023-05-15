@@ -1,11 +1,7 @@
+
 version: "3.1"
 
 stories:
-
-  # - story: raven
-  #   steps:
-  #   - intent: raven
-  #   - action: action_raven_generate_text
 
 
   - story: salutation_ar_story
@@ -33,74 +29,56 @@ stories:
     steps:
     - intent: contact_ar
     - action: utter_contact_fr
-    - action: action_random_topic
-    - intent: affirm
-    - action: action_topic_info
+
 
   - story: courssoir_ar_story
     steps:
     - intent: courssoir_ar
     - action: utter_courssoir_fr
-    - action: action_random_topic
-    - intent: affirm
-    - action: action_topic_info
+
 
   - story: mobilite_internationale_story
     steps:
     - intent: mobilite_internationale_ar
     - action: utter_mobilite_internationale_fr
-    - action: action_random_topic
-    - intent: affirm
-    - action: action_topic_info
+
 
   - story: avantage_alternance_story_ar
     steps:
     - intent: avantage_alternance_ar
     - action: utter_avantage_alternance_fr    
-    - action: action_random_topic
-    - intent: affirm
-    - action: action_topic_info
+
 
 
   - story: reclamation_confirmation_admission_story_ar
     steps:
     - intent: reclamation_confirmation_admission_ar
     - action: utter_reclamation_confirmation_admission_fr    
-    - action: action_random_topic
-    - intent: affirm
-    - action: action_topic_info
+
 
   - story: concours_admission_ar_story
     steps:
     - intent: concours_admission_ar
     - action: utter_concours_admission_fr    
-    - action: action_random_topic
-    - intent: affirm
-    - action: action_topic_info
+
 
   - story: modalites_paiement_ar_story
     steps:
     - intent: modalites_paiement_ar
     - action: utter_modalites_paiement_fr    
-    - action: action_random_topic
-    - intent: affirm
-    - action: action_topic_info
+
 
   - story: reporter_entretien_ar_story
     steps:
     - intent: reporter_entretien_ar
     - action: utter_reporter_entretien_fr    
-    - action: action_random_topic
-    - intent: affirm
-    - action: action_topic_info
+
 
   - story: date_preinscription_ar_story
     steps:
     - intent: date_preinscription_ar
     - action:  utter_date_preinscription_fr    
-    - action: action_random_topic
-    - intent: affirm
-    - action: action_topic_info
+
 
   # - story: cout_formation_ar_story
   #   steps:
@@ -111,303 +89,180 @@ stories:
     steps:
     - intent: B2_ar
     - action: utter_B2_fr    
-    - action: action_random_topic
-    - intent: affirm
-    - action: action_topic_info
+
 
   - story: rentree_ar_story
     steps:
     - intent: rentree_ar
     - action: utter_rentree_fr    
-    - action: action_random_topic
-    - intent: affirm
-    - action: action_topic_info     
+    
 
   - story: modalite_ar_story
     steps:
     - intent: modalite_ar
     - action: utter_modalite_fr     
-    - action: action_random_topic
-    - intent: affirm
-    - action: action_topic_info
+
 
   - story: place_ar_story
     steps:
     - intent: place_ar
     - action: utter_place_fr    
-    - action: action_random_topic
-    - intent: affirm
-    - action: action_topic_info
+
 
   - story: inscri_ing_info_ar_story
     steps:
     - intent: inscri_ing_info_ar
     - action: utter_inscri_ing_info_fr     
-    - action: action_random_topic
-    - intent: affirm
-    - action: action_topic_info 
+
 
   - story: licence_info_ar_story
     steps:
     - intent: licence_info_ar
     - action: utter_licence_info_fr 
-    - action: action_random_topic
-    - intent: affirm
-    - action: action_topic_info
+
 
   - story: alternance_ar_story
     steps:
     - intent: alternance_ar
     - action: utter_alternance_fr     
-    - action: action_random_topic
-    - intent: affirm
-    - action: action_topic_info
+
 
   - story: admission_ar_story
     steps:
     - intent: admission_ar
     - action: utter_admission_fr    
-    - action: action_random_topic
-    - intent: affirm
-    - action: action_topic_info
+
 
 
   - story: inscri_bac_ar_story
     steps:
     - intent: inscri_bac_ar
     - action: utter_inscri_bac_fr    
-    - action: action_random_topic
-    - intent: affirm
-    - action: action_topic_info
+
 
 
   - story: club_ar_story
     steps:
     - intent: club_ar
     - action: utter_club_fr       
-    - action: action_random_topic
-    - intent: affirm
-    - action: action_topic_info
+
 
   - story: cout_hebergement_ar_story
     steps:
     - intent: cout_hebergement_ar
     - action: utter_cout_hebergement_fr     
-    - action: action_random_topic
-    - intent: affirm
-    - action: action_topic_info
+
 
 
   - story: cout_restauration_ar_story
     steps:
     - intent: cout_restauration_ar
     - action: utter_cout_restauration_fr    
-    - action: action_random_topic
-    - intent: affirm
-    - action: action_topic_info
+
 
   - story:  note_ar_story
     steps:
     - intent: note_ar
     - action: utter_note_fr      
-    - action: action_random_topic
-    - intent: affirm
-    - action: action_topic_info
 
-  - story: pcr_ar_story
-    steps:
-    - intent: pcr_ar
-    - action: utter_pcr_fr    
-    - action: action_random_topic
-    - intent: affirm
-    - action: action_topic_info
-
-  # - story: classe_ar_story
-  #   steps:
-  #   - intent: classe_ar
-  #   - action: utter_classe_fr
 
   - story: date_res_ar_story
     steps:
     - intent: date_res_ar
     - action: utter_date_res_fr    
-    - action: action_random_topic
-    - intent: affirm
-    - action: action_topic_info
+
 
   - story: valider_module_ar_story
     steps:
     - intent: valider_module_ar
     - action: utter_valider_module_fr    
-    - action: action_random_topic
-    - intent: affirm
-    - action: action_topic_info
+
 
   - story: admis_ar_story
     steps:
     - intent: admis_ar
     - action: utter_admis_fr    
-    - action: action_random_topic
-    - intent: affirm
-    - action: action_topic_info
-
-  - story: carte_amen_ar_story
-    steps:
-    - intent: carte_amen_ar
-    - action: utter_carte_amen_fr   
-    - action: action_random_topic
-    - intent: affirm
-    - action: action_topic_info
-
-
+  
   - story: double_correction_ar_story
     steps:
     - intent: double_correction_ar
     - action: utter_double_correction_fr    
-    - action: action_random_topic
-    - intent: affirm
-    - action: action_topic_info
+
 
   - story: confirmation_option_ar_story
     steps:
     - intent: confirmation_option_ar
     - action: utter_confirmation_option_fr     
-    - action: action_random_topic
-    - intent: affirm
-    - action: action_topic_info
+
 
   - story: conseil_classe_ar_story
     steps:
     - intent: conseil_classe_ar
     - action: utter_conseil_classe_fr     
-    - action: action_random_topic
-    - intent: affirm
-    - action: action_topic_info
+
+  - story: classe_ar_story
+    steps:
+    - intent: classe_ar
+    - action: utter_classe_fr 
 
   - story: credit_ar_story
     steps:
     - intent: credit_ar
     - action: utter_credit_fr     
-    - action: action_random_topic
-    - intent: affirm
-    - action: action_topic_info
+
 
   - story: exemples_rapport_stage_ar_story
     steps:
     - intent: exemples_rapport_stage_ar
     - action: utter_exemples_rapport_stage_fr     
-    - action: action_random_topic
-    - intent: affirm
-    - action: action_topic_info
+
 
   - story:  procedure_stage_ar_story
     steps:
     - intent: procedure_stage_ar
     - action: utter_procedure_stage_fr     
-    - action: action_random_topic
-    - intent: affirm
-    - action: action_topic_info
+
 
   - story: obtention_diplome_ar_story
     steps:
     - intent: obtention_diplome_ar
     - action: utter_obtention_diplome_fr     
-    - action: action_random_topic
-    - intent: affirm
-    - action: action_topic_info
+
 
   - story:  absence_examen_ar_story
     steps:
     - intent: absence_examen_ar
     - action: utter_absence_examen_fr    
-    - action: action_random_topic
-    - intent: affirm
-    - action: action_topic_info
+
 
   - story: redoublement_ar_story
     steps:
     - intent: redoublement_ar
     - action: utter_redoublement_fr      
-    - action: action_random_topic
-    - intent: affirm
-    - action: action_topic_info
+
 
   - story:  ratt_ar_story
     steps:
     - intent: ratt_ar
     - action: utter_ratt_fr     
-    - action: action_random_topic
-    - intent: affirm
-    - action: action_topic_info
+
 
   - story: annulation_inscription_ar_story
     steps:
     - intent: annulation_inscription_ar
     - action: utter_annulation_inscription_fr    
-    - action: action_random_topic
-    - intent: affirm
-    - action: action_topic_info
+
 
   - story:  regime_etude_ar_story
     steps:
     - intent: regime_etude_ar
     - action: utter_regime_etude_fr    
-    - action: action_random_topic
-    - intent: affirm
-    - action: action_topic_info
 
-  - story: photo_foyer_ar_story
-    steps:
-      - intent: photo_foyer_ar
-      - action: utter_type_foyer_fr    
-      - action: action_random_topic
-      - intent: affirm
-      - action: action_topic_info
-
-  - story: photo_foyer_interne_ar_story
-    steps:
-      - intent: photo_foyer_interne_ar
-      - action: utter_photo_foyer1
-      - action: utter_photo_foyer2
-      - action: utter_photo_foyer3    
-      - action: action_random_topic
-      - intent: affirm
-      - action: action_topic_info
-
-  - story: photo_foyer_externe_ar_story
-    steps:
-      - intent: photo_foyer_externe_ar
-      - action: utter_photo_foyer_externe1
-      - action: utter_photo_foyer_externe2
-      - action: utter_photo_foyer_externe3    
-      - action: action_random_topic
-      - intent: affirm
-      - action: action_topic_info
 
   - story: filiere_ar_story 
     steps:
       - intent: filiere_ar
-      - action: utter_type_visualisation_fr    
-      - action: action_random_topic
-      - intent: affirm
-      - action: action_topic_info
-
-  # - story: lien_doc_ar_story
-  #   steps:
-  #     - intent: lien_doc_ar
-  #     - action: utter_type_visualisation_fr
-    
-
-  # - story: lien_video_ar_story
-  #   steps:
-  #     - intent: lien_video_ar
-  #     - action: utter_lien_video
-
-# ---------------------
-
-
-
-
+      - action: utter_filiere_fr    
 
 
   - story: story 1
@@ -443,15 +298,13 @@ stories:
     - intent: bye
     - action: utter_bye
 
-  - story: story 13
+  - story: story contact_fr
     steps:
     - intent: contact_fr
     - action: utter_contact_fr    
-    - action: action_random_topic
-    - intent: affirm
-    - action: action_topic_info
 
-  - story: story 15
+
+  - story: story courssoir_fr
     steps:
     - intent: courssoir_fr
     - action: utter_courssoir_fr
@@ -459,24 +312,6 @@ stories:
     - intent: affirm
     - action: action_topic_info
 
-  - story: story 16
-    steps:
-    - intent: mobilite_internationale_fr
-    - action: utter_mobilite_internationale_fr
-    - action: action_random_topic
-    - intent: affirm
-    - action: action_topic_info
-
-
-
-
-  - story: story 17
-    steps:
-    - intent: avantage_alternance_fr
-    - action: utter_avantage_alternance_fr
-    - action: action_random_topic
-    - intent: affirm
-    - action: action_topic_info
 
   - story: story avantage_alternance_ang
     steps:
@@ -490,17 +325,13 @@ stories:
     steps:
     - intent: reclamation_confirmation_admission_fr
     - action: utter_reclamation_confirmation_admission_fr
-    - action: action_random_topic
-    - intent: affirm
-    - action: action_topic_info
+
 
   - story: story 19
     steps:
     - intent: reclamation_confirmation_admission_ang
     - action: utter_reclamation_confirmation_admission_ang
-    - action: action_random_topic
-    - intent: affirm
-    - action: action_topic_info
+
 
   - story: story 20
     steps:
@@ -612,23 +443,6 @@ stories:
     - action: action_topic_info
 
 
-
-  # - story: story rentree_fr
-  #   steps:
-  #   - intent: rentree_fr
-  #   - action: utter_rentree_fr 
-  #   - action: action_random_topic
-  #   - intent: affirm
-  #   - action: action_topic_info
-
-  # - story: story rentree_ang
-  #   steps:
-  #   - intent: rentree_ang
-  #   - action: utter_rentree_ang 
-  #   - action: action_random_topic
-  #   - intent: affirm
-  #   - action: action_topic_info
-
   - story: story modalite_ang
     steps:
     - intent: modalite_ang
@@ -650,17 +464,13 @@ stories:
     steps:
     - intent: place_fr
     - action: utter_place_fr 
-    - action: action_random_topic
-    - intent: affirm
-    - action: action_topic_info
+
 
   - story: story place_ang
     steps:
     - intent: place_ang
     - action: utter_place_ang
-    - action: action_random_topic
-    - intent: affirm
-    - action: action_topic_info
+
 
   - story: story inscri_ing_info_fr
     steps:
@@ -682,17 +492,13 @@ stories:
     steps:
     - intent: licence_info_fr
     - action: utter_licence_info_fr
-    - action: action_random_topic
-    - intent: affirm
-    - action: action_topic_info
+
 
   - story: story licence_info_ang
     steps:
     - intent: licence_info_ang
     - action: utter_licence_info_ang 
-    - action: action_random_topic
-    - intent: affirm
-    - action: action_topic_info
+
 
   - story: story alternance_fr
     steps:
@@ -715,17 +521,12 @@ stories:
     steps:
     - intent: admission_fr
     - action: utter_admission_fr
-    - action: action_random_topic
-    - intent: affirm
-    - action: action_topic_info
+
 
   - story: story admission_ang
     steps:
     - intent: admission_ang
     - action: utter_admission_ang
-    - action: action_random_topic
-    - intent: affirm
-    - action: action_topic_info
 
 
   - story: story inscri_bac_fr
@@ -826,22 +627,7 @@ stories:
     - intent: affirm
     - action: action_topic_info
     
-  ####
-  - story: pcr_ang
-    steps:
-    - intent: pcr_ang
-    - action: utter_pcr_ang
-    - action: action_random_topic
-    - intent: affirm
-    - action: action_topic_info
 
-  - story: pcr_fr
-    steps:
-    - intent: pcr_fr
-    - action: utter_pcr_fr
-    - action: action_random_topic
-    - intent: affirm
-    - action: action_topic_info
 
   - story: classe_ang
     steps:
@@ -943,17 +729,13 @@ stories:
     steps:
     - intent: confirmation_option_ang
     - action: utter_confirmation_option_ang    
-    - action: action_random_topic
-    - intent: affirm
-    - action: action_topic_info
+
 
   - story: story confirmation_option_fr
     steps:
     - intent: confirmation_option_fr
     - action: utter_confirmation_option_fr      
-    - action: action_random_topic
-    - intent: affirm
-    - action: action_topic_info
+
 
   - story: story conseil_classe_ang
     steps:
@@ -991,17 +773,13 @@ stories:
     steps:
     - intent: exemples_rapport_stage_ang
     - action: utter_exemples_rapport_stage_ang    
-    - action: action_random_topic
-    - intent: affirm
-    - action: action_topic_info
+
 
   - story: story exemples_rapport_stage_fr
     steps:
     - intent: exemples_rapport_stage_fr
     - action: utter_exemples_rapport_stage_fr     
-    - action: action_random_topic
-    - intent: affirm
-    - action: action_topic_info
+
 
   - story: story procedure_stage_ang
     steps:
@@ -1118,108 +896,17 @@ stories:
     - intent: affirm
     - action: action_topic_info
 
-#####################################
-
-  - story: photo foyer fr
-    steps:
-    - intent: photo_foyer_fr
-    - action: utter_type_foyer_fr   
-    - action: action_random_topic
-    - intent: affirm
-    - action: action_topic_info
-
-  - story: photo foyer interne fr
-    steps:
-    - intent: photo_foyer_interne_fr
-    - action: utter_photo_foyer1
-    - action: utter_photo_foyer2
-    - action: utter_photo_foyer3
-    - action: action_random_topic
-    - intent: affirm
-    - action: action_topic_info
-
-  - story: photo foyer externe fr
-    steps:
-    - intent: photo_foyer_externe_fr
-    - action: utter_photo_foyer_externe1
-    - action: utter_photo_foyer_externe2
-    - action: utter_photo_foyer_externe3   
-    - action: action_random_topic
-    - intent: affirm
-    - action: action_topic_info
-      
-
-
-  - story: photo foyer eng
-    steps:
-    - intent: photo_foyer_ang
-    - action: utter_type_foyer_ang
-    - action: action_random_topic
-    - intent: affirm
-    - action: action_topic_info
-
-  - story: photo foyer interne eng
-    steps:
-    - intent: photo_foyer_interne_ang
-    - action: utter_photo_foyer1
-    - action: utter_photo_foyer2
-    - action: utter_photo_foyer3
-    - action: action_random_topic
-    - intent: affirm
-    - action: action_topic_info
-      
-
-
-  - story: photo foyer externe eng
-    steps:
-    - intent: photo_foyer_externe_ang
-    - action: utter_photo_foyer_externe1
-    - action: utter_photo_foyer_externe2
-    - action: utter_photo_foyer_externe3
-    - action: action_random_topic
-    - intent: affirm
-    - action: action_topic_info
-
-
-##########""
-
-  - story: filiere fr 
-    steps:
-    - intent: filiere_fr
-    - action: utter_type_visualisation_fr
-    - action: action_random_topic
-    - intent: affirm
-    - action: action_topic_info
-
-  # - story: lien doc fr
-  #   steps:
-  #     - intent: lien_doc_fr
-  #     - action: utter_lien_doc
-    
-
-  # - story: lien video fr
-  #   steps:
-  #     - intent: lien_video_fr
-  #     - action: utter_lien_video
-
 
   - story: filiere ang
     steps:
     - intent: filiere_ang
-    - action: utter_type_visualisation_ang
+    - action: utter_filiere_ang
     - action: action_random_topic
     - intent: affirm
     - action: action_topic_info
       
 
-  - story: lien doc ang
-    steps:
-    - intent: lien_doc_ang
-    - action: utter_lien_doc
-    - action: action_random_topic
-    - intent: affirm
-    - action: action_topic_info
-
+ 
   
 ######################## YOSR
   - story: story contact_ang
@@ -1242,17 +929,13 @@ stories:
     steps:
     - intent: administration_fr
     - action: utter_administration_fr    
-    - action: action_random_topic
-    - intent: affirm
-    - action: action_topic_info
+
 
   - story: story administration_ang
     steps:
       - intent: administration_ang
       - action: utter_administration_ang    
-      - action: action_random_topic
-      - intent: affirm
-      - action: action_topic_info
+
     
   - story: story partenaires_fr
     steps:
@@ -1373,10 +1056,6 @@ stories:
       - intent: affirm
       - action: action_topic_info
 
-  # - story: story stage_fr
-  #   steps:
-  #     - intent: stage_fr
-  #     - action: utter_stage_fr
 
   - story: story paiement_par_tranche_ang
     steps:
@@ -1404,9 +1083,7 @@ stories:
     - action: utter_nature_cours_ang
     - intent: nature_cours_ang
     - action: action_cours_ang
-    - action: action_random_topic
-    - intent: affirm
-    - action: action_topic_info
+
 
   - story: story nature_cours_ar
     steps:
@@ -1414,9 +1091,7 @@ stories:
     - action: utter_nature_cours_fr
     - intent: nature_cours_fr
     - action: action_cours_fr
-    - action: action_random_topic
-    - intent: affirm
-    - action: action_topic_info
+
 
   - story: story rentree_fr
     steps:
@@ -1424,9 +1099,7 @@ stories:
     - action: utter_rentree_niveau_fr
     - intent: rentree_niveau_fr
     - action: action_rentree_fr       
-    - action: action_random_topic
-    - intent: affirm
-    - action: action_topic_info
+
 
   - story: story rentree_ang
     steps:
@@ -1434,9 +1107,7 @@ stories:
     - action: utter_rentree_niveau_ang
     - intent: rentree_niveau_ang
     - action: action_rentree_ang      
-    - action: action_random_topic
-    - intent: affirm
-    - action: action_topic_info
+
 
   - story: story rentree_ar
     steps:
@@ -1444,9 +1115,7 @@ stories:
     - action: utter_rentree_niveau_fr
     - intent: rentree_niveau_fr
     - action: action_rentree_fr     
-    - action: action_random_topic
-    - intent: affirm
-    - action: action_topic_info
+
 
   - story: story 31
     steps:
@@ -1454,9 +1123,7 @@ stories:
     - action: utter_types_des_couts_ang
     - intent: types_des_couts_ang
     - action:  action_cout_ang    
-    - action: action_random_topic
-    - intent: affirm
-    - action: action_topic_info
+
 
 
   - story: story 32
@@ -1464,863 +1131,200 @@ stories:
     - intent: cout_formation_fr
     - action: utter_types_des_couts_fr
     - intent: types_des_couts_fr
-    - action:  action_cout_fr      
-    - action: action_random_topic
-    - intent: affirm
-    - action: action_topic_info
+    - action: action_cout_fr      
+
 
   - story: cout_formation_ar
     steps:
     - intent: cout_formation_ar
     - action:  utter_types_des_couts_fr
     - intent: nature_cours_fr
-    - action:  action_cout_fr     
+    - action:  action_cout_fr       
+
+
+  - story: story redoublement_ang
+    steps:
+    - intent: redoublement_ang
+    - action: utter_redoublement_ang    
     - action: action_random_topic
     - intent: affirm
-    - action: action_topic_info   
+    - action: action_topic_info
+
+
+  - story: Stages
+    steps:
+    - intent: stage_fr
+    - action: utter_stage_fr
+    - action: action_random_topic
+    - intent: affirm
+    - action: action_topic_info
+
+  - story: procedure Stages_fr
+    steps:
+    - intent: procedure_stage_fr
+    - action: utter_procedure_stage_fr
+    - action: action_random_topic
+    - intent: affirm
+    - action: action_topic_info
+
+  - story: remerciement_neg
+    steps:
+    - intent: remerciement_neg
+    - action: utter_remerciement_neg
+
+  - story: reconnaissance_diplome_ang
+    steps:
+    - intent: reconnaissance_diplome_ang
+    - action: utter_reconnaissance_diplome_ang
+    - action: action_random_topic
+    - intent: affirm
+    - action: action_topic_info
+
+  - story: reduction_premier_ang
+    steps:
+      - intent: reduction_premier_ang
+      - action: utter_reduction_premier_ang
+      - action: action_random_topic
+      - intent: affirm
+      - action: action_topic_info
+
+  - story: administration_ar
+    steps:
+    - intent: administration_ar
+    - action: utter_administration_fr
+
+  - story: reduction_premier_ar
+    steps:
+      - intent: reduction_premier_ar
+      - action: utter_reduction_premier_fr
+
+
+  - story: reconnaissance_diplome_ar
+    steps:
+    - intent: reconnaissance_diplome_ar
+    - action: utter_reconnaissance_diplome_fr
+
+  - story: applicabilite_formation_ar
+    steps:
+    - intent: applicabilite_formation_ar
+    - action: utter_applicabilite_formation_fr
+
+
+  - story: avantage_esprit_ar
+    steps:
+    - intent: avantage_esprit_ar
+    - action: utter_avantage_esprit_fr
+
+
+  - story: info_generale_esprit_ar
+    steps:
+    - intent: info_generale_esprit_ar
+    - action: utter_info_generale_esprit_fr
 
-
-
-  
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  # - story: lien video ang
-  #   steps:
-  #     - intent: lien_video_ang
-  #     - action: utter_lien_video
-
-
-
-##PARTIE  nadya
-  # - story: prix_esprit_ang
-  #   steps:
-  #   - intent: greet
-  #   - action: utter_greet
-  #   - intent: prix_esprit_ang
-  #   - action: utter_prix_esprit_ang
-  #   - action: action_random_topic
-  #   - intent: affirm
-  #   - action: action_topic_info
-
-
-
-
-
-# # NEW ADDINGS
-
-#   - story: mobilite et alternance accepte fr 
-#     steps:
-#       - intent: mobilite_internationale
-#       - action: utter_mobilite_internationale
-#       - action: utter_plus_info_associe_fr
-#       - action: demander_acceptation
-#       - intent: affirm
-#       - slot_was_set:
-#         - acceptation_slot: true
-#       - action: utter_plus_avantage_fr
-#       - action: demander_acceptation
-#       - intent: affirm
-#       - slot_was_set:
-#         - acceptation_slot: true
-#       - action: utter_avantage_alternance
-
-#   - story: mobilite et alternance refuse fr 
-#     steps:
-#       - intent: mobilite_internationale
-#       - action: utter_mobilite_internationale
-#       - action: utter_plus_avantage_fr
-#       - intent: refuser
-
-#   # - story: Mode normal - Rentrée
-#   #   steps:
-#   #   - intent: rentree_fr
-#   #   - slot_was_set:
-#   #       - mode_pro: false
-#   #   - action: utter_rentree_fr
-
-#   # - story: Choix du mode pro
-#   #   steps:
-#   #   - intent: greet
-#   #   - action: action_greet_and_ask_mode
-#   #   - intent: pro_mode
-#   #   - action: action_choose_mode
-#   #   - slot_was_set:
-#   #       - mode_pro: true
-
-
-#   - story: Choix du mode normal
-#     steps:
-#     - intent: greet
-#     - action: action_greet_and_ask_mode
-#     - intent: normal_mode
-#     - action: action_choose_mode
-#     - slot_was_set:
-#         - mode_pro: false
-  
-
-#   - story: Mode pro - Rentrée
-#     steps:
-#     - intent: rentree_fr
-#     # - slot_was_set:
-#     #     - mode_pro: true
-#     - action: utter_rentree_fr
-#     - action: utter_plus_info_associe_fr
-#     - action: demander_acceptation
-#     - intent: affirm
-#     - slot_was_set:
-#       - acceptation_slot: true
-#     - action: utter_plus_filiere_fr
-#     - action: demander_acceptation
-#     - intent: affirm
-#     - slot_was_set:
-#       - acceptation_slot: true
-#     - action: utter_filiere_fr
-#     - action: utter_plus_applicabilite_fr
-#     - action: demander_acceptation
-#     - intent: affirm
-#     - slot_was_set:
-#       - acceptation_slot: true
-#     - action: utter_applicabilite_formation_fr
-#     - action: utter_plus_difference_3A3B_fr
-#     - action: demander_acceptation
-#     - intent: affirm
-#     - slot_was_set:
-#       - acceptation_slot: true
-#     - action: utter_difference_3A_3B_fr
-#     - intent: bye
-#     - action: utter_bye
-#     - slot_was_set:
-#       - acceptation_slot: false
-  
-#   # # - story: Rentrée et cursus refuse fr
-#   # #   steps:
-#   # #     - intent: rentree_fr
-#   # #     - action: utter_rentree_fr
-#   # #     - action: utter_plus_info_associe_fr
-#   # #     - intent: refuser
-  
-
-#   - story: Stages et double diplôme mobilite accepte fr
-#     steps:
-#       - intent: stage
-#       - action: utter_stage
-#       - action: utter_plus_info_associe_fr
-#       - action: demander_acceptation
-#       - intent: affirm
-#       - slot_was_set:
-#         - acceptation_slot: true   
-#       - action: utter_plus_procedure_stage_fr
-#       - action: demander_acceptation
-#       - intent: affirm
-#       - slot_was_set:
-#         - acceptation_slot: true     
-#       - action: utter_procedure_stage_fr
-#       - action: utter_plus_rapport_stage_fr
-#       - action: demander_acceptation
-#       - intent: affirm
-#       - slot_was_set:
-#         - acceptation_slot: true     
-#       - action: utter_exemples_rapport_stage_fr
-#       - action: utter_plus_double_diplome_fr
-#       - action: demander_acceptation
-#       - intent: affirm
-#       - slot_was_set:
-#         - acceptation_slot: true   
-#       - action: utter_double_diplome
-#       - action: utter_plus_mobilite_fr
-#       - action: demander_acceptation
-#       - intent: affirm
-#       - slot_was_set:
-#         - acceptation_slot: true   
-#       - action: utter_mobilite_internationale
-#       - intent: bye
-#       - action: utter_bye
-#       - slot_was_set:
-#         - acceptation_slot: false
-
-#   # - story: Stages et double diplôme mobilite refuse fr
-#   #   steps:
-#   #     - intent: stage
-#   #     - action: utter_stage
-#   #     - action: utter_plus_info_associe_fr
-#   #     - intent: refuser   
-
-
-
-#   - story: Information sur école et la formation et la license accepte fr
-#     steps:
-#       # - intent: salutation
-#       # - action: utter_salutation
-#       - intent: info_generale_esprit
-#       - action: utter_info_generale_esprit_fr
-#       - action: utter_plus_info_associe_fr
-#       - action: demander_acceptation
-#       - intent: affirm
-#       - slot_was_set:
-#         - acceptation_slot: true   
-#       - action: utter_plus_licence_fr
-#       - action: demander_acceptation
-#       - intent: affirm
-#       - slot_was_set:
-#         - acceptation_slot: true   
-#       - action: utter_licence_info_fr
-#       - action: utter_plus_cout_formation_fr
-#       - action: demander_acceptation
-#       - intent: affirm
-#       - slot_was_set:
-#         - acceptation_slot: true   
-#       - action: utter_cout_formation_fr
-#       - intent: remerciement
-#       - action: utter_remerciement
-#       - intent: bye
-#       - action: utter_bye
-#       - slot_was_set:
-#         - acceptation_slot: false
-        
-  
-#   - story: Mobilité internationale et alternance accepte fr
-#     steps:
-#       # - intent: salutation
-#       # - action: utter_salutation
-#       - intent: mobilite_internationale
-#       - action: utter_mobilite_internationale
-#       - action: utter_plus_info_associe_fr
-#       - action: demander_acceptation
-#       - intent: affirm
-#       - slot_was_set:
-#         - acceptation_slot: true
-#       - action: utter_plus_avantage_alternance_fr
-#       - action: demander_acceptation
-#       - intent: affirm
-#       - slot_was_set:
-#         - acceptation_slot: true
-#       - action: utter_avantage_alternance
-#       - intent: remerciement
-#       - action: utter_remerciement
-#       - intent: bye
-#       - action: utter_bye
-#       - slot_was_set:
-#         - acceptation_slot: false
-  
-  
-  
-  
-#   - story: Cours du soir et modalités de paiement accepte fr
-#     steps:
-# #  - intent: salutation
-# #   - action: utter_salutation
-#       - intent: courssoir_fr
-#       - action: utter_courssoir_fr
-#       - action: utter_plus_info_associe_fr
-#       - action: demander_acceptation
-#       - intent: affirm
-#       - slot_was_set:
-#         - acceptation_slot: true
-#       - action: utter_plus_modalites_paiement_fr
-#       - action: demander_acceptation
-#       - intent: affirm
-#       - slot_was_set:
-#         - acceptation_slot: true
-#       - action: utter_modalites_paiement_fr
-#       - intent: remerciement
-#       - action: utter_remerciement
-#       - intent: bye
-#       - action: utter_bye
-#       - slot_was_set:
-#         - acceptation_slot: false
-  
-  
-  
-  
-  
-  
-#   - story: inscriptions et diplôme accepte fr
-#     steps:
-# #  - intent: salutation
-# #   - action: utter_salutation
-#       - intent: procedure_inscription_fr
-#       - action: utter_procedure_inscription_fr
-#       - action: utter_plus_info_associe_fr
-#       - action: demander_acceptation
-#       - intent: affirm
-#       - slot_was_set:
-#         - acceptation_slot: true
-#       - action: utter_plus_cout_formation_fr
-#       - action: demander_acceptation
-#       - intent: affirm
-#       - slot_was_set:
-#         - acceptation_slot: true
-#       - action: utter_cout_formation_fr
-#       - action: utter_plus_double_diplome_fr
-#       - action: demander_acceptation
-#       - intent: affirm
-#       - slot_was_set:
-#         - acceptation_slot: true
-#       - action: utter_double_diplome
-#       - intent: remerciement
-#       - action: utter_remerciement
-#       - intent: bye
-#       - action: utter_bye
-#       - slot_was_set:
-#         - acceptation_slot: false
-  
-#   - story: Stages et clubs
-#     steps:
-# #  - intent: salutation
-# #   - action: utter_salutation
-#       - intent: stage
-#       - action: utter_stage
-#       - action: utter_plus_info_associe_fr
-#       - action: demander_acceptation
-#       - intent: affirm
-#       - slot_was_set:
-#         - acceptation_slot: true
-#       - action: utter_plus_procedure_stage_fr
-#       - action: demander_acceptation
-#       - intent: affirm
-#       - slot_was_set:
-#         - acceptation_slot: true
-#       - action: utter_procedure_stage_fr
-#       - action: utter_plus_club_fr
-#       - action: utter_club_fr
-#       - intent: remerciement
-#       - action: utter_remerciement
-#       - intent: bye
-#       - action: utter_bye
-#       - slot_was_set:
-#         - acceptation_slot: false
-  
-#   - story: Hébergement et restauration
-#     steps:
-# #  - intent: salutation
-# #   - action: utter_salutation
-#       - intent: cout_hebergement_fr
-#       - action: utter_cout_hebergement_fr
-#       - action: utter_plus_info_associe_fr
-#       - action: demander_acceptation
-#       - intent: affirm
-#       - slot_was_set:
-#         - acceptation_slot: true
-#       - action: utter_cout_restauration_fr
-#       - action: utter_plus_photo_foyer_fr
-#       - action: demander_acceptation
-#       - intent: affirm
-#       - slot_was_set:
-#         - acceptation_slot: true
-#       - action: utter_photo_foyer1
-#       - action: utter_photo_foyer2
-#       - action: utter_photo_foyer3
-#       - action: utter_photo_foyer_externe1
-#       - action: utter_photo_foyer_externe2
-#       - action: utter_photo_foyer_externe3
-#       - intent: remerciement
-#       - action: utter_remerciement
-#       - intent: bye
-#       - action: utter_bye
-#       - slot_was_set:
-#         - acceptation_slot: false
-  
-#   - story: Informations sur les filières et la mobilité internationale
-#     steps:
-#     - intent: salutation
-#     - action: utter_salutation
-#     - intent: filiere_fr
-#     - action: utter_filiere_fr
-#     - action: utter_plus_info_associe_fr
-#     - action: demander_acceptation
-#     - intent: affirm
-#     - slot_was_set:
-#       - acceptation_slot: true
-#     - action: utter_plus_mobilite_fr
-#     - action: demander_acceptation
-#     - intent: affirm
-#     - slot_was_set:
-#       - acceptation_slot: true
-#     - action: utter_mobilite_internationale
-#     - action: utter_plus_info_associe_fr
-#     - action: demander_acceptation
-#     - intent: affirm
-#     - slot_was_set:
-#       - acceptation_slot: true
-#     - action: utter_plus_avantage_alternance_fr
-#     - action: demander_acceptation
-#     - intent: affirm
-#     - slot_was_set:
-#       - acceptation_slot: true
-#     - action: utter_avantage_alternance
-#     - intent: remerciement
-#     - action: utter_remerciement
-#     - intent: bye
-#     - action: utter_bye
-#     - slot_was_set:
-#       - acceptation_slot: false
-  
-  
-#   - story: Options et conseils de classe
-#     steps:
-#     - intent: salutation
-#     - action: utter_salutation
-#     - intent: confirmation_option_fr
-#     - action: utter_confirmation_option_fr
-#     - action: utter_plus_info_associe_fr
-#     - action: demander_acceptation
-#     - intent: affirm
-#     - slot_was_set:
-#       - acceptation_slot: true
-#     - action: utter_plus_conseil_classe_fr
-#     - action: demander_acceptation
-#     - intent: affirm
-#     - slot_was_set:
-#       - acceptation_slot: true
-#     - action: utter_conseil_classe_fr
-#     - action: utter_plus_credit_fr
-#     - action: demander_acceptation
-#     - intent: affirm
-#     - slot_was_set:
-#       - acceptation_slot: true
-#     - action: utter_credit_fr
-#     - intent: remerciement
-#     - action: utter_remerciement
-#     - intent: bye
-#     - action: utter_bye
-#     - slot_was_set:
-#       - acceptation_slot: false
     
+  - story: stage_ar
+    steps:
+    - intent: stage_ar
+    - action: utter_stage_fr
+
+
+  - story: certificat_ar
+    steps:
+    - intent: certificat_ar
+    - action: utter_certificat_fr
+
+
+  - story: double_diplome_ar
+    steps:
+    - intent: double_diplome_ar
+    - action: utter_double_diplome_fr
+
+
+  - story: reduction_premier_fr
+    steps:
+    - intent: reduction_premier_fr
+    - action: utter_reduction_premier_fr
+    - action: action_random_topic
+    - intent: affirm
+    - action: action_topic_info
+    
+  - story: reconnaissance_diplome_fr
+    steps:
+    - intent: reconnaissance_diplome_fr
+    - action: utter_reconnaissance_diplome_fr
+    - action: action_random_topic
+    - intent: affirm
+    - action: action_topic_info
   
-#   - story: examens, absences et redoublement
-#     steps:
-#     - intent: salutation
-#     - action: utter_salutation
-#     - intent: absence_examen_fr
-#     - action: utter_absence_examen_fr
-#     - action: utter_plus_info_associe_fr
-#     - action: demander_acceptation
-#     - intent: affirm
-#     - slot_was_set:
-#       - acceptation_slot: true
-#     - action: utter_plus_redoublement_fr
-#     - action: demander_acceptation
-#     - intent: affirm
-#     - slot_was_set:
-#       - acceptation_slot: true
-#     - action: utter_redoublement_fr
-#     - action: utter_plus_ratt_fr
-#     - action: demander_acceptation
-#     - intent: affirm
-#     - slot_was_set:
-#       - acceptation_slot: true
-#     - action: utter_ratt_fr
-#     - intent: remerciement
-#     - action: utter_remerciement
-#     - intent: bye
-#     - action: utter_bye
-#     - slot_was_set:
-#       - acceptation_slot: false
+  - story: paiement_par_tranche_fr
+    steps:
+    - intent: paiement_par_tranche_fr
+    - action: utter_paiement_par_tranche_fr
+    - action: action_random_topic
+    - intent: affirm
+    - action: action_topic_info
+    
+  - story: stage_fr
+    steps:
+    - intent: stage_fr
+    - action: utter_stage_fr
+    - action: action_random_topic
+    - intent: affirm
+    - action: action_topic_info
+
+  - story: stage_ang
+    steps:
+    - intent: stage_ang
+    - action: utter_stage_ang
+    - action: action_random_topic
+    - intent: affirm
+    - action: action_topic_info
   
+  - story: inscri_ing_info_fr
+    steps:
+    - intent: inscri_ing_info_fr
+    - action: utter_inscri_ing_info_fr
+    - action: action_random_topic
+    - intent: affirm
+    - action: action_topic_info
   
-#   - story:  Inscriptions et coûts
-#     steps:
-# #  - intent: salutation
-# #   - action: utter_salutation
-#       - intent: procedure_inscription_fr
-#       - action: utter_procedure_inscription_fr
-#       - action: utter_plus_info_associe_fr
-#       - action: demander_acceptation
-#       - intent: affirm
-#       - slot_was_set:
-#         - acceptation_slot: true
-#       - action: utter_cout_formation_fr
-#       - action: utter_plus_modalites_paiement_fr
-#       - action: demander_acceptation
-#       - intent: affirm
-#       - slot_was_set:
-#         - acceptation_slot: true
-#       - action: utter_modalites_paiement_fr
-#       - action: utter_plus_paiement_tranche_fr
-#       - action: utter_paiement_par_tranche_fr
-#       - intent: remerciement
-#       - action: utter_remerciement
-#       - intent: bye
-#       - action: utter_bye
-#       - slot_was_set:
-#         - acceptation_slot: false
+  - story: mobilite_internationale_fr
+    steps:
+    - intent: mobilite_internationale_fr
+    - action: utter_mobilite_internationale_fr
+    - action: action_random_topic
+    - intent: affirm
+    - action: action_topic_info
   
+  - story: mobilite_internationale_ang
+    steps:
+    - intent: mobilite_internationale_ang
+    - action: utter_mobilite_internationale_ang
+    - action: action_random_topic
+    - intent: affirm
+    - action: action_topic_info
+    
+  - story: avantage_alternance_fr
+    steps:
+    - intent: avantage_alternance_fr
+    - action: utter_avantage_alternance_fr
+    - action: action_random_topic
+    - intent: affirm
+    - action: action_topic_info 
+
+  - story: avantage_alternance_ang
+    steps:
+    - intent: avantage_alternance_ang
+    - action: utter_avantage_alternance_ang
+    - action: action_random_topic
+    - intent: affirm
+    - action: action_topic_info 
+
+  - story: mobilite_internationale_ang
+    steps:
+    - intent: mobilite_internationale_ang
+    - action: utter_mobilite_internationale_ang
+    - action: action_random_topic
+    - intent: affirm
+    - action: action_topic_info
   
-  
-  
-#   # - story: Informations sur les clubs et les partenaires
-#   #   steps:
-#   #   - intent: salutation
-#   #   - action: utter_salutation
-#   #   - intent: club_fr
-#   #   - action: utter_club_fr
-#   #   - intent: partenaires_fr
-#   #   - action: utter_partenaires_fr
-#   #   - intent: remerciement
-#   #   - action: utter_remerciement
-#   #   - intent: byefr
-#   #   - action: utter_byefr
-
-
-
-
-
-
-
-
-#   # - story: Stages et procédures
-#   #   steps:
-#   #     - intent: salutation
-#   #     - action: utter_salutation
-#   #     - intent: stage
-#   #     - action: utter_stage
-#   #     - intent: procedure_stage_fr
-#   #     - action: utter_procedure_stage_fr
-#   #     - intent: exemples_rapport_stage_fr
-#   #     - action: utter_exemples_rapport_stage_fr
-#   #     - intent: remerciement
-#   #     - action: utter_remerciement
-#   #     - intent: byefr
-#   #     - action: utter_byefr
-
-
-
-#   # - story: Inscription et examens
-#   #   steps:
-#   #     - intent: salutation
-#   #     - action: utter_salutation
-#   #     - intent: inscri_bac_fr
-#   #     - action: utter_inscri_bac_fr
-#   #     - intent: note_fr
-#   #     - action: utter_note_fr
-#   #     - intent: absence_examen_fr
-#   #     - action: utter_absence_examen_fr
-#   #     - intent: ratt_fr
-#   #     - action: utter_ratt_fr
-#   #     - intent: remerciement
-#   #     - action: utter_remerciement
-#   #     - intent: byefr
-#   #     - action: utter_byefr
-
-
-
-#   # - story:   Coût de formation et modalités de paiement
-#   #   steps:
-#   #     - intent: salutation
-#   #     - action: utter_salutation
-#   #     - intent: cout_formation_fr
-#   #     - action: utter_cout_formation_fr
-#   #     - intent: modalites_paiement_fr
-#   #     - action: utter_modalites_paiement_fr
-#   #     - intent: paiement_par_tranche_fr
-#   #     - action: utter_paiement_par_tranche_fr
-#   #     - intent: remerciement
-#   #     - action: utter_remerciement
-#   #     - intent: byefr
-#   #     - action: utter_byefr
-
-
-#   # - story:   Vie étudiante et clubs
-#   #   steps:
-#   #     - intent: salutation
-#   #     - action: utter_salutation
-#   #     - intent: club_fr
-#   #     - action: utter_club_fr
-#   #     - intent: cout_hebergement_fr
-#   #     - action: utter_cout_hebergement_fr
-#   #     - intent: cout_restauration_fr
-#   #     - action: utter_cout_restauration_fr
-#   #     - intent: remerciement
-#   #     - action: utter_remerciement
-#   #     - intent: byefr
-#   #     - action: utter_byefr
-
-
-
-#   # - story:  Admission et pré-inscription
-#   #   steps:
-#   #     - intent: salutation
-#   #     - action: utter_salutation
-#   #     - intent: admission_fr
-#   #     - action: utter_admission_fr
-#   #     - intent: date_preinscription_fr
-#   #     - action: utter_date_preinscription_fr
-#   #     - intent: rentree_fr
-#   #     - action: utter_rentree_fr
-#   #     - intent: remerciement
-#   #     - action: utter_remerciement
-#   #     - intent: byefr
-#   #     - action: utter_byefr
-
-#   # - story: Demande d'informations sur les clubs étudiants
-#   #   steps:
-#   #   - intent: contact
-#   #   - action: utter_contact
-#   #   - intent: club_fr
-#   #   - action: utter_club_info
-
-#   # - story: Demande de précisions sur la procédure d'inscription
-#   #   steps:
-#   #   - intent: admission_fr
-#   #   - action: utter_admission_info
-#   #   - intent: procedure_inscription_fr
-#   #   - action: utter_procedure_inscription
-
-#   # - story: Demande d'informations sur les avantages de l'ESPRIT
-#   #   steps:
-#   #   - intent: avantage_esprit_fr
-#   #   - action: utter_avantage_esprit
-#   #   - intent: avantage_alternance
-#   #   - action: utter_avantage_alternance
-
-#   # - story: Demande de précisions sur le coût des études
-#   #   steps:
-#   #   - intent: cout_formation_fr
-#   #   - action: utter_cout_formation
-#   #   - intent: cout_hebergement_fr
-#   #   - action: utter_cout_hebergement
-#   #   - intent: cout_restauration_fr
-#   #   - action: utter_cout_restauration
-  
-#   # - story: Demande d'informations sur la mobilité internationale
-#   #   steps:
-#   #   - intent: mobilite_internationale
-#   #   - action: utter_mobilite_info
-  
-#   # - story: Demande d'informations sur les modalités de paiement
-#   #   steps:
-#   #   - intent: modalites_paiement_fr
-#   #   - action: utter_modalites_paiement
-  
-#   # - story: Demande d'informations sur la rentrée
-#   #   steps:
-#   #   - intent: rentree_fr
-#   #   - action: utter_rentree_info
-  
-#   # - story: Demande d'informations sur les modalités d'inscription en ingénieur
-#   #   steps:
-#   #   - intent: inscri_ing_info_fr
-#   #   - action: utter_inscri_ing_info
-  
-#   # - story: Demande d'informations sur la procédure de validation des modules
-#   #   steps:
-#   #   - intent: valider_module_fr
-#   #   - action: utter_valider_module_info
-#   #   - intent: conseil_classe_fr
-#   #   - action: utter_conseil_classe
-  
-#   # - story: Demande d'informations sur les réductions pour les étudiants de première année
-#   #   steps:
-#   #   - intent: reduction_premier_fr
-#   #   - action: utter_reduction_premier
-  
-#   # - story: Demande de précisions sur les conditions d'obtention du diplôme
-#   #   steps:
-#   #   - intent: obtention_diplome_fr
-#   #   - action: utter_obtention_diplome
-#   #   - intent: double_diplome
-#   #   - action: utter_double_diplome
-  
-#   # - story: Demande d'informations sur les stages
-#   #   steps:
-#   #   - intent: stage
-#   #   - action: utter_stage_info
-#   #   - intent: exemples_rapport_stage_fr
-#   #   - action: utter_exemples_rapport_stage
-#   #   - intent: procedure_stage_fr
-#   #   - action: utter_procedure_stage
-  
-#   # - story: Demande d'informations sur les modalités de paiement par tranche
-#   #   steps:
-#   #   - intent: paiement_par_tranche_fr
-#   #   - action: utter_paiement_par_tranche_info
-  
-#   # - story: Demande de précisions sur la reconnaissance des diplômes
-#   #   steps:
-#   #   - intent: reconnaissance_diplome_fr
-#   #   - action: utter_reconnaissance_diplome
-  
-  
-  
-#   # - story: admission process
-#   #   steps:
-#   #   - intent: salutation
-#   #   - action: utter_greet
-#   #   - intent: admission_fr
-#   #   - action: utter_admission_details
-#   #   - intent: inscri_bac_fr
-#   #   - action: utter_bac_details
-#   #   - intent: B2_fr
-#   #   - action: utter_B2_details
-#   #   - intent: mobilite_internationale
-#   #   - action: utter_mobilite_details
-#   #   - intent: avantage_alternance
-#   #   - action: utter_alternance_details
-#   #   - intent: concours_admission_fr
-#   #   - action: utter_concours_details
-#   #   - intent: modalites_paiement_fr
-#   #   - action: utter_paiement_details
-#   #   - intent: date_preinscription_fr
-#   #   - action: utter_preinscription_date
-#   #   - intent: remerciement
-#   #   - action: utter_goodbye
-  
-#   # - story: course information
-#   #   steps:
-#   #   - intent: salutation
-#   #   - action: utter_greet
-#   #   - intent: contact
-#   #   - action: utter_contact_info
-#   #   - intent: courssoir
-#   #   - action: utter_course_details
-#   #   - intent: modalite_fr
-#   #   - action: utter_modalite_details
-#   #   - intent: inscri_ing_info_fr
-#   #   - action: utter_inscri_ing_details
-#   #   - intent: licence_info_fr
-#   #   - action: utter_licence_details
-#   #   - intent: alternance_fr
-#   #   - action: utter_alternance_details
-#   #   - intent: avantage_esprit_fr
-#   #   - action: utter_avantage_esprit
-#   #   - intent: info_generale_esprit
-#   #   - action: utter_info_generale_esprit
-#   #   - intent: club_fr
-#   #   - action: utter_club_details
-#   #   - intent: cout_hebergement_fr
-#   #   - action: utter_cout_hebergement
-#   #   - intent: cout_restauration_fr
-#   #   - action: utter_cout_restauration
-#   #   - intent: remerciement
-#   #   - action: utter_goodbye
-  
-#   # - story: international student enrollment
-#   #   steps:
-#   #   - intent: salutation
-#   #   - action: utter_greet
-#   #   - intent: mobilite_internationale
-#   #   - action: utter_mobilite_details
-#   #   - intent: avantage_alternance
-#   #   - action: utter_alternance_details
-#   #   - intent: admission_fr
-#   #   - action: utter_admission_details
-#   #   - intent: inscription_info
-#   #   - action: utter_inscription_info
-#   #   - intent: contact
-#   #   - action: utter_contact_info
-#   #   - intent: reduction_premier_fr
-#   #   - action: utter_reduction_details
-#   #   - intent: procedure_inscription_fr
-#   #   - action: utter_procedure_details
-#   #   - intent: partenaires_fr
-#   #   - action: utter_partenaires_details
-#   #   - intent: remerciement
-#   #   - action: utter_goodbye
-  
-#   # - story: payment options
-#   #   steps:
-#   #   - intent: salutation
-#   #   - action: utter_greet
-#   #   - intent: modalites_paiement_fr
-#   #   - action: utter_paiement_details
-#   #   - intent: paiement_par_tranche_fr
-#   #   - action: utter_paiement_par_tranche
-#   #   - intent: reduction_premier_fr
-#   #   - action: utter_reduction_details
-#   #   - intent: cout_formation_fr
-#   #   - action: utter_cout_formation
-#   #   - intent: date_res_fr
-#   #   - action: utter_date_reservation
-#   #   - intent: inscription_info
-#   #   - action: utter_inscription_info
-#   #   - intent: remerciement
-#   #   - action: utter_goodbye
-
-
-
-
-#   # - story: Salutation et informations générales
-#   #   steps:
-#   #   - intent: salutation
-#   #   - action: utter_salutation
-#   #   - intent: info_generale_esprit
-#   #   # définir les slots dans la même étape que l'intent
-#   #   # pour pouvoir les utiliser dans l'étape suivante
-#   #   - slot_was_set:
-#   #       - action_name: utter_info_generale_esprit
-#   #       - message: "Voudriez-vous savoir plus sur les avantages d'ESPRIT?"
-#   #   # corriger l'indentation de la section steps
-#   #   - steps:
-#   #     - action: demander_acceptation
-    # - intent: affirm
-    # - slot_was_set:
-    #   - acceptation_slot: true
-#   #     # mettre les sections intent et action sur le même niveau
-#   #     - action: utter_avantage_esprit_fr
-#   #     - intent: refuser
-#   #     # mettre les sections intent et action sur le même niveau
-#   #     - action: utter_byefr
-
-
-#   # - story: Inscription et coût de formation
-#   #   steps:
-#   #   - intent: procedure_inscription_fr
-#   #     action: utter_procedure_inscription_fr
-#   #   - intent: cout_formation_fr
-#   #     action: action_ask_nationality
-#   #   - intent: nationality
-#   #     entities:
-#   #     - nationality: "Tunisien"
-#   #     - action: action_get_price_tunisian
-#   #   - intent: nationality
-#   #     entities:
-#   #     - nationality: "Etranger"
-#   #     - action: action_get_price_foreigner
-#   #   - action: action_concatenate_message
-#   #   - intent: modalites_paiement_fr
-#   #     action: utter_modalites_paiement_fr
-#   #   - intent: paiement_par_tranche_fr
-#   #     action: utter_paiement_par_tranche_fr
-#   #   - intent: byefr
-#   #     action: utter_byefr
-

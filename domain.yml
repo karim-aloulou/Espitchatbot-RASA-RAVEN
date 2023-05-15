@@ -17,25 +17,11 @@ actions:
   - action_rentree_fr
   - action_random_topic
   - action_topic_info
+  - action_raven_generate_text
 
-  # - action_mode
-  # - action_ask_nationality
-  # - action_get_price_tunisian
-  # - action_get_price_foreigner
-  # - utter_choose_mode
-  # - action_set_mode_pro
-  # - action_choose_mode
-  # - action_greet_and_ask_mode
-  # - action_random_topic
-  # - action_topic_info
-
-  # - action_concatenate_message
-  # - action_verifier_reponse
-  # - action_raven_generate_text
 intents:
 - refus
 - accepter
-- refuser
 - greet
 - thanks
 - bye
@@ -63,7 +49,6 @@ intents:
 - courssoir_ang
 - cout_hebergement_ang
 - cout_restauration_ang
-- pcr_ang
 - classe_ang
 - date_res_ang
 - valider_module_ang
@@ -83,15 +68,10 @@ intents:
 - annulation_inscription_ang
 - regime_etude_ang
 - mobilite_internationale_ang
-- photo_foyer_ang
-- photo_foyer_externe_ang
-- photo_foyer_interne_ang
 - filiere_ang
-- lien_doc_ang
-- lien_doc_fr
-- lien_video_ang
 - salutation
 - remerciement
+- remerciement_neg
 - byefr
 - contact
 - courssoir_fr
@@ -121,30 +101,24 @@ intents:
 - club_fr
 - cout_hebergement_fr
 - cout_restauration_fr
-- pcr_fr
-- classe_1ere_fr
 - date_res_fr
 - valider_module_fr
 - admis_fr
 - carte_amen_fr
 - double_correction_fr
-- confirmation_option_fr
+- confirmation_option_fr ### je suis
 - conseil_classe_fr
 - credit_fr
 - exemples_rapport_stage_fr
 - procedure_stage_fr
-- obtention_diplome_fr
+- obtention_diplome_fr 
 - absence_examen_fr
 - redoublement_fr
 - ratt_fr
 - annulation_inscription_fr
 - regime_etude_fr
-- photo_foyer_fr
-- photo_foyer_externe_fr
-- photo_foyer_interne_fr
 - filiere_fr
 - applicabilite_formation_fr
-- reconnaissance_diplome_fr
 - reduction_premier_fr
 - administration_fr
 - partenaires_fr
@@ -180,8 +154,7 @@ intents:
 - club_ar
 - cout_restauration_ar
 - cout_hebergement_ar
-- pcr_ar
-- classe_1ere_ar
+- classe_ar
 - date_res_ar
 - valider_module_ar
 - admis_ar
@@ -198,9 +171,6 @@ intents:
 - ratt_ar
 - annulation_inscription_ar
 - regime_etude_ar
-- photo_foyer_ar
-- photo_foyer_externe_ar
-- photo_foyer_interne_ar
 - filiere_ar
 - applicabilite_formation_ar
 - reconnaissance_diplome_ar
@@ -231,6 +201,8 @@ intents:
 - types_des_couts_ang
 - rentree_niveau_fr
 - rentree_niveau_ang
+- reconnaissance_diplome_fr
+
 
 
 # - raven
@@ -244,7 +216,7 @@ responses:
  utter_price_tunisian:
   - text: "Le prix d'inscription pour les étudiants tunisiens est de 1000 DT."
  utter_price_foreigner:
-  - text: "Le prix d'inscription pour les étudiants étrangers est de 3000 DT."
+  - text: "Les frais scolaires s'lèvent à 3000 euros pour les internationaux."
  utter_greet:
   - text: "Hi there\n\nHow can I help you?"
  utter_salutation:
@@ -255,6 +227,9 @@ responses:
   - text: "welcome"
  utter_remerciement:
   - text: "de rien"
+ utter_remerciement_neg:
+  - text: "Je suis désolé, vous pouvez consultez l'administration directement pour plus d'infomations : 
+          📞 (216) 70 250 000\n📧 contact@esprit.tn"
  utter_bye:
   - text: "bye"
  utter_byefr:
@@ -279,23 +254,22 @@ responses:
             - Check payment"
 
  utter_courssoir_fr:
-  - text: "ESPRIT- Cours du soir offre des formations d’ingénieur destinées aux professionnels, 
-académiques et demandeurs d’emploi, titulaires d’un diplôme de licence ou plus
-\nLa durée de la formation est 4 années d'études pour un accès avec une licence et 3 années pour un accès avec un master. 
- \n La charge horaire est hebdomadaire est de 14h  ( du Lundi au Vendredi de 18h30 à 20h30 et le Samedi de 14h à 18h) et ceci durant 10 mois/an."
+  - text: "ESPRIT- Cours du soir offre des formations d’ingénieur destinées aux professionnels, académiques et demandeurs d’emploi, titulaires d’un diplôme de licence ou plus
+          \nLa durée de la formation est 4 années d'études pour un accès avec une licence et 3 années pour un accès avec un master. 
+       \n La charge horaire est hebdomadaire est de 14h  ( du Lundi au Vendredi de 18h30 à 20h30 et le Samedi de 14h à 18h) et ceci durant 10 mois/an."
 
  utter_mobilite_internationale_fr:
   - text: "Esprit offre aux étudiants en formation d’ingénieurs des opportunités de
-semestre d'échange ou bien double-diplôme 🌍 \n\nPour plus d'information: https://esprit.tn/international/experience"
+          semestre d'échange ou bien double-diplôme 🌍 \n\nPour plus d'information: https://esprit.tn/international/experience"
 
  utter_mobilite_internationale_ang:
   - text: "Esprit offers to engineering students opportunities for an exchange semester or a double degree 🌍 \n\nFor more informations: https://esprit.tn/international/experience"
 
  utter_avantage_alternance_fr:
   - text: "Parmi les avantages de la formation en alternance:\n
-  🔹 Une formation de 4 années, alternée entre ESPRIT et l’entreprise partenaire\n
-  🔹 Un contrat d’embauche avec l’entreprise partenaire et des avantages conséquents\n
-  🔹 Une prise en charge des frais de formation par l’entreprise partenaire" 
+          🔹 Une formation de 4 années, alternée entre ESPRIT et l’entreprise partenaire\n
+                🔹 Un contrat d’embauche avec l’entreprise partenaire et des avantages conséquents\n
+                  🔹 Une prise en charge des frais de formation par l’entreprise partenaire" 
 
  utter_contact_fr:
   - text: "📞 (216) 70 250 000\n📧 contact@esprit.tn" 
@@ -314,7 +288,7 @@ semestre d'échange ou bien double-diplôme 🌍 \n\nPour plus d'information: ht
           \n\n🔹 3B: For the student having 3-years diploma in sciences or technologies (diploma other than computer science)"
 
  utter_concours_admission_fr:
-  - text: "Pour la rentrée universitaire 2020/2021, le concours d’admission se déroulera entièrement en ligne.\n
+  - text: "Pour la rentrée universitaire 2023/2024, le concours d’admission se déroulera entièrement en ligne.\n
           \n1. Réunion d'accueil : réunion d’accueil animée par le directeur général adjoint via l’application Google
           Meet durant laquelle il y aura une présentation de l’école suivie d’une séance de questions/réponses.\n
           \n2. Entretien d’admission : entretien oral de motivation d’une durée de 20 min devant une commission en ligne 
@@ -323,10 +297,10 @@ semestre d'échange ou bien double-diplôme 🌍 \n\nPour plus d'information: ht
           en anglais)"
 
  utter_reclamation_confirmation_admission_fr:
-  - text: "Vous pouvez envoyer votre réclamation au mail : 📧 admission2021@esprit.tn"
+  - text: "Vous pouvez envoyer votre réclamation au mail : 📧 admission2023@esprit.tn"
 
  utter_reclamation_confirmation_admission_ang:
-  - text: "Please send your claim to this email: 📧 admission2021@esprit.tn"
+  - text: "Please send your claim to this email: 📧 admission2023@esprit.tn"
 
 
  utter_date_preinscription_fr:
@@ -340,28 +314,28 @@ semestre d'échange ou bien double-diplôme 🌍 \n\nPour plus d'information: ht
  
  utter_double_diplome_fr:
   - text: " Double-diplôme (2 ans, DD):\n
-Refaire la 4ème année! Perdre une année mais gagner un diplôme!\n
-♣ Imposée par les lois en vigueur (CTI)\n
-Mobilités des étudiants, formation en mastère\n
-.Faire M1 puis M2\n
-.Faire directement M2\n
-.Double-diplôme: Mastère (école partenaire)+ Ingénieur(Esprit)"
+            Refaire la 4ème année! Perdre une année mais gagner un diplôme!\n
+            ♣ Imposée par les lois en vigueur (CTI)\n
+            Mobilités des étudiants, formation en mastère\n
+            .Faire M1 puis M2\n
+            .Faire directement M2\n
+            .Double-diplôme: Mastère (école partenaire)+ Ingénieur(Esprit)"
 
  utter_paiement_par_tranche_fr:
    - text: "Il est possible de payer en 2 tranches: 1ere tranche à l'inscription er la 2eme tranche avant le 15/01"
 
  utter_cout_formation_fr:
   - text: "💲 Coût total de la formation 💲
-  \n7350 DT  pour les étudiants Tunisiens (cours du jour)
-  \n6200DT aux étudiants non pris en charge par une entreprise
-  \n7200 DT pour les étudiants tunisiens (cours de soir) 
-  \n3000 € pour les étudiants étrangers." 
+          \n8100 DT  pour les étudiants Tunisiens (cours du jour)
+          \n7700DT pour étudiants non pris en charge par une entreprise
+          \n6700 DT pour les étudiants tunisiens (cours de soir) 
+          \n3000 € pour les étudiants étrangers." 
 
  utter_cout_formation_ang:
   - text: "💲 The tuition fee 💲
-  \n7350 DT for Tunisian students (morning class)
-  \n7200 DT for Tunisian students (evening class) 
-  \n3000 € for foreign students.."
+          \n8100 DT for Tunisian students (morning class)
+          \n6700 DT for Tunisian students (evening class) 
+          \n3000 € for foreign students."
 
 
  utter_B2_ang: 
@@ -370,36 +344,41 @@ Mobilités des étudiants, formation en mastère\n
 
 
  utter_B2_fr: 
-   - text: "Vous pouvez vérifier votre niveau sur notre site Esprit; Vous choisissez 'Resultat' après 'Notes langues'"
+   - text: "Le tests B2 en français et en Anglais peuvent être passés en 3eme et en 5eme années en ligne ou en présentiel.\n
+      Pour réussir le B2 il faut réussir le test oral et écrit\n 
+      Vous pouvez vérifier votre niveau sur notre site Esprit; Vous choisissez 'Resultat' Ensuite 'Notes langues'"
 
  utter_rentree_fr:
-   - text: "👩‍🏫 Rentrée universitaire : 2021 - 2022 👩‍🏫 \n
-🔹 l'activité APP0 se tiendra au cours de la semaine du 6 septembre \n
-🔹 la reprise des cours pour les anciens étudiants aura lieu à partir du 13 septembre \n
-Pour plus d'informations : https://esprit.tn/admission/esprit-ingenieur"
+   - text: "👩‍🏫 Rentrée universitaire : 2023 - 2024 👩‍🏫 \n
+      🔹 l'activité APP0 se tiendra au cours de la semaine du 6 septembre \n
+      🔹 la reprise des cours pour les anciens étudiants aura lieu à partir du 13 septembre \n
+      Pour plus d'informations : https://esprit.tn/admission/esprit-ingenieur"
 
 
  utter_rentree_ang:
-   - text: "👩‍🏫 Start of the academic year: 2021 - 2022 👩‍🏫\n
-🔹 APP0 activity will be held during the week of September 6 \n
-🔹 the resumption of classes for former students will take place from September 13 \n
-For more information: https://prit.tn/admission/ esprit-ingenieur "
+   - text: "👩‍🏫 Start of the academic year: 2023 - 2024 👩‍🏫\n
+      🔹 APP0 activity will be held during the week of September 6 \n
+      🔹 the resumption of classes for former students will take place from September 13 \n
+      For more information: https://prit.tn/admission/ esprit-ingenieur "
 
  utter_modalite_fr:
-   - text: "Nous reprendrons nos programmes d'études de l'A.U. 21-22 en mode 50% FAD/ 50% FAE. (FAD ; Formation à distance/ FAE; Formation à l'école)"
+   - text: "Nous reprendrons nos programmes d'études de l'A.U. 23-24 en mode 20% FAD/ 80% FAE. (FAD ; Formation à distance/ FAE; Formation à l'école)"
  utter_modalite_ang:
-   - text: "We will resume our 50% FAD / 50% FAE study programs. (FAD; Distance learning / FAE; learning at School )"
+   - text: "We will resume our study programs for the A.Y. 23-24 in a 20% distance learning/ 80% in-school learning mode."
  utter_place_fr:
-   - text: "Pour les classes de 5éme ingénieur, les cours seront à Charguiya."
+   - text: "Pour les classes de 5éme ingénieur, les cours seront à Charguiya.\n
+        Pour les classes 1ére années, 2éme années, 3éme années, 4éme années, les cours seront à Ghazela aux blocs A,B,C,D,E,G,H,IJK,L,M\n"
  utter_place_ang:
-   - text: "For the 5th engineering classes, the courses will be at Charguiya."
+   - text: "For the 5th engineering classes, the courses will be at Charguiya.
+        For 1st, 2nd, 3rd, and 4th-year classes, the courses will be held in Ghazela at blocks A, B, C, D, E, G, H, IJK, L, M.\n"
  utter_inscri_ing_info_fr:
-   - text: "Oui vous pouvez suivre un cursus d'ingénieur informatique et vous serez inscrit en 3B. "   
+   - text: "Si vous avec fait 3 ans dans un autre domaine vous pouvez suivre un cursus d'ingénieur informatique et vous serez inscrit en 3B. "   
+
  utter_inscri_ing_info_ang:
    - text: "Yes, you can take a computer engineering course and you will be enrolled in 3B."
 
  utter_licence_info_fr:
-   - text: "Vous serais affecté en 3A."    
+   - text: "Si vous provenez d'une licence en informatique, Vous serez affecté en 3A."  
  utter_licence_info_ang:
    - text: "You would be assigned to 3A."   
  utter_alternance_fr:
@@ -411,31 +390,24 @@ For more information: https://prit.tn/admission/ esprit-ingenieur "
 
  utter_admission_fr:
    - text: "Vous pouvez contacter 📞 70 250 000 ou par mail ; 📧 contact@esprit.tn \n
-\n Vous pouvez contacter le responsable vie étudiante ;M.SAIDI Zied ; 92 234 330 ou lui envoyer un mail sur zied.saidi@esprit.tn"
+        \n Vous pouvez contacter le responsable vie étudiante ;M.SAIDI Zied ; 92 234 330 ou lui envoyer un mail sur zied.saidi@esprit.tn"
 
  utter_admission_ang:
    - text: "You can contact 📞 70 250 000 or by email; 📧 contact@ esprit.tn \n
-\n You can contact the student life manager; Mrs.SAIDI Zied; 92 234 330 or send him an email on zied.saidi@ esprit.tn"
+        \n You can contact the student life manager; Mrs.SAIDI Zied; 92 234 330 or send him an email on zied.saidi@ esprit.tn"
  
  utter_inscri_bac_fr:
-   - text: "En 1ère année ,les titulaires d’un baccalauréat scientifique, économique, technique ou équivalent peuvent s'inscrire à Esprit."
+   - text: "En 1ère année ,les titulaires d’un baccalauréat scientifique, économique, technique ou équivalent peuvent s'inscrire à Esprit.\n
+        les moyennes et le niveau ne sont pas pris en considération mais vous serez amené(e)s à passer un passer un interview (test psycotechnique) pour rejoindre Esprit.\n "
 
  utter_inscri_bac_ang:
    - text: "In the 1st year, holders of a scientific, economic, technical or equivalent baccalaureate can register in Esprit.."
 
  utter_stage_fr:
    - text: "Stage de formation humaine et sociale d'une durée de 4 semaines ,durant l'été lors du passage de la 1ère à la 2ème année.\n 
-Stage d'immersion en entreprise d'une durée de 6 semaines , pendant l'été lors du passage de la 3ème à la  4ème année.\n
-Stage ingénieur d'une durée de 8 semaines, pendant l'été lors du passage de la 4ème à la 5ème année."
+      Stage d'immersion en entreprise d'une durée de 6 semaines , pendant l'été lors du passage de la 3ème à la  4ème année.\n
+      Stage ingénieur d'une durée de 8 semaines, pendant l'été lors du passage de la 4ème à la 5ème année."
 
-# utter_fields_fr:
-#   - text: "Veuillez choisissez"
-
-
-# utter_blogs_fr:
-#   - text: https://esprit.tn/formation/esprit-ingenieur/specialites-et-options
-# utter_video_fr:
-#   - text: https://www.youtube.com/watch?v=jc_88Dlwfm8&list=PL1p0JPMoUm700GiwDZPTEIHNXUPB2E-Mi
 
 ###################################new########################                                                                                                                                                                          
  utter_club_fr:
@@ -460,6 +432,8 @@ Stage ingénieur d'une durée de 8 semaines, pendant l'été lors du passage de 
         - ESPRIT Club Internationaux\n
         - EMUN\n
         - ESPRIT Club engineers Spark\n\n
+        - Deep Flow IA club\n\n
+
         pour plus d'informations
         https://esprit.tn/vie-etudiante/vie-campus/clubs"
   
@@ -486,17 +460,19 @@ Stage ingénieur d'une durée de 8 semaines, pendant l'été lors du passage de 
         - ESPRIT Club Internationaux\n
         - EMUN\n
         - ESPRIT Club engineers Spark\n\n
+        - Deep Flow IA club\n\n
+
         for more information check this link
         https://esprit.tn/vie-etudiante/vie-campus/clubs"
   
  utter_avantage_alternance_ang:
    - text: "Parmi les avantages de la formation en alternance:\n
-   🔹 Courses of 4 years alternating between ESPRIT and the partner company\n
-   🔹 A hiring contract with the partner company\n
-   🔹 Tuition fees will be payed by the partner company " 
+        🔹 Courses of 4 years alternating between ESPRIT and the partner company\n
+        🔹 A hiring contract with the partner company\n
+        🔹 Tuition fees will be payed by the partner company " 
 
  utter_concours_admission_ang:
-   - text: "For the 2020/2021 academic year, the entrance examination will be conducted entirely online.\n
+   - text: "For the 2023/2024 academic year, the entrance examination will be conducted entirely online.\n
           \n1. Welcome meeting: welcome meeting moderated by the director using Google Meet application
           during which there will be a presentation of the school followed by a question and answer session.\n
           \n2. Admission interview: motivational oral interview lasting 20 minutes in front of an online committee
@@ -506,19 +482,27 @@ Stage ingénieur d'une durée de 8 semaines, pendant l'été lors du passage de 
 
  utter_courssoir_ang:
    - text: "ESPRIT- Esprit Evening Course offers engineering training for professionals,
-academics and job seekers, holders of a bachelor's degree or more
-\n The duration of the training is 4 years for students having 3-years diploma and 4 years for the students having a master degree.
-  \n Students study 14 hours weekly (Monday to Friday from 6.30 p.m. to 8.30 p.m. and Saturday from 2 p.m. to 6 p.m.) and this for 10 months / year. "
+        academics and job seekers, holders of a bachelor's degree or more
+        \n The duration of the training is 4 years for students having 3-years diploma and 4 years for the students having a master degree.
+          \n Students study 14 hours weekly (Monday to Friday from 6.30 p.m. to 8.30 p.m. and Saturday from 2 p.m. to 6 p.m.) and this for 10 months / year. "
 
  utter_note_ang: 
    - text: "You can check your grades via Esprit website"
 
  utter_note_fr: 
-   - text: "Vous pouvez consulter vos notes sur votre espace étudiant sur le site d'Esprit"
+   - text: "L’admission à la session principale exige les conditions suivantes :\n
+        ▪ La moyenne générale doit être supérieure ou égale à 10/20.\n
+        ▪ Le nombre d’ECTS acquis pour l’année en cours doit être égal à 60 ECTS.\n
+        ▪ Le nombre d’ECTS antérieurs cumulés non validés doit être nul.\n
+        L’admission à la session de contrôle exige les conditions suivantes :\n
+        ▪ La moyenne générale doit être supérieure ou égale à 10/20.\n
+        ▪ Le nombre d’ECTS antérieurs cumulés non validés doit être inférieur ou égal à 15.\n
+        Les élèves, n’ayant pas satisfait les conditions d’admission en année supérieure précitées seront
+        déclarés redoublants.\n"
 
 
  utter_cout_restauration_fr:
-   - text: "               🥗Frais Restauration 2021/2022 🥗\n
+   - text: "               🥗Frais Restauration 2023/2024 🥗\n
             Pension complète (petit déjeuner, déjeuner et diner) \n
             ⭐ 500 DT par mois \n
             ⭐ 1 900 DT par tranche   \n
@@ -533,17 +517,17 @@ academics and job seekers, holders of a bachelor's degree or more
             ⭐1 730 DT par an\n"
 
  utter_cout_hebergement_fr:
-   - text: "          🏫  Frais Hébergement 2021/2022  🏫 \n
-⭐ Chambre double 2400 DT \n
-⭐ Appartement S1 pour 4 personnes  2500 DT\n"
+   - text: "          🏫  Frais Hébergement 2023/2024  🏫 \n
+      ⭐ Chambre double 2400 DT \n
+      ⭐ Appartement S1 pour 4 personnes  2500 DT\n"
 
  utter_cout_hebergement_ang:
-   - text: "          🏫  Accommodation Fees 2021/2022  🏫 \n
-⭐ Double room 2400 DT \n
-⭐ Apartment for 4 people  2500 DT\n"
+   - text: "          🏫  Accommodation Fees  2023/2024  🏫 \n
+        ⭐ Double room 2400 DT \n
+        ⭐ Apartment for 4 people  2500 DT\n"
 
  utter_cout_restauration_ang:
-   - text: "               🥗 Catering costs 2021/2022 🥗\n
+   - text: "               🥗 Catering costs  2023/2024 🥗\n
             Full board (breakfast, lunch and dinner) \n
             ⭐ 500 DT per month \n
             ⭐ 1 900 DT per installment   \n
@@ -557,17 +541,17 @@ academics and job seekers, holders of a bachelor's degree or more
             ⭐865 DT per installment \n  
             ⭐1 730 DT per year\n"
 
- utter_pcr_fr: 
-   - text: "Vous devez soumettre votre dossier qui contient le test PCR à l'école, au Service élève"
+#  utter_pcr_fr: 
+#    - text: "Vous devez soumettre votre dossier qui contient le test PCR à l'école, au Service élève"
 
- utter_pcr_ang: 
-   - text: "You must submit your file which contains the PCR test at the school, at the Student Service"
+#  utter_pcr_ang: 
+#    - text: "You must submit your file which contains the PCR test at the school, at the Student Service"
 
  utter_classe_fr: 
-   - text: "Vous aurez un email de la part de l'administration les prochains délais. "
+   - text: "Vous aurez un email de la part de l'administration pour savoir votre classe. "
 
  utter_classe_ang: 
-   - text: "You will receive an email from the administration."
+   - text: "You will receive an email from the administration to about your class."
 
 
 
@@ -579,65 +563,65 @@ academics and job seekers, holders of a bachelor's degree or more
 
  utter_valider_module_fr: 
    - text: "En session principale ou en session de rattrapage, une  unité d’enseignement UE est validée avec une moyenne supérieure ou
-égale à 08/20 si la moyenne générale est supérieure ou égale à 10/20, exceptés les projets et les langues
-qui ne sont validés qu’avec une moyenne supérieure ou égale à 10/20. \n \n
-Une UE est validée avec une moyenne supérieure ou égale à 10/20 si la moyenne générale est
-inférieure à 10/20."
+      égale à 08/20 si la moyenne générale est supérieure ou égale à 10/20, exceptés les projets et les langues
+      qui ne sont validés qu’avec une moyenne supérieure ou égale à 10/20. \n \n
+      Une UE est validée avec une moyenne supérieure ou égale à 10/20 si la moyenne générale est
+      inférieure à 10/20."
 
  utter_valider_module_ang: 
    - text: "In the main session or in a remedial session, a teaching unit is validated with a higher average or
-equal to 08/20 if the general average is greater than or equal to 10/20, except for projects and languages
-which are only validated with an average greater than or equal to 10/20. \n \n
-A teaching unit is validated with an average greater than or equal to 10/20 if the general average is
-less than 10/20."
+        equal to 08/20 if the general average is greater than or equal to 10/20, except for projects and languages
+        which are only validated with an average greater than or equal to 10/20. \n \n
+        A teaching unit is validated with an average greater than or equal to 10/20 if the general average is
+        less than 10/20."
 
 
  utter_admis_fr: 
    - text: "Les règles de passage en année supérieure sont résumées comme suit : \n 
-   ⭐ Pour la session principale:
-        • Moyenne générale >= 10/20  \n
-        • Nombre de crédits acquis pour l’année en cours = 60 ECTS.   \n
-        • Déficit cumulé = 0 ECTS \n \n
-    ⭐ Pour la session de rattrapage:
-        • Moyenne générale >= 10/20   \n
-        • Déficit cumulé <= 15 ECTS (Il doit être égal à 0 ECTS si l'élève est en 5ème année) \n \n
-    Les élèves, n’ayant pas satisfait les conditions précitées d’admission en année supérieure, sont
-considérés comme des cas spécifiques qui seront soumis au « Conseil Annuel » pour délibération. Il
-s’agit précisément des élèves ayant obtenu après rattrapage une moyenne générale supérieure ou
-égale à 10/20 et ayant totalisé un déficit cumulé supérieur à 15 ECTS, et des élèves n’ayant pas obtenu
-la moyenne générale au terme de la session de rattrapage. Le « Conseil Annuel » peut prononcer pour
-ces cassoit l’admission en année supérieure avec ou sans déficit,soit le redoublement,soit l'exclusion."
+        ⭐ Pour la session principale:
+              • Moyenne générale >= 10/20  \n
+              • Nombre de crédits acquis pour l’année en cours = 60 ECTS.   \n
+              • Déficit cumulé = 0 ECTS \n \n
+          ⭐ Pour la session de rattrapage:
+              • Moyenne générale >= 10/20   \n
+              • Déficit cumulé <= 15 ECTS (Il doit être égal à 0 ECTS si l'élève est en 5ème année) \n \n
+          Les élèves, n’ayant pas satisfait les conditions précitées d’admission en année supérieure, sont
+      considérés comme des cas spécifiques qui seront soumis au « Conseil Annuel » pour délibération. Il
+      s’agit précisément des élèves ayant obtenu après rattrapage une moyenne générale supérieure ou
+      égale à 10/20 et ayant totalisé un déficit cumulé supérieur à 15 ECTS, et des élèves n’ayant pas obtenu
+      la moyenne générale au terme de la session de rattrapage. Le « Conseil Annuel » peut prononcer pour
+      ces cassoit l’admission en année supérieure avec ou sans déficit,soit le redoublement,soit l'exclusion."
 
 
 
  utter_admis_ang: 
    - text: "The rules for passing to a next year are summarized as follows: \n
-   ⭐ For the main session:\n
-        • General average> = 10/20 \n
-        • Number of credits acquired for the current year = 60 ECTS. \n
-        • Cumulative deficit = 0 ECTS \n 
-   ⭐ For the retake session:\n
-        • General average> = 10/20 \n
-        • Cumulative deficit <= 15 ECTS (It must be equal to 0 ECTS if the student is in 4th year) \n \n
-    Students who have not met the aforementioned conditions for admission to the next year are
-considered as specific cases which will be submitted to the 'Annual Council' for deliberation. It's about students who
- obtained after retake session a higher general average or equal to 10/20 and having totaled a cumulative deficit 
- greater than 15 ECTS, and students not having obtained the general average at the end of the remedial session. 
- The 'Annual Council' can pronounce for these disqualify admission to a higher year with or without deficit, 
- either repetition or exclusion." 
+          ⭐ For the main session:\n
+                • General average> = 10/20 \n
+                • Number of credits acquired for the current year = 60 ECTS. \n
+                • Cumulative deficit = 0 ECTS \n 
+          ⭐ For the retake session:\n
+                • General average> = 10/20 \n
+                • Cumulative deficit <= 15 ECTS (It must be equal to 0 ECTS if the student is in 4th year) \n \n
+            Students who have not met the aforementioned conditions for admission to the next year are
+        considered as specific cases which will be submitted to the 'Annual Council' for deliberation. It's about students who
+        obtained after retake session a higher general average or equal to 10/20 and having totaled a cumulative deficit 
+        greater than 15 ECTS, and students not having obtained the general average at the end of the remedial session. 
+        The 'Annual Council' can pronounce for these disqualify admission to a higher year with or without deficit, 
+        either repetition or exclusion." 
 
  utter_carte_amen_fr: 
    - text: "Amen Bank vous offre la gratuité pour le Pack AMEN First Bank 'First Fees'! \n \n
-    ⭐ 0 frais de tenue de compte. \n
-    ⭐ 0 frais Mobile Banking.   \n
-    ⭐ 0 frais de la carte bancaire 'SESAME'.
-    "
+        ⭐ 0 frais de tenue de compte. \n
+        ⭐ 0 frais Mobile Banking.   \n
+        ⭐ 0 frais de la carte bancaire 'SESAME'.
+        "
 
  utter_carte_amen_ang: 
    - text: "Amen Bank offers you free access to the AMEN First Bank 'First Fees' Pack! \n \n
-    ⭐ 0 account maintenance fees.  \n 
-    ⭐ 0 Mobile Banking fees.  \n
-    ⭐ 0 charges for the 'SESAME' bank card."
+          ⭐ 0 account maintenance fees.  \n 
+          ⭐ 0 Mobile Banking fees.  \n
+          ⭐ 0 charges for the 'SESAME' bank card."
 
  utter_double_correction_ang:
    - text: "You must access your intranet space and make a  grade complaint request"
@@ -645,7 +629,7 @@ considered as specific cases which will be submitted to the 'Annual Council' for
   - text: "At the beginning of August"
  utter_conseil_classe_ang:
    - text: "⭐Main session: end of June\n
-⭐Control session: mid July"
+          ⭐Control session: mid July"
  utter_credit_ang:
    - text: "You must access your intranet space and check the list of credits"
  utter_exemples_rapport_stage_ang:
@@ -653,266 +637,221 @@ considered as specific cases which will be submitted to the 'Annual Council' for
  utter_procedure_stage_ang:
    - text: "You must consult the internship department"
  utter_double_correction_fr:
-   - text: "Vous devez accéder à votre espace intranet et faire une demande de réclamation de note"
+   - text: "Vous pouvez faire une double correction en accédant à votre espace intranet et faire une demande de réclamation de note"
  utter_confirmation_option_fr:
-   - text: "Au début d'août"
+   - text: "Vous recevrez la confirmation du choix de votre option au début d'août."
  utter_conseil_classe_fr :
    - text: "⭐Session principale : fin juin\n
-⭐Session contrôle : mi-juillet"
+            ⭐Session contrôle : mi-juillet"
  utter_credit_fr:
-   - text: "Vous devez accéder à votre espace intranet et consulter la liste des crédits"
+   - text: "Vous devez accéder à votre espace étudiant et consulter la liste des crédits et vous avez 60 ECTS / an."
  utter_exemples_rapport_stage_fr:
-   - text: "Malheureusement, Esprit n'offre pas ce service"
+   - text: "Malheureusement, Esprit ne propose pas des exemples de rapport de stage."
  utter_procedure_stage_fr:
-   - text: "Vous devez consulter le département du stage"
+   - text: "Pour savoir les procédures de vous devez consulter le département du stage.\n
+            Un fichier est partagé avec les étudiants chaque année pour savoir leurs stages obligatoires\n."
  utter_procedure_inscription_fr:
-   - text: " Afin de s'inscrire il faut remplir le formulaire et choisir une date du concours... " 
+   - text: " Afin de s'inscrire il faut remplir le formulaire et choisir une date du concours en visitant: https://esprit.tn/admission/esprit-ingenieur " 
 ###############
 
  utter_obtention_diplome_fr:
    - text: " 👩🏻‍🎓 Conditions d'obtention du diplôme 👩🏻‍🎓  \n\n
-Le diplôme d'ingénieur ESPRIT est délivré aux élèves de cinquième année ayant : \n
-👉 Obtenu la validation de toutes les UE, et par conséquent, la totalité des crédits ECTS
-correspondants aux cinq années d'études. \n
-👉 Obtenu la validation de tous les stages requis. \n
-👉 Atteint le niveau B2 de certifications en langues française et anglaise suite aux
-examens internes. A défaut, l'élève doit justifier d’une certification internationale
-équivalente au niveau B2 (TOIEC ≥720, TEF ≥ 534) en cours de validité et délivrée par
-uncentreagréé. \n
-👉 Obtenu une note supérieure ou égale à 10/20 au projet de fin d’études.
-👉 Obtenu un quitus administratif délivré par la Scolarité de l'École attestant que l’élève
-a rempli toutes ses obligations administratives et légales vis-à-vis de l'École (paiement
-intégral des frais de scolarité, restitution des documents empruntés au centre de
-documentation multimédia, etc.). \n\n
-A la fin de sa scolarité et en cas de succès, chaque élève reçoit son diplôme, le relevé de
-notes de la cinquième année et l'attestation de diplôme. Le SD est un document qui donne
-une idée à l'employeur potentiel sur la nature et le niveau de qualification du diplômé, son
-parcours,et la spécificité de l'institution qui lui adélivré son diplôme.
-"
+          Le diplôme d'ingénieur ESPRIT est délivré aux élèves de cinquième année ayant : \n
+          👉 Obtenu la validation de toutes les UE, et par conséquent, la totalité des crédits ECTS
+          correspondants aux cinq années d'études. \n
+          👉 Obtenu la validation de tous les stages requis. \n
+          👉 Atteint le niveau B2 de certifications en langues française et anglaise suite aux
+          examens internes. A défaut, l'élève doit justifier d’une certification internationale
+          équivalente au niveau B2 (TOIEC ≥720, TEF ≥ 534) en cours de validité et délivrée par
+          uncentreagréé. \n
+          👉 Obtenu une note supérieure ou égale à 10/20 au projet de fin d’études.
+          👉 Obtenu un quitus administratif délivré par la Scolarité de l'École attestant que l’élève
+          a rempli toutes ses obligations administratives et légales vis-à-vis de l'École (paiement
+          intégral des frais de scolarité, restitution des documents empruntés au centre de
+          documentation multimédia, etc.). \n\n
+          A la fin de sa scolarité et en cas de succès, chaque élève reçoit son diplôme, le relevé de
+          notes de la cinquième année et l'attestation de diplôme. Le SD est un document qui donne
+          une idée à l'employeur potentiel sur la nature et le niveau de qualification du diplômé, son
+          parcours,et la spécificité de l'institution qui lui adélivré son diplôme.
+            "
 
  utter_obtention_diplome_ang:
    - text: " 👩🏻‍🎓 Requirements for graduation 👩🏻‍🎓 \n \n
-The ESPRIT engineering diploma is awarded to fifth year students who have: \n
-👉 Obtained the validation of all the teaching units, and therefore all of the ECTS credits
-corresponding to the five years of study. \n
-👉 Obtained the validation of all the required internships. \n
-👉 Reached the B2 level of certifications in French and English following the
-internal reviews. Otherwise, the student must provide proof of international certification
-equivalent to level B2 (TOIEC ≥720, TEF ≥ 534) valid and issued by
-an approved center. \n
-👉 Obtained a grade greater than or equal to 10/20 in the end of studies project.
-👉 Obtained an administrative discharge issued by the School Scolarity certifying that the student
-has fulfilled all its administrative and legal obligations towards the School (payment
-full tuition fees, return of documents borrowed from the
-multimedia documentation, etc.). \n \n
-At the end of their schooling and in case of success, each student receives his diploma, the record of
-grades for the fifth year and certificate of diploma. The SD is a document which gives
-an idea about the level of qualification of the graduate, his
-course, and the specificity of the institution that awarded him his degree.
-"
+            The ESPRIT engineering diploma is awarded to fifth year students who have: \n
+            👉 Obtained the validation of all the teaching units, and therefore all of the ECTS credits
+            corresponding to the five years of study. \n
+            👉 Obtained the validation of all the required internships. \n
+            👉 Reached the B2 level of certifications in French and English following the
+            internal reviews. Otherwise, the student must provide proof of international certification
+            equivalent to level B2 (TOIEC ≥720, TEF ≥ 534) valid and issued by
+            an approved center. \n
+            👉 Obtained a grade greater than or equal to 10/20 in the end of studies project.
+            👉 Obtained an administrative discharge issued by the School Scolarity certifying that the student
+            has fulfilled all its administrative and legal obligations towards the School (payment
+            full tuition fees, return of documents borrowed from the
+            multimedia documentation, etc.). \n \n
+            At the end of their schooling and in case of success, each student receives his diploma, the record of
+            grades for the fifth year and certificate of diploma. The SD is a document which gives
+            an idea about the level of qualification of the graduate, his
+            course, and the specificity of the institution that awarded him his degree.
+            "
 
  utter_absence_examen_fr:
    - text: "Toute absence à un examen entraînera un zéro, l'étudiant peut se présenter à la session rattrapage pour 
-   le repassage de l'examen en question. \n
-   ⚠️ Il est à signaler que les certificats médicaux ne constituent pas un justificatif des absences. ⚠️
-   "
+          le repassage de l'examen en question. \n
+          ⚠️ Il est à signaler que les certificats médicaux ne constituent pas un justificatif des absences. ⚠️
+          "
 
  utter_absence_examen_ang:
    - text: "Any absence from an exam will result in a zero, the student can attend the remedial session to
-   retaking the exam in question. \n
-   ⚠️ It should be noted that medical certificates do not constitute proof of absences. ⚠️
-   "
+            retaking the exam in question. \n
+            ⚠️ It should be noted that medical certificates do not constitute proof of absences. ⚠️
+            "
 
  utter_redoublement_fr:
    - text: "Leredoublement est autorisé une seule fois au cours des deux premières années,et une seule fois au cours 
-   des trois dernières années de la scolarité. \n
-   En cas de redoublement, les UE sont de deux types : \n
-🔹 UE validée durant l'année précédente : dans ce cas, l'élève peut repasser tout module composant l'UE dans le but 
-d’améliorer sa moyenne générale. La nouvelle moyenne du module sera retenue si elle est supérieure à l'ancienne moyenne. \n
-🔹  UE non validée durant l'année précédente (moyenne UE inférieure à 10/20): dans ce
-cas, l'élève doit obligatoirement repasser tous les modules dont la moyenne est
-inférieure à 10/20 de l'UE non validée. Tous les résultats obtenus l'année précédente
-dans ces modules sont annulés et l'élève est tenu d'assister à toutes les séances,
-de passer toutes lesépreuves d’évaluation : contrôle continu, TP, test, examen, etc. \n
-🔹 L'élève doit assister à tout nouveau module introduit dans le programme. \n
-🔹 En cas de modification dans l'UE (ajout / suppression de modules ou modification
-des coefficients des modules), l'élève doit contacter le directeur de la formation. \n\n
-⚠️ Il est vivement recommandé à l’élève d’assister à tous les modules même s’ils sont validés.
-   "
+            des trois dernières années de la scolarité. \n
+            En cas de redoublement, les UE sont de deux types : \n
+          🔹 UE validée durant l'année précédente : dans ce cas, l'élève peut repasser tout module composant l'UE dans le but 
+          d’améliorer sa moyenne générale. La nouvelle moyenne du module sera retenue si elle est supérieure à l'ancienne moyenne. \n
+          🔹  UE non validée durant l'année précédente (moyenne UE inférieure à 10/20): dans ce
+          cas, l'élève doit obligatoirement repasser tous les modules dont la moyenne est
+          inférieure à 10/20 de l'UE non validée. Tous les résultats obtenus l'année précédente
+          dans ces modules sont annulés et l'élève est tenu d'assister à toutes les séances,
+          de passer toutes lesépreuves d’évaluation : contrôle continu, TP, test, examen, etc. \n
+          🔹 L'élève doit assister à tout nouveau module introduit dans le programme. \n
+          🔹 En cas de modification dans l'UE (ajout / suppression de modules ou modification
+          des coefficients des modules), l'élève doit contacter le directeur de la formation. \n\n
+          ⚠️ Il est vivement recommandé à l’élève d’assister à tous les modules même s’ils sont validés.
+            "
 
  utter_redoublement_ang:
    - text: "Repeating classes is allowed only once during the first two years, and only once during
-   of the last three years of schooling. \n
-   In case of repeating class, the teaching units are of two types: \n
-🔹 Teaching units validated during the previous year: in this case, the student can repass any module of the UE with the aim of
-improving his overall average. The new average of the module will be retained if it is higher than the old average. \n
-🔹 Teaching units not validated during the previous year (EU average less than 10/20): in this
-In this case, the student must repass all the modules whose average is
-less than 10/20 of the not validated teaching unit . All results obtained from the previous year
-in these modules are canceled and the student is required to attend all sessions,
-to pass all the evaluation tests: continuous assessment, practical work, test, exam, etc. \n
-🔹 The student must attend any new module introduced in the program. \n
-🔹 In case of modification in the EU (addition / deletion of modules or modification
-coefficients of the modules), the student must contact director of the course. \n \n
-⚠️ Students are strongly recommended to attend all the modules even if they are validated.
-   "
+            of the last three years of schooling. \n
+            In case of repeating class, the teaching units are of two types: \n
+          🔹 Teaching units validated during the previous year: in this case, the student can repass any module of the UE with the aim of
+          improving his overall average. The new average of the module will be retained if it is higher than the old average. \n
+          🔹 Teaching units not validated during the previous year (EU average less than 10/20): in this
+          In this case, the student must repass all the modules whose average is
+          less than 10/20 of the not validated teaching unit . All results obtained from the previous year
+          in these modules are canceled and the student is required to attend all sessions,
+          to pass all the evaluation tests: continuous assessment, practical work, test, exam, etc. \n
+          🔹 The student must attend any new module introduced in the program. \n
+          🔹 In case of modification in the EU (addition / deletion of modules or modification
+          coefficients of the modules), the student must contact director of the course. \n \n
+          ⚠️ Students are strongly recommended to attend all the modules even if they are validated.
+            "
 
  utter_ratt_fr:
    - text: "L'élève, qui n’a pas été déclaré admis à la session principale, est autorisé à passer en
-session de rattrapage l'épreuve de l'examen final : \n
-🔹 De tous les modules dont la moyenne est inférieure à 10/20 si sa moyenne générale en
-session principale est inférieure à 10/20. \n 
-🔹 Des modules dont la moyenne est inférieure à 10/20 des UE non validées si sa moyenne générale en session principale est supérieure ou
-égale à 10/20. \n \n
-Les UE qui sont organisées exclusivement sous forme de travaux pratiques ou de travaux
-personnalisés n'ont pas d'examen final et ne peuvent pas faire l'objet de rattrapage.\n 
-Un projet (autre que le PFE) peut être validé, refusé ou faire l'objet d'un rattrapage avec
-l'exigencede procéder à un complément des travaux accomplis. \n
-Une liste des modules non rattrapables est communiquée à tous les élèves au début de chaque
-année universitaire"
+            session de rattrapage l'épreuve de l'examen final : \n
+            🔹 De tous les modules dont la moyenne est inférieure à 10/20 si sa moyenne générale en
+            session principale est inférieure à 10/20. \n 
+            🔹 Des modules dont la moyenne est inférieure à 10/20 des UE non validées si sa moyenne générale en session principale est supérieure ou
+            égale à 10/20. \n \n
+            Les UE qui sont organisées exclusivement sous forme de travaux pratiques ou de travaux
+            personnalisés n'ont pas d'examen final et ne peuvent pas faire l'objet de rattrapage.\n 
+            Un projet (autre que le PFE) peut être validé, refusé ou faire l'objet d'un rattrapage avec
+            l'exigencede procéder à un complément des travaux accomplis. \n
+            Une liste des modules non rattrapables est communiquée à tous les élèves au début de chaque
+            année universitaire"
 
  utter_ratt_ang:
    - text: "The student, who has not been declared admitted to the main session, is authorized to go to
-remedial session for the final exam: \n
-🔹 All modules with an average of less than 10/20 if its general average in
-main session is less than 10/20. \n
-🔹 Modules with an average of less than 10/20 of non-validated teaching units if their general average in the main session is higher or
-equal to 10/20. \n \n
-Teaching units which are organized exclusively in the form of practical work or work
-personalized exams do not have a final exam and cannot be retested. \n
-A project (other than the PFE) can be validated, refused or be the subject of a remedial with
-the requirement to carry out additional work. \n
-A list of non-catch-up modules is communicated to all students at the start of each
-college year"
+            remedial session for the final exam: \n
+            🔹 All modules with an average of less than 10/20 if its general average in
+            main session is less than 10/20. \n
+            🔹 Modules with an average of less than 10/20 of non-validated teaching units if their general average in the main session is higher or
+            equal to 10/20. \n \n
+            Teaching units which are organized exclusively in the form of practical work or work
+            personalized exams do not have a final exam and cannot be retested. \n
+            A project (other than the PFE) can be validated, refused or be the subject of a remedial with
+            the requirement to carry out additional work. \n
+            A list of non-catch-up modules is communicated to all students at the start of each
+            college year"
 
- utter_annulation_inscription_ang:
+ utter_annulation_inscription_eng:
   - text: "1) Cancellation requests submitted before November 30:\n
-    - Registration fees are non-refundable.\n
-    - The rest of the tuition fees are refundable within a period not exceeding one month from the notification date.\n
-    2) Cancellation requests submitted between December 1 and January 31:\n
-    - The amount of the 1st installment is automatically withdrawn.\n 
-    - The rest of the tuition fees are refundable within a period not exceeding one month from the notification date.\n
-    3) Cancellation requests submitted from February 1: \n
-    - No refund will be made"
+          - Registration fees are non-refundable.\n
+          - The rest of the tuition fees are refundable within a period not exceeding one month from the notification date.\n
+          2) Cancellation requests submitted between December 1 and January 31:\n
+          - The amount of the 1st installment is automatically withdrawn.\n 
+          - The rest of the tuition fees are refundable within a period not exceeding one month from the notification date.\n
+          3) Cancellation requests submitted from February 1: \n
+          - No refund will be made"
+
 
  utter_annulation_inscription_fr:
   - text: "1) Les demandes d'annulation déposées avant le 30 novembre :\n
-    - Les droits d'inscription ne sont pas remboursables. \n
-    - Le reste des frais de scolarité est remboursable dans un délai ne dépassant pas un mois à compter de la date de notification.\n
-    2) Les demandes d'annulation déposées entre le 1er décembre et le 31 janvier :\n
-    - Le montant de la 1ère tranche est prélevé automatiquement. \n
-    - Le reste des frais de scolarité est remboursable dans un délai ne dépassant pas un mois à compter de la date de notification.\n
-    3) Les demandes d'annulation déposées à partir du 1er février : \n
-    - Aucun remboursement ne sera effectué"
+          - Les droits d'inscription ne sont pas remboursables. \n
+          - Le reste des frais de scolarité est remboursable dans un délai ne dépassant pas un mois à compter de la date de notification.\n
+          2) Les demandes d'annulation déposées entre le 1er décembre et le 31 janvier :\n
+          - Le montant de la 1ère tranche est prélevé automatiquement. \n
+          - Le reste des frais de scolarité est remboursable dans un délai ne dépassant pas un mois à compter de la date de notification.\n
+          3) Les demandes d'annulation déposées à partir du 1er février : \n
+          - Aucun remboursement ne sera effectué"
+
+ utter_annulation_inscription_ang:
+  - text: "1) Cancellation requests submitted before November 30th:;\n
+              Registration fees are non-refundable.\n
+              The remaining tuition fees are refundable within a period not exceeding one month from the notification date.\n
+           2) Cancellation requests submitted between December 1st and January 31st;\n
+              The amount of the first installment is automatically deducted. \n
+              The remaining tuition fees are refundable within a period not exceeding one month from the notification date.\n
+           3) Cancellation requests submitted from February 1st: \n
+              No refunds will be issued. \n"
 
  utter_regime_etude_fr:
   - text : "La durée de la formation à ESPRIT pour l’obtention du diplôme d’Ingénieur est de :\n
-    - Cinq années pour les candidats ayant le baccalauréat comme dernier diplôme \n
-    - Trois années pour les candidats ayant été admis aux Concours Nationaux d’Entrée aux Ecoles d’ingénieurs, ou ayant un diplôme de technicien supérieur, ou une licence ou tout autre diplôme scientifique ou techniqueéquivalent.\n
-    - Deux années pour les candidats ayant été admis en 2ème Master ou en 2ème année cycle ingénieur"
+          - Cinq années pour les candidats ayant le baccalauréat comme dernier diplôme \n
+          - Trois années pour les candidats ayant été admis aux Concours Nationaux d’Entrée aux Ecoles d’ingénieurs, ou ayant un diplôme de technicien supérieur, ou une licence ou tout autre diplôme scientifique ou techniqueéquivalent.\n
+          - Deux années pour les candidats ayant été admis en 2ème Master ou en 2ème année cycle ingénieur"
 
  utter_regime_etude_ang:
   - text : "The duration of the training at ESPRIT for obtaining the engineering diploma is: \n
-    - Five years for candidates with the baccalaureate as their last degree \n
-    - Three years for candidates who have been admitted to the National Entrance Competitions to Engineering Schools, or having a higher technical diploma, or a license or any other equivalent scientific or technical diploma. \n
-    - Two years for candidates who have been admitted to the 2nd Master or the 2nd year of engineering cycle"
+          - Five years for candidates with the baccalaureate as their last degree \n
+          - Three years for candidates who have been admitted to the National Entrance Competitions to Engineering Schools, or having a higher technical diploma, or a license or any other equivalent scientific or technical diploma. \n
+          - Two years for candidates who have been admitted to the 2nd Master or the 2nd year of engineering cycle"
 
  utter_filiere_fr:
-  - text : "Option DS (Data Science)\n Option Infini (Informatique Financière Et Ingénierie)\nOption Software Architecture Engineering\n Option ERP-BI (Enterprise Resource Planning-Business Intelligence)\n Option SIM (Systèmes Informatiques Et Mobiles)\n Option TWIN (Technologies Du Web Et De L’INternet)\n Option SLEAM : (Systèmes Et Logiciels Embarqués Ambiants Et Mobiles)\nOption NIDS (Network Infrastructure And Data Security)\nOption SE (Software Engineering )\nOption ArcTIC (Architecture IT Et Cloud Computing)\n Spécialité IA (Intelligence Artificielle)  "
+  - text : "ESPRIT offre 4 types de diplôme National d’ingénieur en: 
+            1- Informatique avec les options suivantes: Option DS (Data Science)\n Option Infini (Informatique Financière Et Ingénierie)\nOption Software Architecture Engineering\n Option ERP-BI (Enterprise Resource Planning-Business Intelligence)\n Option SIM (Systèmes Informatiques Et Mobiles)\n Option TWIN (Technologies Du Web Et De L’INternet)\n Option SLEAM : (Systèmes Et Logiciels Embarqués Ambiants Et Mobiles)\nOption NIDS (Network Infrastructure And Data Security)\nOption SE (Software Engineering )\nOption ArcTIC (Architecture IT Et Cloud Computing)\n Spécialité IA (Intelligence Artificielle) \n
+            2- Télécommunications avec les options suivantes: Option WIN (Wireless Intelligent Networks) \n Option IoSyS (Internet Of Things Systems & Services) \n
+            3- Génie Electromécanique avec les options suivantes: Option OGI (Organisation Et Gestion Industrielles) \n Option Mécatronique \n
+            4- Génie Civil avec les options suivantes: UE Optionnelle Structures Et Ouvrages \n UE Optionnelle Eco-Construction & Efficacité Energétique \n UE Optionnelle Ponts Et Chaussées \n
+            Vous pouvez trouver plus d'informations sur le site https://esprit.tn/ .\n"
+ utter_filiere_ang:
+  - text : "ESPRIT offers 4 types of National Engineering diplomas in the following fields:
+            1- Computer Science with the following options:DS (Data Science) Option \nInfini (Financial Computing and Engineering) \nOption Software Architecture Engineering \nOption ERP-BI (Enterprise Resource Planning - Business Intelligence) \nOption SIM (Computer Systems and Mobile) \nOption TWIN (Web and Internet Technologies) \nOption SLEAM (Ambient and Mobile Embedded Systems and Software) \nOption NIDS (Network Infrastructure and Data Security) \nOption SE (Software Engineering) \nOption ArcTIC (IT Architecture and Cloud Computing) \nOption Specialization in AI (Artificial Intelligence) \n
+            2- Telecommunications with the following options: WIN (Wireless Intelligent Networks) \nOption IoSyS (Internet of Things Systems & Services)
+            3- Electromechanical Engineering with the following options: OGI (Industrial Organization and Management) \nOption Mechatronics \n
+            4- Civil Engineering with the following options: Optional Unit Structures and Works \n Optional Unit Eco-Construction & Energy Efficiency \n Optional Unit Bridges and Highways \n
+              You can find more information on the website https://esprit.tn/."
+
  utter_info_generale_esprit_fr:
   - text : "Fondée en 2003 à l’initiative de trois universitaires ayant conduit de nombreux projets dans l’enseignement supérieur tunisien, et dans l’enseignement supérieur technique en particulier, entourés de plusieurs dizaines de leurs collègues, ainsi que d’entreprises TIC et de partenaires financiers, Esprit a dès le départ mis en place des formations basées sur des valeurs intangibles :\n
-    En plus d’être habilitée par le Ministère de l’Enseignement Supérieur et de la Recherche Scientifique tunisien, la qualité de l’enseignement Esprit a été reconnue internationalement :\n
-    Par son adhésion en avril 2014 à la conférence des grandes école (CGE )* qui regroupe environ 110 établissements français et étrangers qui forment leurs diplômés dans un souci constant d’excellence\n
-    Par son adhésion à l’initiative CDIO* fondé par le MIT (Massachussetts institue of Technology) qui regroupe 116 institutions dont 2 seulement sur le continent africain. CDIO a pour objectif est de recentrer la pédagogie des formations d’ingénieurs autour de mises en situation professionnelle)\n
-    Et enfin par l’accréditation internationale de ses programmes à travers le label EUR ACE qui lui a été délivrée par la commission française des titres de l’ingénieur(CTI)* en 2014 et en 2017.\n "
+          En plus d’être habilitée par le Ministère de l’Enseignement Supérieur et de la Recherche Scientifique tunisien, la qualité de l’enseignement Esprit a été reconnue internationalement :\n
+          Par son adhésion en avril 2014 à la conférence des grandes école (CGE )* qui regroupe environ 110 établissements français et étrangers qui forment leurs diplômés dans un souci constant d’excellence\n
+          Par son adhésion à l’initiative CDIO* fondé par le MIT (Massachussetts institue of Technology) qui regroupe 116 institutions dont 2 seulement sur le continent africain. CDIO a pour objectif est de recentrer la pédagogie des formations d’ingénieurs autour de mises en situation professionnelle)\n
+          Et enfin par l’accréditation internationale de ses programmes à travers le label EUR ACE qui lui a été délivrée par la commission française des titres de l’ingénieur(CTI)* en 2014 et en 2017.\n "
 #############################################
  utter_avantage_esprit_fr:
-  - text : "Les avantages de esprit sont"
-##############################################
- utter_type_foyer_ang:
-  - text: ""
-    buttons:
-      - title: ESPRIT Internal Residence 
-        payload: Here are the pictures of ESPRIT Internal Residence (block 1)
-      - title: Al Amen Residence
-        payload: Here are the pictures of Al Amen Residence
+  - text : "«Se former autrement »\n
+            vise à former des ingénieurs directement opérationnels : cela passe par une approche pédagogique innovante, l’APP apprentissage par projets/problèmes, notamment au travers de la participation à de nombreuxchallenge nationaux et internationaux. Les activités de recherche et développement dans lesquels les étudiants peuvent être acteurs y jouent aussi leur rôle. Récemment créé , Esprit incubator constitue un puissant outil contribuant à permettre aux étudiants porteurs d’idées innovantes à aller, dans le cadre de leur formation, jusqu’à la création de leur start up s’ils le souhaitent.\n
+            Esprit se veut depuis sa création une école ouverte au plus grand nombre. Dès le début, des mécanismes ont été déployés pour qu’un jeune ayant du talent puisse, quelle que soit sa situation sociale, suivre les cours et obtenir son diplôme. Depuis deux ans, l’école a souhaité amplifier le phénomène par la création de la Fondation Esprit en vue d’aider les jeunes à financer leur formation.\n
+            L’objectif de l’école étant de former des ingénieurs totalement en phase avec les besoins de l’économie et des entreprises, passe par de nombreux canaux : rencontres régulières avec les professionnels pour faire le point sur les programmes afin de les adapter avec les besoins réels du marché ; obligation pour les élèves d’effectuer 3 stages en entreprise dont le Projet de fin d’étude d’une durée de 7 mois ; mise en place d’une « Learning Factory » qui offre des espaces aux entreprises venus à la rencontre des étudiants et de leurs enseignants pour y déployer des projets en relation avec leurs préoccupations ; création d’Esprit Tech qui porte la RDI (Recherche, développement et innovation) permettant aux enseignants de développer leurs compétences par des activités de production au service des entreprises ; création d’Esprit Incubateur, l’incubateur de startups."
 
- utter_type_foyer_fr:
-  - text: ""
-    buttons:
-      - title: Foyer ESPRIT (bloc 1)
-        payload: Voici les photos de Foyer ESPRIT (bloc 1)
-      - title: Foyer Résidence Al Amen
-        payload: Voici les photos de Foyer Résidence Al Amen 
-
- utter_photo_foyer1:
-  - text: ""
-    image: https://esprit.tn/static/media/foyer1.2bc84f42.jpg
-             
- utter_photo_foyer2:
-  - text: ""
-    image: https://esprit.tn/static/media/foyer3.4b92007f.jpg
-
-
- utter_photo_foyer3:
-  - text: ""
-    image: https://esprit.tn/static/media/foyer2.f90c9dff.jpg
-
-
- utter_photo_foyer_externe1:
-  - text: ""
-    image: https://esprit.tn/static/media/residence1.83eae4df.jpg
-             
- utter_photo_foyer_externe2:
-  - text: ""
-    image: https://esprit.tn/static/media/residence2.9f8f1968.jpg
-
-
- utter_photo_foyer_externe3:
-  - text: ""
-    image: https://esprit.tn/static/media/residence3.c9c826a9.png
-
-#################
-
- utter_type_visualisation_fr:
-  - text: ""
-    buttons:
-      - title: Document
-        payload: Voici le lien de la documentation
-      - title: Vidéo
-        payload: Voici le lien de la vidéo 
-
- utter_lien_doc:
-  - text: "https://esprit.tn/formation/esprit-ingenieur/specialites-et-options"
-
-             
- utter_lien_video:
-  - text: "https://www.youtube.com/watch?v=jc_88Dlwfm8&list=PL1p0JPMoUm700GiwDZPTEIHNXUPB2E-Mi"
-    
-
- utter_type_visualisation_ang:
-  - text: ""
-    buttons:
-      - title: Document
-        payload: Here is the link for documentation
-      - title: Video
-        payload: Here is the link for the video
-
-
-##########################
  utter_applicabilite_formation_fr:
-  - text: "test test"
+  - text: "La touche Esprit des formations d'ingénieurs se caractérise par une combinaison de créativité et de compétences opérationnelles, ainsi que par le développement de qualités humaines telles que l'esprit d'équipe, la communication, le leadership, la créativité et la rigueur.\n
+           Ces programmes répondent aux besoins des entreprises dans des filières d'avenir et bénéficient d'une reconnaissance internationale grâce à l'accréditation EUR-ACE délivrée par la CTI, ainsi qu'à l'adhésion à la Conférence des Grandes Écoles (CGE) et à l'initiative CDIO. \n"
 
-##########################
-
-#NEW
+########################## 
+# EW
  utter_plus_info_associe_fr:
    - text : "Voudriez vous avoir des informations associées à cet topic ?"
-
- utter_plus_avantage_fr:
+ utter_plus_avantage_fr:  
    - text : "Voudriez vous savoir plus sur les avantages de ESPRIT ?"
-
- utter_plus_cout_formation_fr:
+ utter_plus_cout_formation_fr:  
    - text : "Voudriez vous savoir plus sur les coûts de formations à ESPRIT ?"
  utter_plus_info_generale_fr:
    - text : "Voudriez vous savoir plus sur ESPRIT ?"
@@ -930,8 +869,6 @@ college year"
    - text : "Voudriez vous savoir plus sur les Clubs à ESPRIT?"
  utter_plus_restau_fr:
    - text : "Voudriez vous savoir plus sur les couts de restaurations à ESPRIT?"
- utter_plus_photo_foyer_fr:
-   - text : "Voudriez vous voir les photos des foyers à ESPRIT?"
  utter_plus_conseil_classe_fr:
    - text : "Voudriez vous savoir plus sur les conseils de classe ?"
  utter_plus_credit_fr:
@@ -956,83 +893,76 @@ college year"
    - text : "Voudriez vous savoir plus à propos le processus de rattrapage à ESPRIT?"
  
  demander_acceptation:
-   - text : "accept?"
- utter_default:
-   - text: "Je ne peux pas répondre"
-
-  # 
+ - text : "accept?" 
  utter_choose_mode:
-   - text: "Veuillez choisir le mode de conversation: normal ou pro."
-
+  - text: "Veuillez choisir le mode de conversation: normal ou pro." 
  ####################################### YOSR ############################
  utter_reduction_premier_fr:
    - text: "Des réductions des frais de scolarité sont accordées annuellement aux étudiants les plus méritants : \n
-    🔹 30 % de réduction pour les élèves ayant une moyenne supérieure à
-    15/20 et classés premiers de leur classe.  \n
-    🔹 15 % de réduction pour les élèves classés premiers de leur classe
-    ayant une moyenne inférieure à 15/20. \n"
+            🔹 30 % de réduction pour les élèves ayant une moyenne supérieure à 15/20 et classés premiers de leur classe.  \n
+            🔹 15 % de réduction pour les élèves classés premiers de leur classe ayant une moyenne inférieure à 15/20. \n"
+
  utter_reduction_premier_ang:
    - text: "An annual tuition fee reduction is granted to the most deserving students:  \n
-   🔹 30% reduction for students with an average grade above 15/20 and ranked first in their class. \n 
-   🔹 15% reduction for students ranked first in their class with an average grade below 15/20. \n"
-
+            🔹 30% reduction for students with an average grade above 15/20 and ranked first in their class. \n 
+            🔹 15% reduction for students ranked first in their class with an average grade below 15/20. \n"
+          
  utter_administration_fr:
    - text: "Tahar Ben Lakhdar : Directeur Fondateur \n
-   Docteur ès Sciences Physiques de l'Université Paris VI ; \n
-   Professeur à l'ENIT (1978-2000); \n
-   Président directeur général de l’Agence Tunisienne de la Formation Professionnelle (1995-1999); \n
-   Directeur fondateur de la mission universitaire de Tunisie en France (1993-1995) ; \n
-   Directeur fondateur de l’Ecole Supérieure des Communications de Tunis (1990-1993) ; \n
-   Directeur fondateur de l’Institut Supérieur de Technologie de Nabeul (1988-1990) ; \n
-   Directeur fondateur de l’Institut Préparatoire aux Études d’Ingénieurs de Nabeul (1986-1988) ; \n
-   Animateur de la reforme de l’enseignement supérieur technique (1990-1995) : \n
-   - Création des instituts préparatoires aux études d’ingénieur ; \n
-   - Création des Instituts Supérieurs des Études Technologiques ISET) ; \n
-   - Reforme des études d’ingénieur." 
+            Docteur ès Sciences Physiques de l'Université Paris VI ; \n
+            Professeur à l'ENIT (1978-2000); \n
+            Président directeur général de l’Agence Tunisienne de la Formation Professionnelle (1995-1999); \n
+            Directeur fondateur de la mission universitaire de Tunisie en France (1993-1995) ; \n
+            Directeur fondateur de l’Ecole Supérieure des Communications de Tunis (1990-1993) ; \n
+            Directeur fondateur de l’Institut Supérieur de Technologie de Nabeul (1988-1990) ; \n
+            Directeur fondateur de l’Institut Préparatoire aux Études d’Ingénieurs de Nabeul (1986-1988) ; \n
+            Animateur de la reforme de l’enseignement supérieur technique (1990-1995) : \n
+            - Création des instituts préparatoires aux études d’ingénieur ; \n
+            - Création des Instituts Supérieurs des Études Technologiques ISET) ; \n
+            - Reforme des études d’ingénieur." 
 
  utter_administration_ang:
    - text: "Tahar Ben Lakhdar: Founder Director
- 
-   Doctor of Physical Sciences from the University of Paris VI; \n
-   Professor at ENIT (1978-2000); \n
-   CEO of the Tunisian Agency for Vocational Training (1995-1999); \n
-   Founder Director of the Tunisian University Mission in France (1993-1995); \n
-   Founder Director of the Higher School of Communications in Tunis (1990-1993); \n
-   Founder Director of the Institute of Technology in Nabeul (1988-1990); \n
-   Founder Director of the Preparatory Institute for Engineering Studies in Nabeul (1986-1988); \n
-   Leader of the technical higher education reform (1990-1995): \n
-   
-   Creation of preparatory institutes for engineering studies; \n
-   Creation of Higher Institutes of Technological Studies (ISET); \n
-   Reform of engineering studies."
+            Doctor of Physical Sciences from the University of Paris VI; \n
+            Professor at ENIT (1978-2000); \n
+            CEO of the Tunisian Agency for Vocational Training (1995-1999); \n
+            Founder Director of the Tunisian University Mission in France (1993-1995); \n
+            Founder Director of the Higher School of Communications in Tunis (1990-1993); \n
+            Founder Director of the Institute of Technology in Nabeul (1988-1990); \n
+            Founder Director of the Preparatory Institute for Engineering Studies in Nabeul (1986-1988); \n
+            Leader of the technical higher education reform (1990-1995): \n
+            
+            Creation of preparatory institutes for engineering studies; \n
+            Creation of Higher Institutes of Technological Studies (ISET); \n
+            Reform of engineering studies."
 
  utter_partenaires_fr:
    - text: " ESPRIT a établi des partenariats avec de nombreuses entreprises et institutions nationales et internationales, ce qui contribue à renforcer la qualité de la formation et à faciliter l'insertion professionnelle des diplômés. \n 
-   On dispose de trois types de partenariats: \n
-  🔹Partenariats Académiques: Université de Paris 13, Telecom Ecole de Management (TEM), Institut Supérieur d'Electronique de Paris (ISEP), Université du Maine, Ecole Supérieure Africaine des TICs (ESATIC), Université de Nice, Université de Sherbrooke, Cégep de la Pocatière, Institut National des Postes et Télécommunications de Rabat (INPT), Ecole Nationale Supérieure des Mines de Rabat, et bien d'autres. \n
-  🔹Partenariats Technologiques: Google, Cisco, British Council, IBM, EMC, Microsoft, Intel, Amazon Web Services, UNESCO, et bien d'autres. \n
-  🔹Partenariats Industriels: Evertek, Tunisie Télécom, Samsung, Vermeg, Gomycode, Huawei, et bien d'autres."
+            On dispose de trois types de partenariats: \n
+            🔹Partenariats Académiques: Université de Paris 13, Telecom Ecole de Management (TEM), Institut Supérieur d'Electronique de Paris (ISEP), Université du Maine, Ecole Supérieure Africaine des TICs (ESATIC), Université de Nice, Université de Sherbrooke, Cégep de la Pocatière, Institut National des Postes et Télécommunications de Rabat (INPT), Ecole Nationale Supérieure des Mines de Rabat, et bien d'autres. \n
+            🔹Partenariats Technologiques: Google, Cisco, British Council, IBM, EMC, Microsoft, Intel, Amazon Web Services, UNESCO, et bien d'autres. \n
+            🔹Partenariats Industriels: Evertek, Tunisie Télécom, Samsung, Vermeg, Gomycode, Huawei, et bien d'autres."
 
  utter_partenaires_ang:
    - text: "ESPRIT has established partnerships with many national and international companies and institutions, which helps to strengthen the quality of education and facilitate the professional integration of graduates. \n
-
-   There are three types of partnerships: \n
-   
-   🔹Academic Partnerships: University of Paris 13, Telecom Ecole de Management (TEM), Institut Supérieur d'Electronique de Paris (ISEP), Université du Maine, Ecole Supérieure Africaine des TICs (ESATIC), Université de Nice, Université de Sherbrooke, Cégep de la Pocatière, Institut National des Postes et Télécommunications de Rabat (INPT), Ecole Nationale Supérieure des Mines de Rabat, and many others. \n
-   
-   🔹Technological Partnerships: Google, Cisco, British Council, IBM, EMC, Microsoft, Intel, Amazon Web Services, UNESCO, and many others. \n
-   
-   🔹Industrial Partnerships: Evertek, Tunisie Télécom, Samsung, Vermeg, Gomycode, Huawei, and many others. \n"
+            
+            There are three types of partnerships: \n
+            
+            🔹Academic Partnerships: University of Paris 13, Telecom Ecole de Management (TEM), Institut Supérieur d'Electronique de Paris (ISEP), Université du Maine, Ecole Supérieure Africaine des TICs (ESATIC), Université de Nice, Université de Sherbrooke, Cégep de la Pocatière, Institut National des Postes et Télécommunications de Rabat (INPT), Ecole Nationale Supérieure des Mines de Rabat, and many others. \n
+            
+            🔹Technological Partnerships: Google, Cisco, British Council, IBM, EMC, Microsoft, Intel, Amazon Web Services, UNESCO, and many others. \n
+            
+            🔹Industrial Partnerships: Evertek, Tunisie Télécom, Samsung, Vermeg, Gomycode, Huawei, and many others. \n"
 
  utter_info_generale_esprit_ang: 
    - text: "ESPRIT University is a private higher education institution located in Tunis, Tunisia.\n
-     It was founded in 2003 and has since become one of the leading institutions for engineering, computer science,\n
-     and business education in the region. The university offers undergraduate and graduate programs in a variety of fields, including\n
-     computer science, engineering, business administration, and multimedia. The institution is known for its focus on practical,\n
-     hands-on learning and its strong ties to industry,\n
-     which help students develop the skills and experience necessary to succeed in the workforce. \n
-     ESPRIT also emphasizes innovation, entrepreneurship, and research, encouraging students to pursue new ideas and technologies that can make a positive impact on society.\n
-     Overall, ESPRIT University is recognized as a leading institution for higher education in Tunisia and a valuable resource for students seeking high-quality, career-focused education."
+          It was founded in 2003 and has since become one of the leading institutions for engineering, computer science,\n
+          and business education in the region. The university offers undergraduate and graduate programs in a variety of fields, including\n
+          computer science, engineering, business administration, and multimedia. The institution is known for its focus on practical,\n
+          hands-on learning and its strong ties to industry,\n
+          which help students develop the skills and experience necessary to succeed in the workforce. \n
+          ESPRIT also emphasizes innovation, entrepreneurship, and research, encouraging students to pursue new ideas and technologies that can make a positive impact on society.\n
+          Overall, ESPRIT University is recognized as a leading institution for higher education in Tunisia and a valuable resource for students seeking high-quality, career-focused education."
 
 #  utter_info_generale_esprit_fr:
 #   - text: "
@@ -1045,8 +975,8 @@ college year"
 
  utter_avantage_esprit_ang:
    - text: "ESPRIT University offers several advantages to students, including high-quality education \n
-   , practical learning, strong industry connections, focus on innovation and entrepreneurship, international exposure, and a diverse student body. \n
-    These advantages prepare students for successful careers in a variety of fields, while also fostering a supportive and stimulating learning environment."
+          , practical learning, strong industry connections, focus on innovation and entrepreneurship, international exposure, and a diverse student body. \n
+            These advantages prepare students for successful careers in a variety of fields, while also fostering a supportive and stimulating learning environment."
 
 #  utter_avantage_esprit_fr:
 #    - text: "L'Université ESPRIT offre plusieurs avantages aux étudiants,\n
@@ -1061,8 +991,8 @@ college year"
 
  utter_applicabilite_formation_ang:
    - text: "Yes, the studies at ESPRIT University are designed to be highly applicable to real-life situations and prepare students for successful careers in their chosen fields. ESPRIT places a strong emphasis on practical learning,\n
-       with projects, internships, and collaborations with industry partners that allow students to gain hands-on experience and develop the skills and knowledge necessary to succeed in the workforce. Additionally, ESPRIT has strong ties to the industry,\n
-       providing students with valuable networking opportunities, internships, and job placements after graduation. Overall, ESPRIT's career-focused approach to learning ensures that students are well-prepared for the demands and challenges of the job market."
+            with projects, internships, and collaborations with industry partners that allow students to gain hands-on experience and develop the skills and knowledge necessary to succeed in the workforce. Additionally, ESPRIT has strong ties to the industry,\n
+            providing students with valuable networking opportunities, internships, and job placements after graduation. Overall, ESPRIT's career-focused approach to learning ensures that students are well-prepared for the demands and challenges of the job market."
 
 #  utter_applicabilite_formation_fr:
 #    - text: "Oui, les études à l'Université ESPRIT sont conçues pour être hautement applicables à la vie réelle et préparer les étudiants à des carrières réussies dans leur domaine choisi. ESPRIT met un fort accent sur l'apprentissage pratique, avec des projets, \n
@@ -1086,6 +1016,13 @@ college year"
 #                 il est important de noter que tous les programmes d'Esprit n'ont pas d'accords de double diplôme et les exigences pour l'obtention d'un double diplôme peuvent varier en fonction du programme et de l'institution partenaire.
 #                 Par conséquent, si vous êtes intéressé par un programme de double diplôme à Esprit, il est recommandé de vérifier les exigences et les conditions spécifiques auprès de l'université."
 
+ utter_reconnaissance_diplome_fr:
+   - text: "Les formations d'ingénieurs a ESPRIT bénéficient d'une reconnaissance internationale grâce à des marques de prestige telles que l'accréditation EUR-ACE, délivrée par la CTI, \n
+            ainsi que l'adhésion à des institutions renommées comme la Conférence des Grandes Écoles (CGE) et l'initiative CDIO.\n Ces affiliations attestent de la qualité et de la valeur des programmes offerts, renforçant ainsi la réputation des formations d'ingénieurs sur la scène internationale.\n"
+
+ utter_reconnaissance_diplome_ang:
+  - text: "The engineering programs at ESPRIT enjoy international recognition through prestigious credentials such as the EUR-ACE accreditation awarded by CTI, as well as membership in renowned institutions like the Conference des Grandes Écoles (CGE) and the CDIO initiative.\n
+           These affiliations testify to the quality and value of the engineering programs offered, further enhancing their reputation on the global stage.\n "
 
  utter_certificat_ang:
    - text: "Esprit offers professional certification programs in various fields such as IT, networking, project management, digital marketing, graphic design,
@@ -1095,9 +1032,9 @@ college year"
 
  utter_certificat_fr:
    - text: "Esprit propose des programmes de certification professionnelle dans différents domaines tels que l'informatique, le réseau, 
-  	 la gestion de projet, le marketing numérique, le design graphique, la cybersécurité et d'autres domaines très demandés sur le marché du travail.
-         Les conditions d'admission pour les programmes de certification varient en fonction du programme spécifique, mais peuvent inclure des prérequis académiques ou une expérience professionnelle pertinente. 
-	 Si vous êtes intéressé par un programme de certification à Esprit, il est recommandé de vérifier les exigences spécifiques du programme et de contacter l'université pour plus d'informations."
+            la gestion de projet, le marketing numérique, le design graphique, la cybersécurité et d'autres domaines très demandés sur le marché du travail.
+            Les conditions d'admission pour les programmes de certification varient en fonction du programme spécifique, mais peuvent inclure des prérequis académiques ou une expérience professionnelle pertinente. 
+            Si vous êtes intéressé par un programme de certification à Esprit, il est recommandé de vérifier les exigences spécifiques du programme et de contacter l'université pour plus d'informations."
 
 
  utter_stage_ang:
@@ -1106,17 +1043,17 @@ college year"
             computer science, business, and communication. Students may need to provide a cover letter, CV, academic transcripts, 
             and a letter of recommendation to apply for internships. The internship office provides guidance and support to students throughout the internship process,
             from obtaining necessary documents to submitting their internship report. Overall, internships are an essential component of students' academic journey at Esprit,
-	          allowing them to apply what they have learned in the classroom to a professional setting and gain a deep understanding of their field of study."
+            allowing them to apply what they have learned in the classroom to a professional setting and gain a deep understanding of their field of study."
 
 
  utter_paiement_par_tranche_ang:
    - text: "Methods of payment:
-		 each year the students have the payment as follows 
-		 1st installment: at registration
-		 2nd installment: before 01/15/2023
+            each year the students have the payment as follows 
+            1st installment: at registration
+            2nd installment: before 01/15/2024
 
-		here is the link for online payment:
-		https://esprit-tn.com/ESPOnline/Online/Login.aspx "
+            here is the link for online payment:
+            https://esprit-tn.com/ESPOnline/Online/Login.aspx "
 
 
 
@@ -1124,44 +1061,44 @@ college year"
 
  utter_nature_cours_fr:
   - text: "Veuillez choisir le type du cours: \n
-     🔹cours du jour (internationaux) \n
-     🔹cours du jour (tunisien) \n
-     🔹cours du soir (tunisien) "
+          🔹cours du jour (internationaux) \n
+          🔹cours du jour (tunisien) \n
+          🔹cours du soir (tunisien) "
 
  utter_nature_cours_ang:
   - text: "Please choose the type of course: \n
-     🔹day course (International) \n
-     🔹day course (Tunisian) \n
-     🔹evening course (Tunisian) "
+        🔹day course (International) \n
+        🔹day course (Tunisian) \n
+        🔹evening course (Tunisian) "
  utter_types_des_couts_fr:
   - text: "Êtes-vous : \n
-     un étudiant tunisien (cours du jour) \n
-     un étudiant non pris en charge par une entreprise \n
-     un étudiant tunisien (cours du soir) \n
-     un étudiant international"
+          un étudiant tunisien (cours du jour) \n
+          un étudiant non pris en charge par une entreprise \n
+          un étudiant tunisien (cours du soir) \n
+          un étudiant international"
 
  utter_types_des_couts_ang:
   - text: "Are you? : \n
-     Tunisian student (day course)  \n
-     A student not supported by a company \n
-     Tunisian student (evening course) \n
-     An international student"
+          Tunisian student (day course)  \n
+          A student not supported by a company \n
+          Tunisian student (evening course) \n
+          An international student"
 
  utter_rentree_niveau_ang:
   - text: "Are you? : \n
-     1st year  \n
-     2nd year \n
-     3rd year \n
-     4th year  \n
-     5th year "
+          1st year  \n
+          2nd year \n
+          3rd year \n
+          4th year  \n
+          5th year "
 
  utter_rentree_niveau_fr:
   - text: "Êtes-vous? : \n
-    1 ère année \n
-    2 ème année \n
-    3 ème année \n
-    4 ème année \n
-    5 ème année " 
+          1 ère année \n
+          2 ème année \n
+          3 ème année \n
+          4 ème année \n
+          5 ème année " 
 
 
 
@@ -1192,43 +1129,18 @@ slots:
     mappings:
     - type: from_text
 
-# slots:
-#   acceptation_slot:
-#     type: bool
-#     influence_conversation: true
-#     mappings:
-#     - type: from_intent
-#       value: true
-#       intent: affirm
-#     - type: from_intent
-#       value: false
-#       intent: deny
-#   mode_pro:
-#     type: bool
-#     initial_value: false
-#     influence_conversation: true
-#     mappings:
-#     - type: from_intent
-#       intent: pro_mode
-#       value: true
-#     - type: from_intent
-#       intent: normal_mode
-#       value: false
-#   mode_normal:
-#     type: bool
-#     initial_value: true
-#     influence_conversation: true
-#     mappings:
-#     - type: from_intent
-#       intent: normal_mode
-#       value: true
-#     - type: from_intent
-#       intent: pro_mode
-#       value: false
+  rentree_niveau_fr:
+    type: text
+    mappings:
+    - type: from_text
+
+  rentree_niveau_ang:
+    type: text
+    mappings:
+    - type: from_text
 
 
 
 session_config:
-  session_expiration_time: 60
+  session_expiration_time: 120
   carry_over_slots_to_new_session: true
-
