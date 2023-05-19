@@ -361,6 +361,7 @@ nlu:
 
 - intent: classe_ang
   examples: |
+<<<<<<< Updated upstream
     - we can't get to know our 1st year classes what should we do?
     - how do i know my 1st year class?
     - 1st year class
@@ -369,6 +370,20 @@ nlu:
     - how do i find out which class i am assigned to?
     - how do i request my assignment for the 1st year classes?
     - class assignment
+=======
+    - we can't get to know our classes what should we do
+    - How do I find out which classes I am enrolled in 
+    - What class am I in 
+    - Can you tell me which class I've been assigned to 
+    - How do I know which class I'm supposed to attend 
+    - I'm not sure which class I belong to. How can I find out 
+    - What's my class schedule 
+    - How can I check my assigned class for this semester 
+    - Where can I see my class details, such as the time and location 
+    - What's the name and code of the class I'm enrolled in 
+    - How do I know if I'm in the right class 
+    - Can you confirm which class I should be attending 
+>>>>>>> Stashed changes
 
 
 
@@ -412,100 +427,303 @@ nlu:
 
 - intent: carte_amen_ang
   examples: |
-    - what are the advantages of amen bank's bank cards?
+    - what are the advantages of amen bank's bank cards 
     - the advantages of amen bank's bank card
-    - the benefit of amen bank's credit card?
-    - what is interesting about amen bank's card?
+    - the benefit of amen bank's credit card 
+    - what is interesting about amen bank's card 
     - amen bank credit card advantages
-    - what is the benefit of the amen bank credit card?
+    - what is the benefit of the amen bank credit card 
     - the privilege of the credit card of amen bank
     - i want to know the advantages of the amen bank credit card
+<<<<<<< Updated upstream
+=======
+    - What benefits does Amen Bank's credit card offer 
+    - What is ESPRIT bank 
+    - Does ESPRIT have a partnership with a bank  
+    - I would like to learn more about the advantages of Amen Bank's credit card. Can you tell me about them 
+    - I'm curious to know what makes Amen Bank's card interesting. Can you share its advantages 
+    - ESPRIT Amen bank
+    - Are there any exclusive benefits that come with using Amen Bank's credit card 
+    - Can you walk me through the advantages of Amen Bank's bank cards and how they can benefit me 
+    - Amen bank 
+    - I want to know more about amen bank credit card 
+    
+>>>>>>> Stashed changes
 
 ########################################################
 - intent: double_correction_eng
   examples: |
-    - what is the procedure for making a reevaluation request ?
+    - what is the procedure for making a reevaluation request  
     - how can i make a demand for grade reevaluation 
     - what is the procedure for double correction
     - i want to pass a reevaluation request 
-    - how to make a double correction?
+    - how to make a double correction 
     - how to make a reevaluation request 
     - double correction procedure
     - reevaluation 
     - grade verification
+<<<<<<< Updated upstream
+=======
+    - how to request a grade review 
+    - what are the steps to follow for grade reevaluation 
+    - requesting a grade reevaluation: what is the process 
+    - how can I ask for my grades to be reevaluated 
+    - what is the protocol for grade verification 
+    - how do I apply for a grade reevaluation 
+    - seeking a double correction: what to do 
+    - how to initiate a reevaluation request 
+    - how to challenge a grade 
+    - what is the procedure for requesting a review of grades 
+    - how to contest a grade 
+    - seeking a reevaluation: what are the steps 
+    - what is the process for requesting a double correction 
+    - how to make a grade reevaluation request 
+    - how to ask for a second correction of grades 
+    - How can I contest a grade 
+    - What are the steps for requesting a grade review 
+    - Can I request a grade re-evaluation  If so, how 
+    - How do I challenge a grade that I received 
+    - Is there a process for grade appeals 
+    - What is the policy for grade review requests 
+    - Can I dispute a grade that I think is unfair 
+    - When can I apply for a grade review 
+    - What is the formal process for requesting a grade reconsideration 
+    - How do I make a request for a grade change 
+>>>>>>> Stashed changes
 
 
 - intent: confirmation_option_eng
   examples: |
-    - when do you confirm the choice of fields?
-    - when will you confirm the choice fields?
-    - when will i obtain my orientation result?
+    - when do you confirm the choice of fields 
+    - when will you confirm the choice fields 
+    - when will i obtain my orientation result 
     - when we can know the result of the orientation
     - when we will know our fields
     - orientation result 
+<<<<<<< Updated upstream
+=======
+    - When is the deadline to confirm the choice of fields 
+    - How do I confirm my choice of fields after orientation 
+    - Orientation: when do we find out which fields we were accepted into 
+    - Field confirmation date for orientation results
+    - When will I receive my field confirmation after orientation 
+    - When should I expect to hear about my accepted fields 
+    - When is the deadline to confirm field choices 
+    - How do I confirm my choice of field 
+    - When will I receive my field placement confirmation 
+    - When do we find out which field we've been accepted into 
+    - How long does it take to get the results of field selection 
+    - When should I expect to hear back about my chosen field 
+    - What is the timeline for confirming my field of study 
+    - Is there a specific date for field choice confirmation 
+    - When do we typically receive orientation results 
+    - Can I find out my field placement status before the confirmation deadline 
+    - Is there a way to check the status of my field selection 
+    - How soon after applying will I know my field placement 
+    - When does the field selection process usually start 
+    - When do I need to confirm my field choice by 
+    - What is the typical turnaround time for field selection confirmation 
+>>>>>>> Stashed changes
 
 - intent: conseil_classe_eng
   examples: |
-    - when do class councils start?
-    - when class council start?
-    - when will the class councils take place?
+    - when do class councils start 
+    - when class council start 
+    - when will the class councils take place 
     - when the class counseling period begins
     - class council period
     - class council date 
+<<<<<<< Updated upstream
 
 - intent: credit_eng
+=======
+    - When does the class council meeting begin 
+    - When do class council meetings usually start 
+    - Class council schedule: when does it start 
+    - Class council session start date
+    - Beginning of class council period: when is it 
+    - Dates for class council meetings
+    - What is the date for the next class council meeting 
+    - When are class councils usually held 
+    - When does the class council season begin 
+    - When can I expect the next class council to be scheduled 
+    - Class council schedule 
+    - When does the class council period start and end 
+    - How often do class councils occur during the school year 
+    - Class council meeting dates for this semester 
+    - How can I find out the date of the next class council meeting 
+    - Class council timeline 
+    - Class council timetable: when to expect it 
+    
+- intent: credit_ang
+>>>>>>> Stashed changes
   examples: |
     - how can i check my credits list
     - how can i know if i still have subjects to retake
-    - how can i know if i still have credits?
-    - how do i know if i still have credits?
+    - how can i know if i still have credits 
+    - how do i know if i still have credits 
     - how can i consult my credits list
     - how do i know what are the subjects that i should retake
     - how do i know if i have subject to repass
     - credit 
     - credits
+<<<<<<< Updated upstream
+=======
+    - How to view my credit status 
+    - Checking remaining credits 
+    - Can I check my credit report online 
+    - How to check the credit list for my degree program 
+    - Viewing academic credits online 
+    - Is there a way to check how many credits I have left to complete my degree 
+    - Credit status inquiry 
+    - How to access my credit report 
+    - How can I see my current academic progress and remaining credits 
+    - How do I check if I need to take any additional courses to complete my degree 
+    - How can I review my credit transfer history 
+    - How to request a transcript showing my earned credits 
+    - How to access my academic credit report 
+    - How can I view my credit hours earned 
+    - Can I check my remaining credits online 
+    - How to check the status of my academic credits 
+    - Where to find my credit accumulation status 
+    - How to track my progress towards completing my degree requirements 
+    - Is there a way to check if I have enough credits to graduate 
+>>>>>>> Stashed changes
 
 - intent: exemples_rapport_stage_eng
   examples: |
     - how can obtain examples of internship reports
-    - how can i have examples of internship report?
-    - i want some examples of internship report?
-    - are there any examples for a eos internship report?
-    - where can i have examples of an internship report?
-    - where can i find the internship reports of former students?
+    - how can i have examples of internship report 
+    - i want some examples of internship report 
+    - are there any examples for a eos internship report 
+    - where can i have examples of an internship report 
+    - where can i find the internship reports of former students 
     - reports
+<<<<<<< Updated upstream
+=======
+    - Can I access past internship reports from the school's library 
+    - Are there any online resources for finding internship report examples 
+    - Can I ask my advisor or professors for sample internship reports 
+    - How can I request internship reports from alumni of my school 
+    - Is it common for companies to provide examples of internship reports to their interns 
+    - Are there any professional organizations or associations that provide resources for internship reports 
+    - where to get internship report examples 
+    - obtaining internship report samples
+    - where can I find internship report templates 
+    - looking for internship report models
+    - internship report examples needed
+    - how to access internship report samples
+    - searching for internship report illustrations
+>>>>>>> Stashed changes
 
 - intent: procedure_stage_eng
   examples: |
-    - what is the procedure for doing an internship?
-    - how can i do an internship?
-    - what are the steps to do an internship?
-    - i want information about internships?
+    - what is the procedure for doing an internship 
+    - how can i do an internship 
+    - what are the steps to do an internship 
+    - i want information about internships 
     - information about internship
     - internship procedure
+<<<<<<< Updated upstream
+=======
+    - How to apply for an internship 
+    - Steps to follow for getting an internship
+    - Internship application process
+    - What is involved in the process of getting an internship 
+    - How to find and apply for internships 
+    - How to get started with an internship 
+    - Guidelines for applying for an internship
+    - What are the requirements to start an internship 
+    - Tips for successfully completing an internship
+    - What do I need to know before starting an internship 
+    - How to make the most out of your internship
+    - What are the key elements of a successful internship program 
+    - What should I expect during my internship 
+    - What are the expectations during an internship 
+    - How to prepare for an internship 
+    - How to make a good impression during an internship 
+    - Dos and don'ts of an internship
+    - What are the benefits of doing an internship 
+    - Is doing an internship beneficial for my career 
+    - Steps for internship
+    - Internship application process
+    - Applying for an internship
+    - How to apply for an internship 
+    - Internship process explained
+    - Internship guidelines
+    - Internship requirements and process
+    - Internship application guidelines
+    - Procedure to apply for an internship
+    - How to get an internship 
+>>>>>>> Stashed changes
 
 - intent: avantage_alternance_eng
   examples: |
-    - what are the advantages of work-study training?
-    - advantages of work-study training?
-    - i want to know the advantages of work-study training?
-    - work-study benefits?
+    - what are the advantages of work-study training 
+    - advantages of work-study training 
+    - i want to know the advantages of work-study training 
+    - work-study benefits 
     - the benefits of work-study training
+<<<<<<< Updated upstream
     - what are the advantages of work-study training?
     - why work-study training?
 
+=======
+    - what are the advantages of work-study training 
+    - why work-study training 
+    - benefits of work-based learning
+    - pros of work-study programs
+    - work-study program advantages
+    - work-study benefits and perks
+    - what makes work-study a good choice 
+    - work-study benefits for students
+    - work-study advantages for employers
+    - why choose a work-study program 
+    - the perks of work-study training
+    - advantages of combining work and education
+    - work-study vs traditional training: advantages
+    - work-study training: what's in it for me 
+    - how does work-study training benefit me 
+    - why should I choose work-study over traditional training 
+    - work-study: the benefits explained
+    - the advantages of combining work and study
+    - what are the perks of work-study training 
+    - work-study programs: what makes them advantageous 
+    
+>>>>>>> Stashed changes
 
 
 ############
 - intent: obtention_diplome_ang
   examples: |
-    - what are the conditions for obtaining a diploma?
-    - what conditions to obtain the diploma?
-    - how to get the diploma?
+    - what are the conditions for obtaining a diploma 
+    - what conditions to obtain the diploma 
+    - how to get the diploma 
     - get the diplome
     - graduation condition
     - what are the conditions for graduation
+<<<<<<< Updated upstream
     - what does it take to graduate?
+=======
+    - what does it take to graduate 
+    - How do I receive my diploma 
+    - Is there a ceremony for receiving the diploma 
+    - Can I receive my diploma by mail 
+    - What is the process for diploma distribution 
+    - When do I receive my diploma after graduation 
+    - Do I have to apply for my diploma, or is it automatically issued 
+    - How long does it take to receive the diploma after graduation 
+    - Who can I contact if I haven't received my diploma yet 
+    - Can I request a duplicate diploma if I lose mine 
+    - Is there a fee for obtaining a duplicate diploma 
+    - What are the requirements for earning a degree 
+    - What do I need to do to obtain my diploma 
+    - Can you tell me the criteria for graduation 
+    - What are the graduation requirements 
+    - What are the steps to graduate 
+    - How do I qualify for graduation 
+    - What is needed to receive a diploma 
+>>>>>>> Stashed changes
 
 
 - intent: absence_examen_ang
@@ -516,82 +734,200 @@ nlu:
     - absent from exam
     - absent from exam procedure
     - absence from an exam
-    - do medical certificates constitute proof of absences from examinations?
-    - accompanied by a medical certificate, the examination can be repeated ?
-    - what do we do if we are absent from an exam?
+    - do medical certificates constitute proof of absences from examinations 
+    - accompanied by a medical certificate, the examination can be repeated  
+    - what do we do if we are absent from an exam 
     - when we redo an because of the absence
+<<<<<<< Updated upstream
     - when you redo an exam after being absentt?
     - how to retake an exam if you were absent?
+=======
+    - when you redo an exam after being absentt 
+    - how to retake an exam if you were absent 
+    - Can a student take a make-up exam if they miss the original exam due to illness 
+    - How does the school handle exam absences due to illness 
+    - Are there any deadlines for reporting exam absences due to illness 
+    - How to obtain a medical certificate for an exam absence 
+    - What are the procedures for requesting a make-up exam due to illness 
+    - Can a student be penalized for missing an exam due to illness 
+    - What happens if a student misses multiple exams due to illness 
+    - Is there a limit to the number of make-up exams a student can take 
+    - Dealing with student illness during exams
+    - Exam absenteeism due to illness
+    - How medical certificates impact exam absences
+    - Procedure for exam absences
+    - Absenteeism during exams
+    - Retaking exams after absence
+    - How to retake an exam due to illness
+    - What happens when a student misses an exam due to illness
+>>>>>>> Stashed changes
 
 - intent: redoublement_ang
   examples: |
-    - when we repeat classes?
-    - when we fail?
-    - under what conditions do we repeat class?
-    - how many times can one repeat class at esoritt engineer?
-    - can we repeat classes several times?
-    - if i repeat a year, have i to repass the validated modules?
-    - if we repeat a year, we have to retake the validated teaching units?
-    - if we repeat a year, is it compulsory to redo the modules that have not been validated?
-    - if we repeat class, do we have to attend the modules another time?
-    - if we repeat class, do we have to attend the validated modules another time?
-    - if you repeat class a year, do you have to attend the non-validated modules?
+    - when we repeat classes 
+    - when we fail 
+    - under what conditions do we repeat class 
+    - how many times can one repeat class at esoritt engineer 
+    - can we repeat classes several times 
+    - if i repeat a year, have i to repass the validated modules 
+    - if we repeat a year, we have to retake the validated teaching units 
+    - if we repeat a year, is it compulsory to redo the modules that have not been validated 
+    - if we repeat class, do we have to attend the modules another time 
+    - if we repeat class, do we have to attend the validated modules another time 
+    - if you repeat class a year, do you have to attend the non-validated modules 
     - if one repeats class, should one attend the new modules introduced in the program.
+<<<<<<< Updated upstream
+=======
+    - Class repetition policy 
+    - How many times can a student repeat a class 
+    - Repeating a class: rules and requirements
+    - Do I have to retake all modules if I repeat a year 
+    - Attending modules when repeating a class 
+    - Policy on repeating modules and units 
+    - Do I have to take new modules if I repeat a class 
+    - Repeat classes conditions 
+    - Maximum times to repeat classes 
+    - Repeating a year: validated modules 
+    - Repeating a year: non-validated modules 
+    - Attending modules when repeating a year 
+    - Repeat classes and new modules 
+>>>>>>> Stashed changes
 
 - intent: ratt_ang
   examples: |
-    - what is the catch-up session?
+    - what is the catch-up session 
     - what is the remedial session
-    - under what conditions we go to the remedial session?
+    - under what conditions we go to the remedial session 
     - remedial session
+<<<<<<< Updated upstream
     - can i take the tps again during the remedial session??
     - are the projers the subject of a catch-up?
+=======
+    - can i take the tps again during the remedial session  
+    - are the projers the subject of a catch-up 
+    - What is the purpose of a catch-up session 
+    - How does the remedial session work 
+    - What topics are covered in the remedial session 
+    - Do I need to attend the catch-up session if I missed a lecture 
+    - What are the benefits of attending the catch-up session 
+    - How long does the catch-up session last 
+    - Can I attend the remedial session even if I did not fail any courses 
+    - Is the remedial session mandatory for all students 
+    - Will the remedial session help improve my grades 
+    - Do I need to pay extra for the catch-up or remedial session 
+    - Can I attend the catch-up session online 
+    - How many times can I attend the remedial session 
+    - Do I need to register for the catch-up or remedial session in advance 
+>>>>>>> Stashed changes
   
 
 - intent: annulation_inscription_eng
   examples: |
-    - how do i cancel my registration?
-    - how can i cancel my registration?
+    - how do i cancel my registration 
+    - how can i cancel my registration 
     - i want to cancel my registration
     - information regarding cancellation of registration
     - cancellation of registration
     - when is the last date to cancel the registration
     - what is the deadline to cancel my registration
-    - can i recover the registration fees after canceling my registration?
+    - can i recover the registration fees after canceling my registration 
     - is the cancellation of registration refundable
+<<<<<<< Updated upstream
+=======
+    - How do I withdraw my registration 
+    - What is the process for canceling my registration 
+    - Can you help me cancel my registration 
+    - Is it possible to cancel my registration at this point 
+    - I changed my mind, how do I cancel my registration 
+    - Can I get a refund if I cancel my registration 
+    - What happens to my fees if I cancel my registration 
+    - Can I still cancel my registration after the deadline 
+    - What are the consequences of canceling my registration 
+    - Is there a penalty for canceling my registration 
+    - Can I cancel my registration online 
+    - How long does it take to process a registration cancellation request 
+    - What documents do I need to cancel my registration 
+    - How do I know if my registration cancellation request has been approved 
+    - How can I follow up on my registration cancellation request 
+    - What is the process for cancelling my registration 
+    - How do I withdraw from my courses 
+    - Can I cancel my registration online 
+    - Who do I need to contact to cancel my registration 
+    - Is there a fee for cancelling my registration 
+    - How long does it take to process a registration cancellation 
+    - Can I cancel my registration after the deadline 
+    - Are there any consequences for cancelling my registration 
+    - What happens to my transcript if I cancel my registration 
+    - Can I re-register for the same courses if I cancel my registration 
+    - What are the steps to cancel my registration 
+    - How does cancelling my registration affect my financial aid 
+    - What is the policy for cancelling registration 
+    - How do I know if my registration has been successfully cancelled 
+    - cancel my registration
+    - no more registration 
+    - no registration 
+    - quit esprit
+    - cancel registration 
+    - bye esprit 
+    - i quit 
+>>>>>>> Stashed changes
 
 
 
 - intent: regime_etude_eng
   examples: |
-    - what is the duration of the studies at esprit?
+    - what is the duration of the studies at esprit 
     - how many years i should study befor obtaining my engineering diploma
     - i want to know the study regime
     - i want information about the study regime
     - i have a computer science license how many years of study do i need to have an engineering degree
     - how many years do i need to get my engineering degree
-    - having 3 years diploma how many years i still have to study befor obtaining my engineering diploma?
+    - having 3 years diploma how many years i still have to study befor obtaining my engineering diploma 
     - study regime
     - study regime
     - duration of the engineering diploma 
+<<<<<<< Updated upstream
   
+=======
+    - how long does it take to complete an engineering degree at Esprit 
+    - duration of studies
+    - length of studies
+    - how many years to obtain an engineering diploma at Esprit 
+    - what is the study period at Esprit 
+    - what is the length of the engineering program 
+    - how many years does it take to get an engineering diploma 
+    - time to complete engineering studies at Esprit
+    - duration of engineering studies
+    - what is the length of the engineering program at Esprit 
+    - years needed to earn an engineering degree at Esprit
+    - duration of engineering diploma program
+    - How long do I have to study at Esprit to get my engineering degree 
+    - What's the study schedule like at Esprit 
+    - If I already have a computer science degree, how much longer do I need to study to get an engineering degree 
+    - Can you tell me how many years it takes to get an engineering degree from Esprit 
+    - I have a 3-year diploma, how many more years do I need to study to get an engineering degree 
+    - How many years of studying do I need for my engineering diploma at Esprit 
+    - How long does it take to complete an engineering degree at Esprit 
+   
+>>>>>>> Stashed changes
 
 - intent: mobilite_internationale_eng
   examples: |
-    - is there any opportunities to study abroad?
-    - are there opportunities for international mobility?
+    - is there any opportunities to study abroad 
+    - are there opportunities for international mobility 
     - international mobility opportunities
     - international mobility
-    - esprit offers international mobility?
+    - esprit offers international mobility 
     - double degree
     - exchange semester
     - double degree offers
     - what are the opportunities abroad
     - what are the offers to study abroad
-    - can i study abroad?
+    - can i study abroad 
     - opportunities to study abroad
-    - can i do a double degree?
+    - can i do a double degree 
     - international mobility
+<<<<<<< Updated upstream
 
 - intent: photo_foyer_eng
   examples: |
@@ -610,6 +946,53 @@ nlu:
   examples: |
     - here are the pictures of esprit internal residence
     - here are the pictures of esprit internal residence (block 1)
+=======
+    - Is it possible to study abroad during the program 
+    - Does the program offer any study abroad opportunities 
+    - Can students participate in international exchange programs at Esprit 
+    - What are the options for international study as a student at Esprit 
+    - Are there any exchange programs available for students to study abroad 
+    - I'm interested in studying abroad during my time at Esprit. What opportunities are available 
+    - What kind of international programs does Esprit offer for its students 
+    - Are there any dual degree options for international study 
+    - Can students pursue a double degree while studying abroad 
+    - How does Esprit support students who want to study abroad 
+    - What are the chances of being able to participate in a study abroad program through Esprit 
+    - Mobility opportunities 
+    - Can I study abroad
+    - Study abroad opportunities
+    - Can I do a double degree 
+    - Esprit international mobility
+    - Are there chances to go overseas for studies 
+    - Can I study abroad during my program 
+    - How can I apply for an exchange semester 
+    - Is there any possibility to get a double degree 
+    - What are the options for international mobility 
+    - Does Esprit offer study abroad opportunities 
+    - Can I do part of my program in another country 
+    - Are there any exchange programs available 
+    - I want to study overseas, what are my options 
+    - Is international mobility an option for me at Esprit 
+    - What are the possibilities for studying abroad 
+    - How do I apply for a double degree program 
+    - Can I pursue a part of my studies in another country 
+    - Double degree opportunities 
+    - Exchange programs at Esprit 
+    - Opportunities to study abroad 
+    - Yo, can you study abroad with ESPRIT 
+    - Is there any chance to do a semester abroad 
+    - Are there any international opportunities for students at ESPIRIT 
+    - Does ESPIRIT have any study abroad programs 
+    - Can you hook me up with a double degree program 
+    - I heard ESPIRIT has exchange programs, how can I get in on that 
+    - What's good with international mobility, can I get some details 
+    - Do they offer any trips abroad for students 
+    - Can I bounce to another country for a semester as an ESPIRIT student 
+    - Is it possible to do part of my studies abroad 
+    - I'm trying to travel and get a degree at the same time, can ESPIRIT help me with that 
+    - What's the deal with international opportunities, can you fill me in 
+  
+>>>>>>> Stashed changes
 
 - intent: filiere_ang
   examples: |
@@ -618,11 +1001,53 @@ nlu:
     - fields at esprit
     - what are the fields available for engineering student
     - tell me the list of fields for the third year
-    - what are the fileds for engineerings students in esprit?
-    - what fields could an engineer student choose?
-    - what are the available fileds for engineerings students?
-    - what fields could i choose as an engineering student?
+    - what are the fileds for engineerings students in esprit 
+    - what fields could an engineer student choose 
+    - what are the available fileds for engineerings students 
+    - what fields could i choose as an engineering student 
     - fields
+<<<<<<< Updated upstream
+=======
+    - What fields can engineering students specialize in at Esprit 
+    - List of available fields for engineering students at Esprit.
+    - Available fields for engineering students in the third year at Esprit.
+    - What majors are available for engineering students at Esprit 
+    - What are the fields of study for engineering students at Esprit 
+    - Esprit: engineering fields available.
+    - Engineering fields at Esprit.
+    - Can you tell me about the fields available for engineering students at Esprit 
+    - Which fields are open to engineering students at Esprit 
+    - Esprit: options for engineering students.
+    - Which fields of study are offered at Esprit 
+    - Can you provide me with a list of the available fields of study for engineering students at Esprit 
+    - What majors are available to students in their third year of studies at Esprit 
+    - I'm interested in studying engineering at Esprit, but I'm not sure what fields are available. Can you give me more information 
+    - What options do engineering students have in terms of fields of study at Esprit 
+    - Are there specific fields of study that are available to engineering students at Esprit 
+    - I'm considering studying engineering at Esprit, but I'm not sure what fields I could pursue. Can you help me with this 
+    - Could you give me a list of the fields of study that are open to engineering students at Esprit 
+    - Which fields of study are open to engineering students at Esprit 
+    - I'm looking into studying engineering at Esprit, but I'm not sure what fields are available. Can you provide me with more information on this topic 
+    - Esprit fields 
+    - Available fields at Esprit 
+    - What fields for engineering students at Esprit 
+    - List of fields for third year at Esprit 
+    - Fields for Esprit engineering students 
+    - Options for Esprit engineering students 
+    - Available fields for Esprit engineers 
+    - What fields can I choose as an Esprit engineering student 
+    - Esprit fields: more examples
+    - Can you tell me about the different majors available at your school 
+    - I'm interested in studying engineering, what fields are available at your institution 
+    - What are the options for engineering students in terms of majors 
+    - Could you provide me with a list of majors available to third-year students 
+    - I'm considering studying engineering, what majors are offered at your college 
+    - What majors can I choose from as an engineering student 
+    - What fields of study are available for engineering students 
+    - What majors are open to engineering students 
+    - I'm looking to study engineering, what major options do I have 
+    - What majors are available for students studying engineering 
+>>>>>>> Stashed changes
     
 
 - intent: lien_doc_ang
@@ -651,9 +1076,47 @@ nlu:
     - bonjour
     - bonsoir
     - coucou
+<<<<<<< Updated upstream
     - allo  
     - salut 
 
+=======
+    - allo   
+    - alo
+    - Salut, ça roule  
+    - Salut à toi !
+    - Salutations 
+    - cc
+    - bnjr
+    - hey
+    - Allô
+    - Yo
+    - Bonne journée
+    - Bonne soirée
+    - ciao
+    - alloha
+    - bjr spiritbot
+    - bonj spiritbot
+    - slt spiritbot
+    - salut spiritbot
+    - bonjour spiritbot
+    - bonsoir spiritbot
+    - coucou spiritbot
+    - allo spiritbot
+    - alo spiritbot
+    - Salut, ça roule spiritbot 
+    - Salut à toi spiritbot!
+    - Salutations spiritbot
+    - cc spiritbot
+    - bnjr spiritbot
+    - hey spiritbot
+    - Allô spiritbot
+    - Yo spiritbot
+    - Bonne journée spiritbot
+    - Bonne soirée spiritbot
+    - ciao spiritbot
+    - alloha spiritbot
+>>>>>>> Stashed changes
 
 - intent: remerciement
   examples: |
@@ -704,7 +1167,20 @@ nlu:
     - contact
     - num tel
     - je veux contacter l'administration
+<<<<<<< Updated upstream
     - sur quelle adresse mail je peux vous contacter?
+=======
+    - sur quelle adresse mail je peux vous contacter
+    - num
+    - numéro 
+    - Quel est le numéro de téléphone d'ESPRIT
+    - Comment puis-je vous contacter 
+    - Pourriez-vous me donner le numéro de téléphone de l'administration
+    - Pourriez-vous me donner le numéro 
+    - Comment puis-je vous joindre
+    - Je cherche à contacter esprit, pouvez-vous me donner un numéro de téléphone  
+    - Je cherche à contacter esprit
+>>>>>>> Stashed changes
 
 - intent: courssoir
   examples: |
@@ -727,6 +1203,7 @@ nlu:
 
 - intent: date_preinscription_fr
   examples: |
+<<<<<<< Updated upstream
     - quand on peut faire la préinscription sur le site?
     - quelle est la date de préinscription sur le site?
     - quand on fait la préinscription sur le site?
@@ -735,25 +1212,55 @@ nlu:
     - quand est qu'on peut faire l'inscription sur le site? 
     - quel est le dernier délai pour l inscription?
     - y aura t'il une 2e session pour ceux qui sont en retard pour l'inscription?
+=======
+    - quand on peut faire la préinscription sur le site 
+    - quelle est la date de préinscription sur le site 
+    - quand on fait la préinscription sur le site 
+    - c'est quand l'inscription 
+    - quand est qu'on peut faire la préinscription sur le site 
+    - quand est qu'on peut faire l'inscription sur le site  
+    - quel est le dernier délai pour l inscription 
+    - y aura t'il une 2e session pour ceux qui sont en retard pour l'inscription 
+>>>>>>> Stashed changes
     - date préinscription
     - date inscription
     - préinscri
-    - Y a-t-il une limite de places pour les pré-inscriptions?
+    - Y a-t-il une limite de places pour les pré-inscriptions 
     - je veux savoir la date d'inscription
     - je veux savoir les dates des sessions d'inscription
+<<<<<<< Updated upstream
     - quel est le processus de pré-inscription?
+=======
+    - quel est le processus de pré-inscription 
+    - À partir de quand peut-on faire la pré-inscription sur le site  
+    - Quand est-ce que les pré-inscriptions sont ouvertes sur le site  
+    - Quand est-ce que les inscriptions sont disponibles sur le site  
+    - Quelle est la période de pré-inscription sur le site  
+    - Quelle est la période d'inscription sur le site  
+    - Quelle est la date limite d'inscription  
+    - préinscription
+    - inscription
+    - Y a-t-il une deuxième session d'inscription pour les retardataires
+    - Je voudrais savoir quand sont les dates d'inscription
+    - Je voudrais connaître les dates des sessions d'inscription
+    - Avez-vous déjà fixé la date de préinscription pour la prochaine session 
+    - Savez-vous quand les préinscriptions seront ouvertes pour la prochaine session 
+    - Est-ce que vous pouvez me donner une idée approximative de la date de préinscription pour la prochaine session  
+    - À quel moment est-ce que les préinscriptions seront disponibles pour la prochaine session
+    - Quand est-ce que vous allez annoncer la date de préinscription pour la prochaine session 
+>>>>>>> Stashed changes
 
 - intent: mobilite_internationale
   examples: |
-    - est-ce-qu'il ya des opportunités de mobilité à l'international?
+    - est-ce-qu'il ya des opportunités de mobilité à l'international 
     - opportunités de mobilité à l’international 
     - mobilité à l’international
-    - esprit offre des mobilités à l'international?
+    - esprit offre des mobilités à l'international 
     - semestre d'échange
     - comment je peux etudier a l'etranger 
     - quelles sont les opportunités a l'etranger
     - quelles sont les offres d'etudier a l'etranger
-    - je peux etudier a l'etranger?
+    - je peux etudier a l'etranger 
     - mobilité internationale
     - offres de mobilités
     - quels sont les avantages d'une expérience de mobilité internationale ?
@@ -762,7 +1269,7 @@ nlu:
     - quelle est la durée typique d'une expérience de mobilité internationale ?
 
 
-- intent: avantage_alternance
+- intent: avantage_alternance_fr
   examples: |
     - quelles sont les avantages de la formations en alternance?
     - avantages de la formations en alternance?
@@ -784,20 +1291,89 @@ nlu:
     - en quoi 3a differt de 3b
     - je me demande c'est quoi la différence entre la 3eme a et la 3eme b en informatique?
     - 3a et 3b 
+<<<<<<< Updated upstream
     - est ce qu'il y a une différence entre 3a et 3b?
+=======
+    - est ce qu'il y a une différence entre 3a et 3b
+    - Pouvez-vous m'expliquer les distinctions entre les filières 3A et 3B 
+    - Quelles sont les particularités de la formation en 3A et en 3B 
+    - Je suis intéressé(e) par la filière informatique en 3ème année, mais je ne sais pas quelle option choisir entre 3A et 3B. Pouvez-vous m'aider à comprendre la différence 
+    - Y a-t-il une différence de programme ou de débouchés entre les filières 3A et 3B en informatique 
+    - Je suis actuellement en 2ème année en informatique et j'hésite entre la filière 3A et la 3B. Quels sont les critères à prendre en compte pour faire un choix éclairé 
+    - Différence 3A et 3B 
+    - En quoi 3A et 3B sont différents 
+    - 3A vs 3B : quelles sont les différences 
+    - Quelle est la distinction entre 3A et 3B 
+    - Y a-t-il une différence entre 3A et 3B 
+    - 3a et 3b : différences 
+    - Différence entre 3a et 3b 
+    - 3a et 3b : quoi de différent 
+    - 3a vs 3b : différences 
+    - 3a et 3b : quelles distinctions 
+    - 3a ou 3b : quelles sont les différences 
+    - 3a et 3b : en quoi sont-elles différentes 
+    - 3a 3b
+    - 3b
+    - 3a
+    - Quelle est la diff entre 3A et 3B en info  
+    - 3A et 3B en informatique, c'est quoi la diff  
+    - J'hésite entre 3A et 3B en informatique, pouvez-vous m'aider à comprendre les différences  
+    - 3A ou 3B en info, comment choisir  
+    - Est-ce qu'il y a une différence de programme ou de débouchés entre 3A et 3B en informatique  
+    - 3A vs 3B en informatique : quelles sont les particularités  
+    - Différence entre les filières 3A et 3B en informatique  
+    - 3A ou 3B en info : quoi de différent  
+    - Comprendre les distinctions entre 3A et 3B en informatique
+    - Les différences entre 3A et 3B en informatique, expliquez-moi
+    - Filière 3A ou 3B en informatique : comment choisir  
+>>>>>>> Stashed changes
 
 
 
 - intent: concours_admission_fr
   examples: |
-    - comment se déroule le concours d'admission?
-    - comment se passe le concours d'admission?
+    - comment se déroule le concours d'admission 
+    - comment se passe le concours d'admission 
     - je veux des informations sur le concours d'admission
     - déroulement du concours d'admission
     - donnez moi des informations sur le déroulement de concours d'admission
     - je veux des informations concernant le concours d'admission
     - concours d'admission
     - donne moi plus de details sur le concours d'admission
+<<<<<<< Updated upstream
+=======
+    - Quels sont les critères d'évaluation lors du concours d'admission  
+    - Comment s'inscrire au concours d'admission  
+    - Y a-t-il une préparation recommandée pour le concours d'admission  
+    - Quelles sont les épreuves du concours d'admission  
+    - Combien de temps dure le concours d'admission  
+    - Comment se déroule la journée du concours d'admission  
+    - Quand a lieu le concours d'admission  
+    - Est-ce que le concours d'admission est obligatoire pour être admis à Esprit  
+    - Comment est noté le concours d'admission  
+    - Est-ce que le concours d'admission est payant  
+    - Comment se déroule le concours d'admission  
+    - Déroulement du concours d'admission  
+    - Concours d'admission : infos  
+    - Comment passer le concours d'admission  
+    - Tout savoir sur le concours d'admission  
+    - Comment se passe le concours d'admission  
+    - Infos concours admission
+    - Concours admission Esprit
+    - Admission : déroulement concours
+    - Détails concours admission
+    - Concours Esprit : informations
+    - Concours d'entrée : comment ça se passe  
+    - C'est quoi le truc pour rentrer à Esprit  
+    - Comment on peut faire pour s'inscrire à Esprit  
+    - Est-ce que c'est compliqué de passer le concours d'Esprit  
+    - Le concours pour Esprit, c'est facile  
+    - Qu'est-ce qu'il faut savoir pour passer le concours d'Esprit  
+    - Comment ça marche le concours pour Esprit  
+    - J'ai entendu parler d'un concours pour entrer à Esprit, c'est quoi le délire  
+    - Est-ce que le concours pour Esprit est difficile  
+    - Comment je peux entrer à Esprit   Faut passer un concours  
+>>>>>>> Stashed changes
     
 
 
@@ -814,7 +1390,43 @@ nlu:
     - j'ai rien reçu à propos la onfirmation de préinscription
     - aucun mail de confirmation d'admission
     - aucun mail ne m'a été transmis pour me notifier de mon admission.
+<<<<<<< Updated upstream
     
+=======
+    - Je n'ai pas reçu de réponse concernant ma demande d'admission
+    - Je n'ai pas reçu de confirmation de la part de l'établissement pour ma demande d'inscription
+    - Je n'ai pas eu de nouvelles de mon dossier d'admission
+    - J'attends toujours une réponse de l'école pour savoir si j'ai été accepté(e)
+    - Je n'ai pas été informé(e) de l'état d'avancement de ma demande d'inscription
+    - Je n'ai pas reçu de mail d'accusé de réception pour ma demande d'admission
+    - Je n'ai pas reçu de mail de suivi concernant l'avancement de ma demande d'inscription
+    - Je n'ai pas reçu de mail de confirmation d'inscription
+    - Je suis en attente de confirmation de mon inscription mais je n'ai reçu aucune nouvelle
+    - Je n'ai pas reçu de mail pour confirmer mon inscription
+    - J'attends toujours un mail de confirmation pour l'inscription
+    - J'ai pré-inscrit mais je n'ai pas reçu de mail de confirmation
+    - Je ne trouve pas le mail de confirmation pour l'inscription
+    - Je ne suis pas sûr(e) d'avoir reçu un mail de confirmation pour l'inscription
+    - J'ai regardé dans mes spams mais je n'ai pas trouvé le mail de confirmation pour l'inscription
+    - Je me demande si j'ai bien été inscrit(e), je n'ai pas reçu de confirmation
+    - Je n'ai pas reçu de mail pour confirmer mon inscription, que dois-je faire  
+    - Mon inscription a-t-elle été prise en compte   Je n'ai pas reçu de confirmation
+    - Pas de mail confirmation préinscription/admission
+    - Pas de confirmation inscription/admission par mail
+    - Toujours rien reçu en ce qui concerne l'inscription/admission
+    - Aucune nouvelle concernant l'inscription/admission par mail
+    - Pas de confirmation par mail pour l'inscription/admission
+    - Pas de mail pour confirmer mon inscription/admission
+    - Aucun mail de confirmation pour l'inscription/admission
+    - Mail confirmation inscription/admission manquant
+    - Pas de mail confirmation préinscription
+    - Pas de mail admission
+    - Aucune confirmation préinscription/admission reçue
+    - Rien reçu concernant la confirmation d'admission
+    - pas confirmation admission 
+    - admission pas confirmé 
+    - amission non confirmé 
+>>>>>>> Stashed changes
 
 
 
@@ -1070,10 +1682,50 @@ nlu:
     - donne moi une idée générale sur esprit
     - info generale esprit
     - je veux avoir des informations générales sur esprit
+<<<<<<< Updated upstream
     - est ce que tu peux me donner plus d'infromations sur esprit?
 
 
 - intent: avantage_esprit_fr      
+=======
+    - est ce que tu peux me donner plus d'infromations sur esprit 
+    - Je veux en savoir plus sur Esprit.
+    - Donne-moi une idée générale sur Esprit.
+    - Infos générales sur Esprit.
+    - Je souhaite obtenir des informations générales sur Esprit.
+    - Est-ce que tu peux me donner plus de détails sur Esprit  
+    - J'aimerais avoir des renseignements sur Esprit.
+    - Quelques infos générales sur Esprit, s'il te plaît.
+    - Qu'est-ce que tu peux me dire sur Esprit en général  
+    - Pouvez-vous me donner un aperçu général d'Esprit  
+    - J'aimerais en apprendre davantage sur Esprit, si possible.
+    - J'aimerais en savoir plus sur Esprit, tu vois  
+    - Donne-moi une idée générale de ce qu'est Esprit.
+    - T'as des infos générales sur Esprit  
+    - Je veux des détails sur Esprit, genre tout.
+    - T'as des trucs à me dire sur Esprit en général  
+    - J'veux des infos générales sur Esprit, si tu peux m'aider.
+    - Est-ce que tu peux me filer plus d'infos sur Esprit  
+    - Raconte-moi tout ce que tu sais sur Esprit, stp.
+    - J'aimerais avoir une idée générale d'Esprit, tu peux m'aider  
+    - Dis-moi tout ce que t'as sur Esprit
+    - je veux savoir plus d'information generale sur esprit
+    - parle moi d'esprit quand elle a ete fonde etc
+    - Je veux en savoir plus d'informations générales sur Esprit.
+    - Parle-moi d'Esprit, donne-moi les détails.
+    - Quand est-ce qu'Esprit a été fondée  
+    - Dis-moi tout ce que tu sais sur Esprit, depuis sa création jusqu'à maintenant.
+    - Est-ce qu'Esprit a des partenariats avec d'autres écoles ou institutions  
+    - Quelles sont les spécialités ou filières disponibles à Esprit  
+    - Est-ce qu'Esprit propose des programmes de recherche  
+    - Est-ce qu'Esprit offre des possibilités de mobilité internationale  
+    - Comment est l'environnement étudiant à Esprit  
+    - Qu'est-ce qui distingue Esprit des autres écoles d'ingénieurs  
+    - c'est quoi esprit
+  
+    
+- intent: avantage_esprit_fr
+>>>>>>> Stashed changes
   examples: |
     - pourquoi esprit?
     - pourquoi choisir esprit?
@@ -1170,6 +1822,48 @@ nlu:
     - quand sera la date des resultats?
     - je veux m'informer sur la date du résultat
     - je veux connaître la date du résultat
+<<<<<<< Updated upstream
+=======
+    - Quand est-ce qu'on aura les résultats  
+    - C'est quand la date des résultats  
+    - Quelle est la date prévue pour les résultats  
+    - Date du résultat, peux-tu me la donner  
+    - Quand sera annoncée la date des résultats  
+    - Je souhaite m'informer sur la date de publication des résultats.
+    - Je veux connaître la date exacte du résultat.
+    - Tu sais quand on aura les résultats  
+    - La date des résultats, tu l'as  
+    - Quand est-ce qu'on pourra connaître les résultats  
+    - Je veux savoir quand est-ce qu'on aura les résultats.
+    - La date de diffusion des résultats, tu peux me la donner  
+    - Je veux connaître la date précise des résultats, si possible.
+    - Quand est-ce qu'ils annonceront la date des résultats  
+    - Dis-moi quand est-ce qu'on saura les résultats.
+    - Y a une idée de quand les résultats seront disponibles  
+    - T'as des infos sur la date de publication des résultats  
+    - Quand est-ce qu'on pourra enfin avoir les résultats  
+    - La date des résultats est-elle déjà fixée  
+    - J'aimerais savoir quand est-ce qu'on recevra les résultats.
+    - C'est bientôt la date des résultats  
+    - Je suis impatient de connaître la date des résultats, tu sais  
+    - Quand est-ce qu'on aura enfin les résultats   J'ai hâte !
+    - T'as des infos sur la date où les résultats seront lâchés  
+    - Dis-moi quand je pourrai enfin savoir si j'ai réussi !
+    - Y a une date fixée pour la publication des résultats  
+    - Je veux connaître le jour où je saurai si j'ai réussi ou non.
+    - La date des résultats, c'est pour quand exactement  
+    - Quand est-ce qu'on pourra enfin voir les résultats affichés  
+    - C'est quand qu'on aura les résultats   Je suis trop impatient(e) !
+    - T'as des news sur la date où on pourra enfin souffler après les résultats  
+    - Dis-moi, la date de sortie des résultats, ça se rapproche ou pas du tout  
+    - Je veux savoir quand est-ce qu'on pourra enfin avoir le verdict !
+    - La date des résultats, c'est pas trop loin maintenant, non  
+    - Quand est-ce qu'on saura si on a réussi cette fichue épreuve  
+    - J'aimerais connaître la date précise des résultats pour être fixé.
+    - je suis impatient pour connaitre mes notes
+    - quand avoir mes notes de fin d'année
+
+>>>>>>> Stashed changes
 
 - intent: valider_module_fr
   examples: |
@@ -1179,7 +1873,28 @@ nlu:
     - comment valider un module?
     - condition pour valider un module
     - note nécessaire pour valider un module
+<<<<<<< Updated upstream
     - avec quelle note en valide un module?
+=======
+    - avec quelle note en valide un module 
+    - Quelle est la note minimale pour valider un module  
+    - Comment est-ce qu'on peut valider un module  
+    - Quelles sont les conditions pour valider un module  
+    - Quelle note est nécessaire pour valider un module  
+    - À partir de quelle note un module est-il considéré comme validé  
+    - Quelle est la note minimale pour valider un module d'études  
+    - Comment se passe la validation d'un module  
+    - Pour valider un module, il faut avoir une note d'au moins 10, c'est ça  
+    - Quelle note faut-il obtenir pour que le module soit validé  
+    - Comment ça marche pour valider un module   Faut avoir une bonne note  
+    - Est-ce qu'il y a une note minimale à avoir pour valider un module  
+    - J'ai entendu dire qu'on peut valider un module avec une note de 8, c'est vrai  
+    - Quelle note je dois avoir pour que le module soit considéré comme validé  
+    - C'est quoi les conditions pour valider un module   La moyenne  
+    - J'aimerais savoir quelle note je dois avoir pour valider mes modules.
+    - Pour réussir un module, quelle note je dois viser  
+    - On m'a dit que la note minimale pour valider un module est de 10, c'est bien ça  
+>>>>>>> Stashed changes
 
 
 
@@ -1193,6 +1908,7 @@ nlu:
       - comment réussir l'année universitaire
       - avec quelle moyenne on réussit?
       - les règles pour passer l'année
+<<<<<<< Updated upstream
       - avec une moyenne de {moyenne}, on redouble ?
       - est ce qu'on redouble avec une moyenne de {moyenne} ?
       - est ce qu'on refait l'année avec une moyenne de {moyenne} ?
@@ -1200,6 +1916,54 @@ nlu:
       - quelle est la moyenne requise pour avoir un rachat ?
       - avec quelle moyenne j'aurai le rachat ?
 
+=======
+      - avec une moyenne de {moyenne}, on redouble  
+      - est ce qu'on redouble avec une moyenne de {moyenne}  
+      - est ce qu'on refait l'année avec une moyenne de {moyenne}  
+      - est ce qu'on redouble avec {moyenne} comme moyenne générale  
+      - quelle est la moyenne requise pour avoir un rachat  
+      - avec quelle moyenne j'aurai le rachat  
+      - Quelle est la moyenne minimale pour réussir  
+      - Quelles sont les conditions à satisfaire pour réussir  
+      - Quelles sont les règles de passage en année supérieure  
+      - Comment se fait le passage en année supérieure  
+      - Comment réussir l'année universitaire  
+      - Avec quelle moyenne valide-t-on l'année  
+      - Quelles sont les règles pour passer à l'année suivante  
+      - Si j'ai une moyenne de {moyenne}, est-ce que je redouble  
+      - Est-ce qu'on redouble si on a une moyenne de {moyenne}  
+      - Si ma moyenne générale est de {moyenne}, est-ce que je refais l'année  
+      - Quelle est la moyenne requise pour bénéficier d'un rachat  
+      - Avec quelle moyenne aurai-je droit à un rachat  
+      - Quelle est la moyenne minimale pour être admis  
+      - Comment fait-on pour réussir l'année  
+      - Quelles sont les règles pour passer à l'année suivante  
+      - Si ma moyenne est inférieure à {moyenne}, est-ce que je redouble  
+      - Est-ce qu'on peut passer en année supérieure avec une moyenne de {moyenne}  
+      - Quelle est la moyenne requise pour éviter le redoublement  
+      - Avec quelle moyenne peut-on bénéficier d'un rachat d'année  
+      - Est-ce qu'on redouble si notre moyenne générale est de {moyenne  
+      - Quels critères faut-il satisfaire pour être admis en année supérieure  
+      - Si ma moyenne est en dessous de {moyenne}, devrai-je refaire l'année  
+      - Comment se passe le passage en année supérieure à Esprit Ingénieur  
+      - Y a-t-il une note seuil à atteindre pour être admis en année supérieure  
+      - Est-ce qu'on a la possibilité de rattraper l'année avec une moyenne de {moyenne}  
+      - Quelle est la moyenne minimale pour être admis à l'année suivante  
+      - Comment réussir et passer en année supérieure  
+      - Quelles sont les conditions à remplir pour valider l'année  
+      - Est-ce que je redouble si ma moyenne est inférieure à {moyenne}  
+      - Est-ce que je peux passer en année supérieure avec une moyenne de {moyenne}  
+      - Quelle est la note requise pour éviter le redoublement  
+      - Avec quelle moyenne puis-je bénéficier d'un rachat d'année  
+      - Est-ce que je dois refaire l'année si ma moyenne est de {moyenne}  
+      - Comment fonctionne le passage en année supérieure à Esprit Ingénieur  
+      - Y a-t-il une moyenne seuil à atteindre pour être admis en année supérieure  
+      - Est-ce possible de rattraper l'année avec une moyenne de {moyenne}  
+      - Quelles sont les exigences pour être admis en année supérieure  
+      - Si ma moyenne est inférieure à {moyenne}, suis-je obligé(e) de redoubler  
+      - Quelles sont les chances de réussir si ma moyenne est de {moyenne}  
+      - Est-ce que je peux compenser une mauvaise note par une meilleure moyenne  
+>>>>>>> Stashed changes
 
 - intent: carte_amen_fr
   examples: |
@@ -1223,7 +1987,41 @@ nlu:
     - la double correction   
     - vérification note
     - double correction
+<<<<<<< Updated upstream
     - comment effectuer une double correction?
+=======
+    - comment effectuer une double correction 
+    - Quelle est la procédure pour faire une double correction  
+    - Je veux demander une double correction de ma note.
+    - Comment est-ce que je peux faire une double correction  
+    - J'aimerais passer une demande de vérification de ma note.
+    - Quelle est la procédure à suivre pour demander une double correction  
+    - Explique-moi comment fonctionne la double correction.
+    - Est-ce que je peux faire vérifier ma note par une double correction  
+    - Comment est-ce que je peux effectuer une double correction  
+    - Je souhaite faire une double correction de ma note.
+    - Comment est-ce que je peux demander une double correction de ma copie  
+    - Si je ne suis pas satisfait(e) de ma note, est-ce que je peux demander une double correction  
+    - J'aimerais faire vérifier ma copie par une double correction. Comment faire  
+    - Quelle est la marche à suivre pour demander une double correction de ma note  
+    - Est-ce possible d'effectuer une double correction si je pense qu'il y a une erreur dans ma note  
+    - Comment est-ce que je peux faire une demande de double correction de ma note  
+    - Explique-moi comment fonctionne la procédure de double correction.
+    - Je veux faire une demande de vérification de note par une double correction. Comment procéder  
+    - Quelles sont les étapes à suivre pour demander une double correction de ma copie  
+    - Est-ce qu'il y a un formulaire ou une démarche spécifique pour la double correction  
+    - Je souhaite soumettre ma copie à une double correction. Quelles sont les modalités  
+    - Comment est-ce que je peux faire réviser ma note par une double correction  
+    - Est-il possible de demander une double correction de ma copie d'examen  
+    - Quelle est la procédure pour faire corriger à nouveau ma note  
+    - J'ai des doutes sur ma note, est-ce que je peux demander une double correction  
+    - Comment est-ce que je peux contester ma note et demander une vérification  
+    - Est-ce que l'école propose un service de double correction des copies d'examen  
+    - Je souhaite faire une demande de révision de ma note par une double correction.
+    - Quelles sont les démarches à suivre pour obtenir une double correction de ma note  
+    - Comment puis-je faire appel à une double correction de ma copie d'examen  
+    - Je pense qu'il y a eu une erreur dans la correction de ma copie, comment puis-je faire vérifier ma note  
+>>>>>>> Stashed changes
 
 - intent: confirmation_option_fr
   examples: |
@@ -1236,8 +2034,33 @@ nlu:
     - quand specialite
     - je veux savoir ma specialite
     - quand est-ce que je vais savoir ma specialite
+<<<<<<< Updated upstream
 
 
+=======
+    - À quelle date connaîtrons-nous le résultat de l'orientation  
+    - Quand saurons-nous nos options  
+    - Quand sera annoncé le résultat de l'orientation  
+    - Quelle est la date de confirmation des options  
+    - Quand est-ce que je saurai ma spécialité  
+    - À quel moment sera-t-il annoncé ma spécialité  
+    - Quand vais-je connaître ma spécialité  
+    - Quand sera publiée la liste des spécialités  
+    - Est-ce que vous avez des informations sur la date de confirmation des options  
+    - Je veux savoir quand je recevrai la confirmation de mon choix d'option.
+    - Quand est-ce que vous validez les choix d'options  
+    - À partir de quand aurons-nous la confirmation de nos options  
+    - Quand serons-nous informés de nos options définitives  
+    - Quelle est la date de publication des résultats d'orientation  
+    - Est-ce que vous pouvez me dire quand je saurai quelles options j'ai été affecté  
+    - Quand est-ce que je recevrai les informations sur ma spécialité  
+    - Je veux connaître la date à laquelle je saurai quelle option j'ai été accepté.
+    - À quel moment sera-t-il annoncé le résultat de l'orientation et les options attribuées  
+    - Quand est-ce que je pourrai connaître ma spécialisation  
+    - Est-ce que vous avez des informations sur la date de confirmation des options pour cette année  
+    - Quand vais-je recevoir la confirmation de mon choix d'option  
+    
+>>>>>>> Stashed changes
 - intent: conseil_classe_fr
   examples: |
     - quand les conseils de classes commencent-ils?
@@ -1248,6 +2071,36 @@ nlu:
     - date conseil de classe
     - quand commence les conseils de classe?
     - conseil de classe
+<<<<<<< Updated upstream
+=======
+    - Quand est-ce que les conseils de classe commencent  
+    - Quand est-ce que le conseil de classe va commencer  
+    - Quand auront lieu les conseils de classe  
+    - Quand est-ce que la période des conseils de classe commence  
+    - Quelle est la période des conseils de classe  
+    - Quelle est la date du prochain conseil de classe  
+    - À partir de quand les conseils de classe débutent-ils  
+    - Date des conseils de classe
+    - Est-ce que tu as des informations sur la période des conseils de classe  
+    - Je voudrais connaître la date du conseil de classe.
+    - Quand est-ce que les réunions de conseil de classe débutent  
+    - À partir de quand auront lieu les conseils de classe  
+    - Quand est-ce que je saurai les résultats du conseil de classe  
+    - Quelle est la période des réunions de conseil de classe  
+    - Date du prochain conseil de classe
+    - Est-ce que tu peux me dire quand se tiendra le conseil de classe  
+    - Je voudrais connaître la période des conseils de classe.
+    - Quand est-ce que je recevrai le compte rendu du conseil de classe  
+    - Est-ce que les conseils de classe ont déjà commencé  
+    - Quand est-ce que les résultats des conseils de classe seront publiés  
+    - J'aimerais savoir quand est-ce que je serai informé des décisions prises lors du conseil de classe.
+    - Cet exemple aborde des questions supplémentaires sur la période des réunions de conseil de classe, la publication des résultats et l'obtention des décisions prises lors de ces réunions à Esprit Ingénieur.
+
+#######################Aloulou fin ici#####################""
+
+
+########################## Début NADIA ############
+>>>>>>> Stashed changes
 
 - intent: credit_fr
   examples: |
@@ -1460,7 +2313,12 @@ nlu:
     - quelles sont les fileres disponible?
     - je veux des détails sur l'orientation
     - je veux des information sur l'orientation
+<<<<<<< Updated upstream
     - comment je peux avoir des informations sur les options disponible?
+=======
+    - comment je peux avoir des informations sur les options disponible 
+    - je  voudrais des informations sur les filières
+>>>>>>> Stashed changes
 
 - intent: applicabilite_formation_fr
   examples: |
@@ -1972,6 +2830,7 @@ nlu:
 
 - intent: admis_ar
   examples:  |
+<<<<<<< Updated upstream
       - kadech l moyenne minimale bech nenjah
       - kadeh l moyenne minimale bech nanjah
       - kadeh lezmni bech nanjah
@@ -1994,6 +2853,30 @@ nlu:
       - naawed laam b {moyenne} moyenne ?
       - ndoubel b {moyenne} moyenne ?
       - ndoubel ken njib {moyenne} moyenne generale
+=======
+    - kadech l moyenne minimale bech nenjah
+    - kadeh l moyenne minimale bech nanjah
+    - kadeh lezmni bech nanjah
+    - chnouma les conditions lezmin bech nanjah
+    - chnia houma les conditions lezmin bech nanjah
+    - 9adeh l moyenne minimale bech nanjah
+    - kadeh l moyenne minimale bech nanjah
+    - kadech lezm bech nanjah
+    - condition à satisfaire bech nanjah
+    - kadeh lezm njib bech nanjah
+    - 9adech lezemni njib bech nanja7
+    - n7eb nanja7 9adeh lezemni moyenne
+    - kifeh nanjah fel année universitaire
+    - bkadeh moyenne nanjah
+    - b9adeh moyenne nanja7
+    - ken njib {moyenne} ndoubel  
+    - ken njib {moyenne} naawed l aam  
+    - ken njib {moyenne} n3awed l 3am  
+    - n3awed l3am b {moyenne} moyenne  
+    - naawed laam b {moyenne} moyenne  
+    - ndoubel b {moyenne} moyenne  
+    - ndoubel ken njib {moyenne} moyenne generale
+>>>>>>> Stashed changes
 
 - intent: carte_amen_ar
   examples: |
@@ -2288,6 +3171,7 @@ nlu:
     
 - intent: raven
   examples: |
+<<<<<<< Updated upstream
     - what is a university 
     - what is a uni 
     - what is a degree
@@ -2298,4 +3182,844 @@ nlu:
     - c'est quoi ingenieurie ?
     - c'est quoi l'intelligence artificielle ?
     - c'est quoi l'IA ? 
+=======
+    - phone number
+    - mail address   
+    - what is the phone number of the administration 
+    - give me the phone number of the administration
+    - i want the email adress of esprit
+    - how can i contact esprit
+    - administration phone number
+    - i want to contact the administration
+    - in which email address can I contact you 
+    - how can i contact you
+    - how can i phone esprit
+    - i want to contact the faculty
+    - what is your contact 
+    - when can i call you 
+    - give me your mail plz
+    - your email please
+    - your mail heyy 
+    - where can i address you 
+    - What is the full contact address of ESPRIT University 
+    - Could you provide me with the phone number of ESPRIT University's main office 
+    - Is there a specific email address I can use to contact ESPRIT University 
+    - What is the official website of ESPRIT University 
+    - Can you provide me with the contact information for the admissions office at ESPRIT University 
+    - How can I get in touch with the student services department at ESPRIT University 
+    - Is there a dedicated helpline or support line for inquiries related to ESPRIT University 
+    - Are there any specific contact details for international students who wish to study at ESPRIT University 
+    - Is there a separate contact person or department for financial aid or scholarship inquiries at ESPRIT University 
+    - How can I contact the faculty or professors at ESPRIT University 
+    - Are there any social media accounts or online platforms through which I can connect with ESPRIT University 
+    - Is there a dedicated contact person for questions regarding the curriculum or academic programs at ESPRIT University 
+    - How can I get in touch with the IT or technical support team at ESPRIT University 
+    - Are there any specific contact details for the sports or recreational facilities at ESPRIT University 
+    - Is there a public relations or media contact for press inquiries related to ESPRIT University 
+    - How can I contact the administration or management team at ESPRIT University 
 
+
+- intent: double_diplome_ang
+  examples: |
+    - Double diploma
+    - Offers of double diploma
+    - Can I do a double diploma 
+    - Opportunities to study to get a double diploma
+    - What is a program of double diploma 
+    - What are the advantages of a program of double diploma 
+    - What are the criteria of eligibility for a program of double diploma 
+    - what is a double diploma 
+    - how can i get a double diploma 
+    - where can i get a double diploma 
+    - the double diploma 
+    - What is a double diploma program 
+    - How does a double diploma program differ from a regular degree program 
+    - Which universities or educational institutions offer double diploma programs 
+    - What are the benefits of pursuing a double diploma program 
+    - Are double diploma programs available for undergraduate or graduate students  
+    - Are there any prerequisites or specific requirements to be eligible for a double diploma program 
+    - Will I receive two separate degrees upon completion of a double diploma program 
+    - Can I choose different majors or specializations for each diploma in a double diploma program 
+    - What are the potential career opportunities after completing a double diploma program 
+
+- intent: certificat_ang
+  examples: |
+    - What are the certifications at Esprit 
+    - How can I obtain a certificate 
+    - How can I get a certificate 
+    - Esprit certification
+    - Obtaining certifications at Esprit
+    - What types of certifications does ESPRIT offer 
+    - How can I obtain a certification from ESPRIT 
+    - What are the requirements to be eligible for certification programs at ESPRIT 
+    - Are ESPRIT certifications recognized and accredited 
+    - Can I pursue a certification program at ESPRIT while working or studying elsewhere 
+    - Are there any prerequisites or prior knowledge necessary for certification programs at ESPRIT 
+    - How long does it typically take to complete a certification program at ESPRIT 
+    - What is the cost associated with certification programs at ESPRIT 
+    - Are there any financial aid or scholarship options available for ESPRIT certification programs  
+    - Can I pursue multiple certifications simultaneously at ESPRIT 
+    - What are the career prospects or job opportunities associated with ESPRIT certifications 
+    - How are the certification programs at ESPRIT structured  Are there any specific courses or exams 
+    - Can I transfer credits earned from ESPRIT certification programs to other educational institutions 
+    - Are there any continuing education or professional development options available for ESPRIT certification holders 
+    - How can I verify the authenticity of an ESPRIT certification 
+    - Can international students apply for ESPRIT certification programs 
+    - What support services are available for students pursuing certification programs at ESPRIT 
+    - How can I stay updated with new certification offerings or updates from ESPRIT 
+
+- intent: stage_ang
+  examples: |
+    - Is the internship mandatory 
+    - What are the types of internships for each level of studies 
+    - What are the documents required to do an internship 
+    - How can I obtain the necessary documents to do an internship 
+    - Where can I submit my internship report 
+    - Internship
+    - internship esprit
+    - intern
+    - how can i lead to an internship 
+    - give me informations about internship   
+    - Does the university offer internship programs for students 
+    - What are the requirements to be eligible for an internship through the university 
+    - How can I find information about available internships at the university 
+    - Are there specific departments or offices dedicated to facilitating internships 
+    - Can international students apply for internships through the university 
+    - What is the process for applying for internships at the university 
+    - Are internships paid or unpaid  What is the typical compensation 
+    - Are there any prerequisites or specific skills required for specific internship positions 
+    - How long do internships typically last at the university 
+    - Are there different types of internships available, such as research-based or industry-based 
+    - Can internships be completed for academic credit 
+    - Are there any limitations on the number of internships a student can pursue 
+    - Can I pursue an internship during the academic year or only during summer/winter breaks 
+    - What support or resources does the university provide to students during their internships 
+    - Are there any partnerships or connections with external organizations for internship placements 
+    - How does the university ensure the quality and relevance of internship experiences 
+    - Are there any networking or career development opportunities associated with the university's internships 
+    - Can the university help with finding housing or accommodations for students during their internships 
+    - How are internships evaluated or assessed by the university 
+
+- intent: paiement_par_tranche_ang
+  examples: |
+    - I want to pay in installments for this order.
+    - How can I pay in installments 
+    - Can I pay in installments 
+    - I cannot pay the full amount at once, can I spread the payment 
+    - Payment by installment.
+    - I want to pay by installment.
+    - Is it possible to pay by installments 
+    - Can I opt for a payment plan 
+    - Is there a financing option available 
+    - Are installment payments accepted 
+    - Can I divide the payment into multiple parts 
+    - Do you offer a monthly payment option 
+    - Can I spread the cost over time 
+    - Is there a deferred payment plan 
+    - Are there any flexible payment options 
+    - Can I pay in monthly installments 
+    - Do you provide a pay-over-time option 
+    - Is there a financing scheme for this purchase 
+    - Can I choose a payment plan that suits my budget 
+    - Are there any options for staggered payments 
+    - Can I make partial payments over a period 
+    - Is a layaway plan available 
+    - Do you offer a buy-now-pay-later option 
+    - Can I pay in equal installments 
+    - Is there a monthly installment scheme 
+    - Are there any payment alternatives for spreading out the cost 
+    - Can I set up a payment schedule 
+    - can i pay in parts
+##
+
+- intent: info_generale_esprit_ang
+  examples: |
+    - I want to know more details about esprit.
+    - Give me a general idea about esprit.
+    - General information about esprit.
+    - I want to have general information about esprit.
+    - Can you give me more information about esprit 
+    - Could you provide me with an overview of ESPRIT 
+    - What can you tell me about ESPRIT in more detail 
+    - I'm interested in learning more about ESPRIT. Can you provide additional information 
+    - Can you give me a brief introduction to ESPRIT 
+    - I would like to know the basics about ESPRIT. Can you provide some general information 
+    - Could you share some key details about ESPRIT 
+    - Can you give me an overview of what ESPRIT is all about 
+    - I'm curious about ESPRIT. Can you provide some general background information 
+    - What are the main features or characteristics of ESPRIT 
+    - Can you give me a general understanding of ESPRIT and its purpose 
+    - I want to gather more information about ESPRIT. Where can I start 
+    - Could you give me a general description of ESPRIT and its offerings 
+    - What sets ESPRIT apart from other universities or institutions 
+    - Can you provide a summary of ESPRIT's mission and values 
+    - I'm looking for a general overview of ESPRIT's programs and services. Can you help 
+    - Could you share some insights into the history and background of ESPRIT 
+    - What are the core disciplines or areas of expertise at ESPRIT 
+    - Can you provide a high-level overview of ESPRIT's faculty and resources 
+    - I'm interested in the overall reputation and achievements of ESPRIT. Can you provide some details 
+    - Can you direct me to additional resources for obtaining comprehensive information about ESPRIT 
+    - i want to know more about this faculty
+    - i want to know more about esprit  
+
+- intent: avantage_esprit_ang      
+  examples: |
+    - Why esprit 
+    - Why choose esprit 
+    - What are the specificities of esprit 
+    - How does esprit distinguish itself from other engineering schools 
+    - Advantages of esprit.
+    - Give me the advantages of studying at esprit.
+    - What are the advantages of studying at esprit 
+    - What makes ESPRIT a compelling choice for prospective students 
+    - Why should I consider ESPRIT for my engineering education 
+    - Can you highlight the unique features or specificities of ESPRIT as an educational institution 
+    - How does ESPRIT differentiate itself from other engineering schools 
+    - What advantages does studying at ESPRIT offer compared to other universities 
+    - Why is ESPRIT a preferred destination for engineering students 
+    - Can you provide me with the distinct advantages of choosing ESPRIT for my studies 
+    - What sets ESPRIT apart from other engineering schools in terms of curriculum and teaching methods 
+    - What are the key strengths of ESPRIT that make it stand out among other educational institutions 
+    - How does ESPRIT foster innovation and practical skills development in its engineering programs 
+    - Can you highlight the career-oriented approach of studying at ESPRIT 
+    - What resources and facilities does ESPRIT provide to enhance the learning experience 
+    - Can you outline the industry partnerships and opportunities for practical exposure at ESPRIT 
+    - Are there any specific research initiatives or centers of excellence associated with ESPRIT 
+    - What support services are available to students at ESPRIT, such as career guidance or internships 
+    - Can you discuss the reputation and recognition of ESPRIT within the engineering community 
+    - Are there any notable success stories or achievements of ESPRIT alumni 
+    - How does ESPRIT promote a multicultural and diverse learning environment 
+    - Can you provide information on scholarships or financial aid options available at ESPRIT 
+    - What do current students appreciate most about studying at ESPRIT 
+
+- intent: procedure_inscription_ang
+  examples: |
+    - What are the registration procedures 
+    - How do I proceed with registration 
+    - What is the registration process 
+    - How do I enroll at esprit 
+    - Registration procedure for esprit.
+    - Enrolling at esprit.
+    - I want to know how I can register.
+    - I want to know how I can enroll.
+    - Can you provide an overview of the registration procedures at ESPRIT 
+    - How do I proceed with the registration process at ESPRIT 
+    - What are the steps involved in enrolling at ESPRIT 
+    - Can you guide me through the registration procedure for ESPRIT 
+    - What is the process for enrollment at ESPRIT 
+    - How can I register for courses at ESPRIT 
+    - Can you explain the steps I need to take to enroll at ESPRIT 
+    - What documentation or information is required for registration at ESPRIT 
+    - Are there any specific deadlines or timelines to be aware of during the registration process 
+    - Can you provide a breakdown of the registration steps for prospective students at ESPRIT 
+    - Is there an online registration portal or platform for enrolling at ESPRIT 
+    - Are there any prerequisites or eligibility criteria for enrollment at ESPRIT 
+    - How can I access the registration forms or application materials for ESPRIT 
+    - Can you provide information on the required fees or tuition payments during the registration process 
+    - Are there any specific orientation or onboarding sessions for newly registered students at ESPRIT 
+    - Can you guide me on how to create a student account or profile for registration purposes 
+    - Are there any placement tests or assessments as part of the registration process at ESPRIT 
+    - Can you explain the timeline for course selection or program choices during enrollment at ESPRIT 
+    - Are there any additional support services or resources available to assist with the registration process at ESPRIT 
+    - Can you direct me to the relevant department or contact person for inquiries regarding registration at ESPRIT 
+
+- intent: applicabilite_formation_ang
+  examples: |
+    - Is what we learn in school applicable in real life 
+    - Does the training we receive make us directly operational 
+    - Is our education adapted to labor market trends 
+    - What's the point of spending so much time on theoretical subjects if they're not directly applicable in professional life 
+    - How can we know if our education will make us operational as soon as we enter the job market 
+    - Does our education adequately prepare us for the realities of the professional world 
+    - Is the theory taught in class easily transposable to practical applications 
+    - Est-ce que la théorie enseignée en cours est facilement transposable dans la pratique  
+    - How can we know if our education will enable us to meet the needs of the company where we will work 
+    - Can I work directly after graduation 
+    - Is it easy to find a job after completing the education 
+    - Are the skills and knowledge we acquire in school directly applicable in real-life situations 
+    - Does the training we receive in our education make us immediately job-ready and operational 
+    - Is our education at your institution designed to align with current labor market trends and industry needs 
+    - What is the value of spending a significant amount of time on theoretical subjects if they don't have direct applications in professional life 
+    - How can we assess if our education will make us immediately operational upon entering the job market 
+    - Does our education adequately prepare us for the practical realities and demands of the professional world 
+    - Is the theory taught in classrooms easily transferrable to real-life practical applications 
+    - Est-ce que la théorie enseignée en cours est facilement applicable dans des situations pratiques  
+    - How can we determine if our education equips us with the necessary skills to meet the specific requirements of companies in the job market 
+    - Can we expect to find employment directly after graduation from your institution 
+    - Is it generally easy to find a job after completing the education provided by your institution 
+    - Are there specific career services or resources available to assist students in finding employment after graduation 
+    - Can you provide information on the job placement rates or success of graduates from your institution 
+    - What efforts does your institution make to ensure the relevance and marketability of the education provided to students 
+    - Are there opportunities for internships or practical experiences during the education program to enhance employability 
+    - Can you share success stories or examples of graduates who have successfully transitioned into the workforce 
+    - How does your institution collaborate with industry partners to bridge the gap between education and employment needs 
+    - What measures are in place to ensure the curriculum reflects the evolving demands and advancements in the job market 
+    - Can you provide insights into the skills or qualities employers typically seek in graduates from your institution 
+    - Are there any networking or career development opportunities provided to students to facilitate their transition into the job market 
+
+- intent: reconnaissance_diplome_ang
+  examples: |
+    - How can I get my degree recognized abroad 
+    - Is my degree recognized abroad 
+    - How do I obtain recognition of my degree in another country 
+    - Can I work abroad with my degree 
+    - What do I need to do to have my degree recognized in another country 
+    - What are the procedures for the recognition of my degree 
+    - Is my degree recognized by the state 
+    - How can I find out if my degree is recognized abroad 
+    - Is the recognition of my degree automatic in all countries 
+    - What are the conditions for the recognition of my degree abroad 
+    - Is my degree recognized in France 
+    - Is my degree recognized in Germany 
+    - Is my degree recognized in Europe 
+    - Is my degree recognized in the United States 
+    - Is my degree recognized in Asia 
+    - What steps can I take to ensure my degree is recognized abroad 
+    - Is my degree recognized internationally or specifically in other countries 
+    - How can I obtain recognition of my degree in another country 
+    - Can I pursue employment opportunities abroad with my degree 
+    - What requirements or procedures must I follow to have my degree recognized in another country 
+    - What are the specific processes involved in the recognition of my degree 
+    - Is my degree recognized by the government or relevant authorities in my desired country of recognition 
+    - How can I find out if my degree is recognized abroad 
+    - Is the recognition of my degree automatic in all countries, or are there additional steps to be taken 
+    - What are the conditions or criteria for the recognition of my degree in foreign countries 
+    - Are there specific organizations or agencies responsible for the recognition of degrees in different countries 
+    - How can I navigate the process of degree recognition if I plan to study or work internationally 
+    - Are there any specific documents or paperwork required for the recognition of my degree abroad 
+    - What resources or support services are available to assist with the recognition of my degree in foreign countries 
+    - Can you provide information on any bilateral agreements or international frameworks that facilitate the recognition of degrees between countries 
+    - How long does the process of degree recognition typically take 
+    - Are there any additional examinations or assessments I might need to undergo for the recognition of my degree abroad 
+    - Can I start working immediately in a profession related to my degree upon its recognition in another country 
+    - Are there any limitations or restrictions on the recognition of degrees in certain countries or professional fields 
+    - How can I determine the equivalency or comparability of my degree to the educational standards in other countries 
+    - Are there any specific language requirements or language proficiency tests associated with the recognition of degrees abroad 
+    - Can I seek assistance or guidance from my home institution or country's embassy for the recognition of my degree in another country 
+    - Are there any networking or professional associations that can help with the recognition of degrees in specific regions or industries 
+    - What are the potential benefits or advantages of having my degree recognized abroad 
+    - How can I stay informed about any changes or updates in the recognition process for degrees in different countries 
+
+- intent: reduction_premier_ang
+  examples: |
+    - Are there any discounts for top-performing students 
+    - How can I benefit from the discount for top students in my field 
+    - Do students with good grades have any advantages or discounts 
+    - How can I find out if I'm eligible for the discount for top-performing students 
+    - How does the discount for top students in my field work 
+    - What is the amount of the discount for students with good grades 
+    - reduction
+    - Is there a sibling discount 
+    - Is there a discount for being the top student 
+    - Is there a discount for being the top student in my field 
+    - Are there any discounts available 
+    - Do I qualify for a discount 
+    - Do high-achieving students get any discounts or perks 
+    - How can I get in on those sweet discounts for top students in my field 
+    - Do good grades come with any cool benefits or discounts 
+    - How do I find out if I can score a discount for being an awesome student 
+    - So, how does that discount thing work for top students like me 
+    - Any idea how much of a discount I can get for having good grades 
+    - Is there a discount for students who have siblings studying here 
+    - Will I get a discount for being the top student in the whole school 
+    - Can I get a special discount for being the best in my field 
+    - Are there any sweet discounts up for grabs 
+    - Do I qualify for any discounts or special deals 
+    - Is there any scholarship or financial aid for high-achieving students 
+    - Can you break it down for me  How do I get some money off my tuition 
+    - Is there a specific GPA I need to maintain to keep the discount 
+    - Can you explain how I can apply for discounts or benefits as a top-performing student 
+    - How can I prove that I'm an outstanding student to get a discount 
+    - Do I have to do anything extra to maintain the discount throughout my studies 
+    - Are there any other factors that might help me score a discount or financial advantage 
+    - Can I chat with someone about any discounts or cool stuff available for top students 
+    - Can you hook me up with any info on discounts or perks for top-performing students 
+
+- intent: administration_ang
+  examples: |
+    - Who is Tahar Ben Lakhdar 
+    - Who is the director of ESPRIT 
+    - CEO
+    - Founder of ESPRIT
+    - Can you provide more information about Tahar Ben Lakhdar and his contributions to academia 
+    - What is Tahar Ben Lakhdar's background and expertise in the field of physics 
+    - Is Tahar Ben Lakhdar affiliated with ESPRIT in any capacity 
+    - Who currently holds the position of director at ESPRIT 
+    - Can you tell me the name of the CEO of ESPRIT 
+    - Who is currently leading ESPRIT as the CEO 
+    - Can you provide details about the person who founded ESPRIT 
+    - Who is the founder of ESPRIT and what motivated them to establish the institution 
+    - Are there any notable individuals associated with the founding of ESPRIT 
+    - Can you provide information on the history and origins of ESPRIT as an educational institution 
+    - Has the leadership or founding members of ESPRIT changed since its establishment 
+    - Who are the key decision-makers and leaders within ESPRIT's organizational structure 
+    - Can you share any notable achievements or initiatives spearheaded by the director or CEO of ESPRIT 
+    - Is there any information available on the background and qualifications of the current director or CEO of ESPRIT 
+    - Are there any other notable figures or key personnel involved in the management of ESPRIT 
+
+- intent: partenaires_ang
+  examples: |
+    - Partners
+    - Who are ESPRIT's partners 
+    - Conventions
+    - Who sponsors ESPRIT 
+    - With whom is ESPRIT in convention 
+    - Friends of ESPRIT
+    - So, who are ESPRIT's partners in crime 
+    - Can you spill the beans on ESPRIT's squad of partners 
+    - Any juicy gossip on who's in cahoots with ESPRIT 
+    - Who's got ESPRIT's back as their sponsors 
+    - Do you know which cool organizations ESPRIT is hooked up with 
+    - Can you give me the lowdown on ESPRIT's convention scene 
+    - Who's got ESPRIT's stamp of approval as their official friends 
+    - Are there any big shots supporting ESPRIT's initiatives 
+    - Who's ESPRIT in cahoots with to level up their game 
+    - Any insider info on the conventions and partnerships ESPRIT is rocking 
+    - Can you dish out some details on ESPRIT's cool collaborators 
+    - Who are ESPRIT's BFFs in the industry 
+    - Any word on who's in the inner circle of ESPRIT's partnerships 
+    - Are there any epic projects brewing from ESPRIT's collaborations 
+    - Can you share some success stories from ESPRIT's partner network 
+    - How do ESPRIT's partnerships and conventions spice up the educational experience 
+    - Any secret sauce behind ESPRIT's choice of sponsors and partners 
+    - Can you give me the scoop on how students and faculty benefit from ESPRIT's connections 
+    - What's the tea on ESPRIT's plans to expand their partner network and conventions 
+    - Can you hook me up with more deets on ESPRIT's future collaborations 
+
+- intent: nature_cours_fr
+  examples: |
+    - [cours du jour internationaux](cours_fr)
+    - [cours du jour tunisien](cours_fr)
+    - [cours du soir tunisien](cours_fr)
+
+- intent: nature_cours_ang
+  examples: |
+    - [international day course](cours_ang)
+    - [Tunisian day course](cours_ang)
+    - [Tunisian evening course](cours_ang)
+
+
+- intent: procedure_inscription_fr
+  examples: |
+    - quels sont les procedures d'inscription 
+    - comment procéder à l'inscription 
+    - quel est le processus d'inscription
+    - comment s'inscrire à esprit 
+    - procedure inscription esprit
+    - inscription a esprit 
+    - s'inscrire a esprit
+    - je veux savoir comment je peux m'inscrire
+    - Quelles sont les étapes à suivre pour les procédures d'inscription  
+    - Comment puis-je procéder à mon inscription  
+    - Quel est le processus d'inscription à suivre  
+    - Comment puis-je m'inscrire à l'ESPRIT  
+    - Pouvez-vous m'expliquer la procédure d'inscription à l'ESPRIT  
+    - Comment faire pour m'inscrire à l'ESPRIT  
+    - Je souhaite connaître la marche à suivre pour m'inscrire.
+    - Quels documents sont nécessaires pour l'inscription à l'ESPRIT  
+    - Y a-t-il des délais ou des dates limites à respecter lors de l'inscription  
+    - Où puis-je obtenir les formulaires d'inscription pour l'ESPRIT  
+    - Pouvez-vous me fournir des informations sur les frais d'inscription à l'ESPRIT  
+    - Existe-t-il des orientations spécifiques ou des sessions d'accueil pour les nouveaux inscrits à l'ESPRIT  
+    - Quels services de soutien sont disponibles pour les étudiants lors du processus d'inscription à l'ESPRIT  
+    - Comment puis-je créer un compte étudiant ou un profil pour l'inscription  
+    - Y a-t-il des tests de placement ou des évaluations à passer lors de l'inscription à l'ESPRIT  
+    - Pouvez-vous expliquer le calendrier de sélection des cours ou le choix des programmes lors de l'inscription à l'ESPRIT  
+    - Y a-t-il des ressources supplémentaires ou des services d'aide pour faciliter le processus d'inscription à l'ESPRIT  
+    - Qui contacter pour obtenir des informations sur l'inscription à l'ESPRIT  
+    - Quels sont les critères d'admission ou les exigences pour l'inscription à l'ESPRIT  
+    - Pouvez-vous partager des conseils ou des recommandations pour une inscription réussie à l'ESPRIT  
+
+
+- intent: procedure_inscription_ang
+  examples: |
+    - What are the registration procedures 
+    - How do I proceed with registration 
+    - What is the registration process 
+    - How do I enroll at esprit 
+    - Registration procedure for esprit.
+    - Enrolling at esprit.
+    - I want to know how I can register.
+    - I want to know how I can enroll.
+    - Can you explain the steps involved in the registration process 
+    - What documents are required for registration/enrollment 
+    - Are there any specific deadlines for registration at esprit 
+    - Are there any fees associated with the registration/enrollment process 
+    - Is there an online registration option available 
+    - Can you provide information on the registration/enrollment timeline 
+    - Are there any prerequisites or eligibility criteria for registration/enrollment 
+    - What are the benefits of registering/enrolling at esprit 
+    - Is there a specific department or office where I should go for registration/enrollment 
+    - Are there any orientation programs or sessions for new students during the registration/enrollment process 
+    - Can I make changes to my registration/enrollment after it has been completed 
+    - What are the modes of payment accepted for registration/enrollment fees 
+    - Are there any scholarships or financial aid options available for registered/enrolled students 
+    - Are there any placement tests or assessments required during the registration/enrollment process 
+    - Are there any additional forms or paperwork that need to be completed for registration/enrollment 
+    - How long does the registration/enrollment process typically take 
+    - Can I register/enroll for multiple courses or programs at once 
+    - Is there a specific dress code or uniform requirement for registered/enrolled students 
+    - Can you provide information on the cancellation or withdrawal process after registration/enrollment 
+    - Are there any student support services available to assist with the registration/enrollment process 
+
+- intent: procedure_inscription_ar
+  examples: |
+    - chnouma les procedures mta l inscription
+    - chneya houma les procedures mta l inscription
+    - chnia na3mel bech n9ayed
+    - kifeh n9ayed 
+    - kifech nkayed
+    - kifeh tsir l inscription f esprit
+    - ta9yid f esprit
+    - nheb nkayed
+    - n7eb n9ayed
+    - aatini les procedures mtaa l inscription
+    - chnia le processus d'inscription
+    - kifech tsir l inscription 
+    - chnia les procedures d inscription
+    - nheb naref kifeh namel inscription
+    - tnajm tkoli kifeh namel l inscription
+    - nheb nodkhol lel fac
+    - mezelt ki khdhit lbac 
+    - nheb nodkhol lel Esprit
+    - esprit kifeh nodkhlelha 
+    - nheb ninscrivi fi esprit 
+    - esprit ta9yid 
+
+
+- intent: cout_formation_ar
+  examples: |
+    - b9adech el 3am 
+    - 9adeh nkhales 
+    - chnoua nkhales 
+    - kadeh l aam
+    - kdeh l 3am
+    - 9adeh tetkalef el 9raya 
+    - 9adeh soum el 3am 
+    - 9adeh flous yetkalef el 3am 
+    - b9adeh el 9raya  
+    - 9adeh 3am fi esprit 
+    - b9adech esprit  
+    - chnoua soum el 9raya fi esprit 
+  
+
+- intent: types_des_couts_fr
+  examples: |
+    - [un étudiant tunisien cours du jour](type_cout_fr)
+    - [un étudiant non pris en charge par une entreprise](type_cout_fr)
+    - [un étudiant tunisien cours du soir](type_cout_fr)
+    - [un étudiant international](type_cout_fr)
+
+- intent: types_des_couts_ang
+  examples: |
+    - [a tunisian student (day course)](type_cout_ang)
+    - [a student not supported by a company](type_cout_ang)
+    - [a tunisian student (evening course)](type_cout_ang)
+    - [an international student](type_cout_ang)
+
+- intent: rentree_niveau_fr
+  examples: |
+    - [1 ère année](rentree_niveau_fr)
+    - [2 ème année](rentree_niveau_fr)
+    - [3 ème année](rentree_niveau_fr)
+    - [4 ème année](rentree_niveau_fr)
+    - [5 ème année](rentree_niveau_fr)
+
+- intent: rentree_niveau_ang
+  examples: |
+    - [1st year] (rentree_niveau_ang)
+    - [2nd year] (rentree_niveau_ang)
+    - [3rd year] (rentree_niveau_ang)
+    - [4th year] (rentree_niveau_ang)
+    - [5th year] (rentree_niveau_ang)
+############### fin karim
+>>>>>>> Stashed changes
+
+- intent: soft_skills_fr
+  examples: |
+    - j'ai des problemes de communication  
+    - je veux améliorer mes compétances en soft skills
+    - J'éprouve des difficultés à communiquer efficacement
+    - J'ai du mal à gerer mon temps
+    - Je rencontre des obstacles dans ma capacité à communiquer avec les autres
+    - J'aimerais améliorer ma mes compétances de leadership
+    - Je souhaite renforcer mes compétences en matière de communication
+    - Je cherche à développer la facon dont je présente dans les présentations
+    - ou je peux améliorer mes softskills
+    - Je veux développer mes soft skills pour être plus efficace dans mon travail
+    - Je suis conscient que mes compétences en communication ont besoin d'être améliorées
+    - Je suis déterminé à devenir un meilleur communicateur/une meilleure communicatrice
+    - Je veux apprendre à m'exprimer plus efficacement et à être plus à l'aise dans mes interactions sociales
+    - Je suis motivé à améliorer mes compétences en gestion du temps et en organisation
+    - J'ai réalisé que les soft skills sont essentielles pour réussir dans ma carrière et je veux les perfectionner
+
+
+- intent: soft_skills_ang
+  examples: |
+    - I have communication issues
+    - I want to improve my soft skills
+    - I have difficulties communicating effectively
+    - I struggle with time management 
+    - I encounter obstacles in my ability to communicate with others 
+    - I would like to enhance my leadership skills 
+    - I wish to strengthen my communication skills 
+    - I'm looking to develop my presentation skills 
+    - Where can I improve my soft skills 
+    - I want to develop my soft skills to be more effective in my work 
+    - I am aware that my communication skills need improvement 
+    - I am determined to become a better communicator 
+    - I want to learn to express myself more effectively and feel more comfortable in social interactions 
+    - I am motivated to improve my time management and organizational skills 
+    - I have realized that soft skills are crucial for success in my career, and I want to refine them
+
+- intent: massai_fr
+  examples: |
+    - que veut dire massai
+    - c'est quoi massai
+    - quand massai 
+    - ou je peux faire des formations en machine learning
+    - je veux apprendre le deep learning
+    - est ce que il y'a un club d'été a esprit
+    - pourquoi massai
+    - les avantages du massai 
+    - j'ai entendu parler dans ma fac que pendant l'été il y'a massai , c'est quoi
+
+- intent: massai_ang
+  examples: |
+    - the meaning of massai
+    - What is Massai 
+    - When is Massai 
+    - Where can I take machine learning courses 
+    - I want to learn deep learning.
+    - Is there a summer club at ESPRIT 
+    - Why Massai 
+    - How long does Massai last 
+    - Over how many days is Massai held 
+    - What are the benefits of Massai 
+    - What is the content of Massai 
+    - I heard in my university that there is Massai during the summer, what is it 
+
+- intent: massai_plusinfo_fr
+  examples: |
+    - il y'a quoi exactement dans les workshops massai
+    - donne moi le contenu du massai
+    - combien la durée du massai 
+    - sur combien du jour massai
+    - les avantages du massai 
+    - le contenu du massai
+    - je veux participer a massai mais je ne sais pas les workshops proposées
+
+- intent: massai_plusinfo_ang
+  examples: |
+    - What exactly is included in the MASSAI workshops  
+    - Provide me with the content of MASSAI.
+    - How long does MASSAI last  
+    - How many days does MASSAI span  
+    - What are the advantages of MASSAI  
+    - What is the content of MASSAI  
+    - I want to participate in MASSAI, but I don't know the workshops offered.
+
+- intent: chatbot_esprit_fr
+  examples: |
+    - qui tu es 
+    - tu fais quoi
+    - t'es qui
+    - présente toi 
+    - tu fais quoi dans la vie 
+    - comment tu t'appelles
+    - qui est ton créateur 
+    - tu travailles
+    - t'es un humain
+    - qui parle avec moi
+    - qui me répond
+
+- intent: chatbot_esprit_ang
+  examples: |
+    - What do you do  
+    - Who are you  
+    - Who are you  
+    - Introduce yourself.
+    - What do you do in life  
+    - What's your name  
+    - Who is your creator  
+    - Do you work  
+    - Are you a human  
+    - Who is speaking with me  
+    - Who is responding to me  
+ 
+- intent: localisation_fr
+  examples: |
+    - ou se trouve esprit
+    - c'est ou ESPRIT
+    - je veux l'adresse exact d'esprit
+    - esprit se trouve au pole technologique ou a ghazela
+    - esprit c'est ou
+    - je veux la localisation d'esprit
+    - donne moi la localisation d'esprit
+    - ou l'administration d'esprit se localise
+   
+- intent: localisation_ang
+  examples: |
+    - Where is ESPRIT located  
+    - Where is ESPRIT  
+    - I want the exact address of ESPRIT.
+    - Is ESPRIT located at the Technological Pole or in Ghazela  
+    - Where is ESPRIT  
+    - I want the location of ESPRIT.
+    - Give me the location of ESPRIT.
+    - Where is the administration of ESPRIT located  
+ 
+- intent: cellule_d'ecoute_fr
+  examples: |
+    - je pleure
+    - c'est quoi la cellule d'ecoute
+    - je ne me sens pas bien
+    - avec qui je peux parler si je ne me sens pas bien
+    - j'arrive pas a m'integré dans l'environment a esprit
+    - je veux quelqu'un m'ecoute
+    - Qu'est-ce que le service de soutien ou la cellule d'écoute   
+    - Je ne suis pas dans mon état normal.
+    - Avec qui puis-je discuter si je ne me sens pas bien   
+    - J'ai du mal à m'intégrer dans l'environnement d'ESPRIT.
+    - J'ai besoin de quelqu'un qui puisse m'écouter.
+    - Quelle est la fonction de la cellule d'écoute   
+    - Je me sens mal à l'aise et j'ai besoin de parler à quelqu'un.
+    - Est-ce qu'il y a un service de soutien pour les problèmes d'intégration   
+    - J'aimerais avoir quelqu'un avec qui je peux partager mes préoccupations.
+    - Je recherche une oreille attentive pour m'écouter.
+
+- intent: cellule_d'ecoute_ang
+  examples: |
+    - What is the listening cell  
+    - I don't feel well.
+    - Who can I talk to if I don't feel well  
+    - I'm having trouble integrating into the environment at ESPRIT.
+    - I want someone to listen to me.
+    - What is the support service or the listening cell  
+    - I'm not feeling normal.
+    - Who can I talk to if I don't feel well  
+    - I'm having difficulty integrating into the ESPRIT environment.
+    - I need someone to listen to me.
+    - What is the function of the listening cell  
+    - I feel uncomfortable and I need to talk to someone.
+    - Is there a support service for integration problems  
+    - I would like someone with whom I can share my concerns.
+    - I'm looking for a listening ear.
+
+- intent: sentiment_fr
+  examples: |  
+    - cava
+    - comment va tu
+    - comment ca va
+    - t'as quoi de nouveau
+    - tu te sens bien
+    - Ça va bien   
+    - Comment vas-tu   
+    - Quoi de neuf   
+    - Est-ce que tu te sens bien   
+    - Tout va bien de ton côté   
+    - Comment te sens-tu aujourd'hui   
+    - Quelles sont les nouvelles   
+    - Est-ce que tout va bien pour toi   
+    - Comment se passe ta journée   
+    - As-tu des nouvelles à partager   
+ 
+
+- intent: sentiment_ang
+  examples: |
+    - How are you doing  
+    - How are you feeling  
+    - What's new  
+    - Are you feeling well  
+    - Are you okay  
+    - How are you  
+    - What's up  
+    - Are you feeling good  
+    - Is everything going well on your side  
+    - How are you feeling today  
+    - Any news to share  
+    - Is everything okay with you  
+    - How is your day going  
+    - Do you have any news to share  
+    - u good
+
+- intent: sentiment_ar
+  examples: |
+    - chneya hwelek 
+    - chneya jaw 
+    - oumourek henya 
+    - mechya denya 
+    - cheda? 
+    - ti chnouwa jawek  
+    - chhalek 
+    - chhalek ya ghali
+    - cavan 
+
+
+- intent: activite_fr
+  examples: |
+    - il y'a quoi comme activité de divertissement a esprit
+    - comment je peux passer du bon temps a esprit 
+    - Quelles sont les activités de divertissement disponibles à ESPRIT  
+    - Comment puis-je m'amuser à ESPRIT  
+    - Quelles options de divertissement y a-t-il à ESPRIT  
+    - Comment puis-je passer un bon moment à ESPRIT  
+    - Quels sont les loisirs proposés à ESPRIT  
+    - Quelles sont les activités récréatives offertes à ESPRIT  
+    - Comment puis-je profiter de mon temps libre à ESPRIT  
+    - Quels sont les moyens de se divertir à ESPRIT  
+    - Quelles possibilités de divertissement existe-t-il à ESPRIT  
+    - Comment puis-je rendre mon temps à ESPRIT agréable et divertissant   
+ 
+- intent: activite_ang
+  examples: |
+    - What entertainment activities are available at ESPRIT 
+    - How can I have a good time at ESPRIT 
+    - What entertainment activities are available at  esprit
+    - How can I have fun at ESPRIT 
+    - What entertainment options are there at ESPRIT 
+    - How can I have a good time at ESPRIT 
+    - What leisure activities are offered at esprit
+    - What recreational activities are offered at esprit
+    - How can I make the most of my free time at esprit
+    - What are the ways to entertain oneself at esprit
+    - What entertainment possibilities are there at ESPRIT 
+    - How can I make my time at ESPRIT enjoyable and entertaining 
+ 
+- intent: creation_club_fr
+  examples: |
+    - Comment puis-je ouvrir un club  
+    - je veux ouvrir un club
+    - Quelles étapes sont nécessaires pour ouvrir un club  
+    - Quels sont les éléments à prendre en compte pour ouvrir un club  
+    - Quelle est la procédure pour créer et ouvrir un club  
+    - J'ai une idée pour ouvrir un club, comment puis-je la concrétiser  
+    - Quelles sont les démarches à suivre pour lancer un nouveau club  
+    - Comment transformer mon idée de club en une réalité concrète  
+    - Quels sont les aspects légaux et administratifs à considérer lors de l'ouverture d'un club  
+    - Quelles ressources et conseils sont disponibles pour m'aider à ouvrir mon propre club  
+    - Comment planifier et gérer les différentes étapes de l'ouverture d'un club  
+    - Quelles sont les responsabilités et obligations associées à l'ouverture et à la gestion d'un club  
+    - Comment promouvoir et attirer des membres pour mon club nouvellement ouvert  
+    - Quelles sont les clés du succès pour ouvrir et maintenir un club prospère  
+    - Quelles sont les erreurs courantes à éviter lors de l'ouverture d'un club  
+    - Comment obtenir le soutien financier nécessaire pour ouvrir un club    
+
+- intent: creation_club_ang
+  examples: |
+    - How can I open a club 
+    - I want to open a club.
+    - What steps are necessary to open a club 
+    - What factors should be taken into account when opening a club 
+    - What is the procedure for creating and opening a club 
+    - I have an idea to open a club, how can I make it a reality 
+    - What are the steps to follow in launching a new club 
+    - How can I turn my club idea into a concrete reality 
+    - What legal and administrative aspects should be considered when opening a club 
+    - What resources and advice are available to help me open my own club 
+    - How do I plan and manage the different stages of opening a club 
+    - What are the responsibilities and obligations associated with opening and managing a club 
+    - How can I promote and attract members to my newly opened club 4
+    - What are the keys to success in opening and maintaining a successful club 4
+    - What are the common mistakes to avoid when opening a club 4
+    - How can I obtain the necessary financial support to open a club 4
